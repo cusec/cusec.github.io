@@ -14,12 +14,10 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
+    background: white;
+    background-image: url('gplaypattern_@2X.png');
+    margin: 0;
+    min-height: 100%; 
 }
 
 
