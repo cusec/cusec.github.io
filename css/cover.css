@@ -1,0 +1,418 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body,
+.row-offcanvas {
+  height: 100%;
+}
+body {
+  text-align: center;
+  /*text-shadow: 0 1px 3px rgba(0,0,0,.5); */
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  overflow: hidden;
+  position: relative;
+  background: url("../images/mtlbg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background: cover;
+}
+
+.test{
+  background: #9F2064;
+  opacity: 0.9;
+  padding:8px;
+  padding-bottom: 10px;
+}
+
+.test-lower{
+  background: #5D4056;
+  opacity: 0.9;
+  padding:8px;
+  padding-bottom: 10px;
+  width:30%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  font-size: 2em;
+}
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top; 
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.content-container{
+  margin-right:auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+.derp{
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  overflow: hidden;
+  position: relative;
+  background: #5d4056  no-repeat center center fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background: cover;
+
+}
+
+#map-outer {  
+  height: 440px; 
+  padding: 20px; 
+  margin-bottom: 20px; 
+}
+
+#map-container{
+  height:400px;
+  
+}
+
+.derp2{
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  overflow: hidden;
+  position: relative;
+  background: #5d4056 no-repeat center center fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background: cover;
+}
+
+.derp3{
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  overflow: hidden;
+  position: relative;
+  background: #F1CA2D no-repeat center center fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background: cover;
+}
+
+.derp4{
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 75px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 75px rgba(0,0,0,.5);
+  overflow: hidden;
+  position: relative;
+  background: #730244 no-repeat center center fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background: cover;
+}
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (max-width(
+.h1-hero{
+  margin-top: 5%;
+  font-size: 90px;
+  color: inherit;
+  font-size-adjust: 0.508;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 4px;
+  max-width:100%;
+ height:auto;
+}
+
+.h1-big-black{
+  font-size: 90px;
+  color: black;
+  font-size-adjust: 0.508;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 4px; 
+  font-family: 'Raleway', sans-serif;
+}
+
+.lead-hero {
+  margin-bottom: px;
+  font-size: 350%;
+  font-weight: 400;
+  line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.h2-black{
+  margin-left:5px;
+  padding:3px;
+  margin-bottom: 0px;
+  font-family: inherit;
+  line-height: 1.1;
+  color: black;
+  margin-top: 0px;
+}
+
+.h3-black{
+  margin-left:10px;
+  padding:3px;
+  margin-bottom: 0px;
+  font-family: inherit;
+  line-height: 1.1;
+  color: black;
+  margin-top: 0px;
+}
+
+.picdescrip{
+  font-size:100%;
+  font-family:'Raleway', serif;
+  display:block;
+  padding: 20px 10px;
+}
+
+@media (max-width: 980px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+
+  .test{
+  background: #9F2064;
+  line-height: 100px;
+  opacity: 0.9;
+  padding: 4px;
+  padding-bottom: 5px;  
+}
+
+  .h1-big{
+  font-size: 45px;
+  color: inherit;
+  font-size-adjust: 0.508;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 2px; 
+  font-family: 'Raleway', sans-serif;
+}
+.site-wrapper-inner {
+    vertical-align: middle;
+  }
+
+}
+
+@media (max-width: 360px){
+  .test{
+  background: #9F2064;
+  opacity: 0.9;
+  padding: 2px;
+  padding-bottom: 2.5px; 
+  font-size: 15px;
+}
+
+  .h1-big{
+  font-size: 27px;
+  line-height: 50px;
+  color: inherit;
+  font-size-adjust: 0.508;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 2px; 
+  font-family: 'Raleway', sans-serif;
+}
+.site-wrapper-inner {
+    vertical-align: middle;
+  }
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/*
+ * About us
+ */
+
+ .about{
+    background: url("../images/image1.png") #000 repeat;  
+
+ }
+
+ .mainContainer{
+    display: table;
+    table-layout:fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: red;
+ }
+
+ .mainContent{
+  display:table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+ }
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #000; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+  background: black;
+  width: 100%;
+
+}
+
+.footer{
+  background:black;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: relative;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+  
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 1100px;
+  }
+}

@@ -1,23 +1,59 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-<!--<div class="home">-->
-  <img  src="/images/montrealCusec2.png">
-  <!--<h1 class="page-heading">Posts</h1>
+    <title>CUSEC 2015</title>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 
-<!--</div>-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+  </head>
+
+  <body>
+  
+    <section class="site-wrapper container-fluid" id="home">
+            <div class ="row">
+                <div class="col-md-5 col-md-offset-8">
+                    <h1 class="img-responsive"><img src="images/EventLogo-960.png" height="150" width="240"> 
+                    </h1>
+                </div>
+            </div>
+        <div class="container-fluid cover-container">
+                <div class ="row">
+                    <div class="h3 col-md-6 col-md-offset-3 date text-center">
+                        <p>
+                            January 15th - 17th, 2015
+                        </p>
+                    </div>
+                    <div class="h2 col-md-6 col-md-offset-3 text-center" >
+                    <p>Canadian University Software Engineering Conference
+                    </p>
+                    </div>
+                    <div class="h3 col-md-6 col-md-offset-3 text-center date"> 
+                        <p>
+                            Montreal, Quebec, Canada
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </section>
+</body>
+</html>
