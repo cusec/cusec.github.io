@@ -1,59 +1,477 @@
 <!DOCTYPE html>
+<!--Lovingly Crafted by Rohan Likhite (.com) -->
+
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <meta name="author" content="Rohan">
 
     <title>CUSEC 2015</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+    <!-- Add custom CSS here -->
+    <link href="css/cusec.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- tickets -->
+    <script type="text/javascript" src="https://guestlistapp.com/javascripts/guestlist-embed.js"></script>
+    
+    <!--Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    
+</head>
 
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+<body>
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">CUSEC 2015</a></li>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#schools">Schools</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="team.html#team">Team</a></li>
+            <li><a href="faq.html#faq">Frequently Asked Questions</a></li>
+            <li><a href="faq.html#coc">Code of Conduct</a></li>
+        </ul>
+    </div>
+    <!-- /Side Menu -->
 
-    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+        <div class="vert-text1">
+            <img class="img-responsive img-center" src="img/logo.png"></img>
+            <h1>January 15-17th 2015</h1>
+            <h1>Montreal,Quebec, Canada</h1>
+            <br/>
+            <a href="#" class="btn btn-lg btn-primary btn-last guestlist-event-288732"><span class="glyphicon glyphicon-shopping-cart"></span>Purchase Tickets</a>
+        </div>
+    </div>
+    <!-- /Full Page Image Header Area -->
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-
-  </head>
-
-  <body>
-  
-    <section class="site-wrapper container-fluid" id="home">
-            <div class ="row">
-                <div class="col-md-5 col-md-offset-8">
-                    <h1 class="img-responsive"><img src="images/EventLogo-960.png" height="150" width="240"> 
-                    </h1>
+    <!-- Intro -->
+    <div id="about" class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <p class="lead">CUSEC brings together passionate students from across Canada. Meet like-minded peers, learn from world-renowned experts and discover career opportunities with exciting companies.</p>
+                    <hr>
+                    <h2>Venue</h2>
+                    <h3>Montréal Marriott Château Champlain Hotel</h3>
+                    <h4>1 Place du Canada <br>
+                    H3B 4C9, Montreal, QC Canada</h4>
+                    <hr>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6">
+                            Want to read our Code of Conduct?
+                        </div>
+                        <div class="col-sm-6">
+                            Have any questions? 
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6">
+                            <a href="faq.html#coc" class="btn btn-primary btn-block">Code of Conduct</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="faq.html#faq" class="btn btn-primary btn-block">FAQ's</a>  
+                        </div>
+                    </div>
                 </div>
             </div>
-        <div class="container-fluid cover-container">
-                <div class ="row">
-                    <div class="h3 col-md-6 col-md-offset-3 date text-center">
-                        <p>
-                            January 15th - 17th, 2015
-                        </p>
-                    </div>
-                    <div class="h2 col-md-6 col-md-offset-3 text-center" >
-                    <p>Canadian University Software Engineering Conference
-                    </p>
-                    </div>
-                    <div class="h3 col-md-6 col-md-offset-3 text-center date"> 
-                        <p>
-                            Montreal, Quebec, Canada
-                        </p>
+        </div>
+    </div>
+    <!-- /Intro -->
+
+
+
+
+<!-- Callout -->
+    <div class="callout">
+        <div class="vert-text">
+            <h2>"You will learn more at CUSEC in 3 days than your entire 1st year of university" <br/>-  Michel Parisien </h2>
+        </div>
+    </div>
+    <!--/Callout -->
+
+
+    <!-- Speakers -->
+    <div id="speakers" class="speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h2>Keynote Speakers</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-2 text-center">
+                    <div class="speakerPerson">
+                        <img src="img/speakers/aaronpatterson.jpeg" class="img-circle">
+                        <h4><a href="http://tenderlovemaking.com/">Aaron Patterson</a></h4>
+                        <p><a href="https://www.twitter.com/tenderlove/">@tenderlove</a></p>
                     </div>
                 </div>
+                <div class="col-md-2 text-center">
+                    <div class="speakerPerson">
+                        <img src="img/speakers/juliepagano.jpg" class="img-circle">
+                        <h4><a href="http://juliepagano.com/">Julie Pagano</a></h4>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="speakerPerson">
+                        <img src="img/speakers/placeholder.png" class="img-circle">
+                        <h4>Camille Fournier</h4>
+                        <p><a href="https://twitter.com/skamille">@skamille</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="speakerPerson">
+                        <img src="img/speakers/sandimetz.png" class="img-circle">
+                        <h4><a href="http://www.sandimetz.com/">Sandi Metz</a></h4>
+                        <p><p><a href="https://twitter.com/sandimetz">@sandimetz</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-2 col-md-offset-4 text-center">
+                    <div class="speakerPerson">
+                        <img src="img/speakers/placeholder.png" class="img-circle">
+                        <h4>Dr. Jeff Chastine</h4>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="speakerPerson">
+                        <img src="img/speakers/bruce.jpg" class="img-circle" alt="Photo by: Per Ervland">
+                        <h4><a href="https://www.schneier.com/">Bruce Schneier</a></h4>
+                        <p><a href="https://twitter.com/schneierblog/">@schneierblog</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h2>Breakout Speakers</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-2 text-center">
+                    <div class="speakerPerson">
+                        <img src="img/speakers/david.png" class="img-circle">
+                        <h4><a href="http://blog.codekills.net/">David Wolever</a></h4>
+                        <p><a href="https://twitter.com/wolever">@wolever</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="speakerPerson">
+                        <img src="img/speakers/placeholder.png" class="img-circle">
+                        <h4><a href="http://stumm.ca/">Christopher Stumm</a></h4>
+                        <p><a href="https://twitter.com/stumm">@stumm</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="speakerPerson">
+                        <img src="img/speakers/placeholder.png" class="img-circle">
+                        <h4>Elida Arrizza</h4>
+                        <p><a href="https://twitter.com/elida_ca">@elida_ca</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="speakerPerson">
+                        <img src="img/speakers/helge.png" class="img-circle">
+                        <h4><a href="http://blog.tandemlaunch.com/">Dr. Helge Seetzen</a></h4>
+                        <p><a href="https://twitter.com/HelgeSeetzen">@HelgeSeetzen</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-4 text-center">
+                    <div class="speakerPerson">
+                        <img src="img/speakers/placeholder.png" class="img-circle">
+                        <h4>Dr. Joelle Pineau</h4>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="speakerPerson">
+                        <img src="img/speakers/rami.jpeg" class="img-circle">
+                        <h4><a href="http://ramisayar.com/">Rami Sayar</a></h4>
+                        <p><a href="https://twitter.com/ramisayar">@ramisayar</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+    <!-- /Speakers -->
+
+<!-- schools -->
+    <div class="schools" id="schools">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <div class="row">
+                    <div class="col-md-4 col-md-offset-4 text-center">
+                    <h2>Schools</h2>
+                    <hr>
+                </div>
+                        
+                    </div>
+                    <h3>Get in touch with your school's Head Delegate to find out more about getting to CUSEC with your school!</h3>
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                    <h3>Carleton University</h3>
+                        <h5><a href="mailto:carleton@cusec.net?Subject=CUSEC2015">Laura Alkhoury</a></h5>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                    <h3>Concordia University</h3>
+                        <h5><a href="mailto:concordia@cusec.net?Subject=CUSEC2015">TingLi Lorigiano</a></h5>
+                    </div>
+                    </div>
+                    
+                        <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                    <h3>McGill University</h3>
+                        <h5><a href="mailto:mcgill@cusec.net?Subject=CUSEC2015">Maude Lemaire</a></h5>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                    <h3>McMaster University</h3>
+                        <h5><a href="mailto:mcmaster@cusec.net?Subject=CUSEC2015">Peter Hoang</a></h5>
+                    </div>
+                    </div>
+                    
+                    
+                        <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                    <h3>Queen's University</h3>
+                        <h5><a href="mailto:queens@cusec.net?Subject=CUSEC2015">James Pang</a></h5>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                    <h3>University of Cincinnati</h3>
+                        <h5><a href="mailto:cincinnati@cusec.net?Subject=CUSEC2015">Angelika Modawal</a></h5>
+                    </div>
+                    </div>
+                    
+                    
+                        <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                    <h3>University of Guelph</h3>
+                        <h5><a href="mailto:guelph@cusec.net?Subject=CUSEC2015">Julian Hovart</a></h5>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                    <h3>University of Ottawa</h3>
+                        <h5><a href="mailto:ottawa@cusec.net?Subject=CUSEC2015">Keiko Climaco</a></h5>
+                    </div>
+                    </div>
+                    
+                     <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                    <h3>University of Toronto</h3>
+                        <h5><a href="mailto:toronto@cusec.net?Subject=CUSEC2015">Edward Ntiri</a></h5>
+                        <h5><a href="mailto:toronto@cusec.net?Subject=CUSEC2015">Tahia Khan</a></h5>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                    <h3>University of Waterloo</h3>
+                        <h5><a href="mailto:waterloo@cusec.net?Subject=CUSEC2015">Farwa Naqi</a></h5>
+                    </div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-md-12  col-sm-12">
+                    <h3>York University</h3>
+                        <h5><a href="mailto:york@cusec.net?Subject=CUSEC2015">Ursula Sarracini</a></h5>
+                    </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /schools -->
+    
+
+    <!-- Sponsors -->
+    <div id="sponsors" class="sponsors">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h2>Our Sponsors</h2>
+                    <hr>
+                </div>
+            </div>
+            
+            <!-- Gold sponsors -->
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h3>GOLD</h3>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                      <div class="sponsor-item">
+                        <a href="http://www.cae.com/">
+                            <img class="img-portfolio img-responsive" src="img/sponsors/cae.jpg">
+                        </a>
+                    </div>
+                </div>            
+                <div class="col-md-3 text-center">
+                    <div class="sponsor-item">
+                        <a href="http://www.genetec.com/about-us/careers">
+                            <img class="img-portfolio img-responsive" src="img/sponsors/genetec.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3  text-center">
+                      <div class="sponsor-item">
+                        <a href="https://www.dreamspark.com/">
+                            <img class="img-portfolio img-responsive" src="img/sponsors/dreamspark.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="sponsor-item">
+                        <a href="www.yelp.com">
+                            <img class="img-portfolio img-responsive" src="img/sponsors/yelp.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-offset-2 text-center">
+                      <div class="sponsor-item">
+                        <a href="http://www.morganstanley.com/about/careers/">
+                            <img class="img-portfolio img-responsive" src="img/sponsors/morganstanley.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3  text-center">
+                      <div class="sponsor-item">
+                        <a href="http://www.shopify.com/">
+                            <img class="img-portfolio img-responsive" src="img/sponsors/shopify.png">
+                        </a>
+                       
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="sponsor-item">
+                        <a href="http://montreal.ubisoft.com/en">
+                            <img class="img-portfolio img-responsive" src="img/sponsors/ubisoft.jpg">
+                        </a>
+                        
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Bronze sponsors -->
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <br>
+                    <h3>BRONZE</h3>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-3 text-center">
+                      <div class="sponsor-item">
+                        <a href="http://www.google.com/">
+                            <img class="img-portfolio img-responsive" src="img/sponsors/google.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                      <div class="sponsor-item">
+                        <a href="https://www.digitalocean.com">
+                            <img class="img-portfolio img-responsive" src="img/sponsors/digitalocean.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- /spnsonrs -->
+
+    <!-- Footer -->
+    <footer>
+        <!-- 
+        // Leaf Flat Social Media Icons Set // 
+        Release date: 06/09/2013
+        License: (by-sa-nd) Free for commercial use (link to author, no derivative works)
+        Original source: http://www.webhostingsecretrevealed.net/discount-freebies/free-icons/leaf/ 
+        -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="text-align:center">
+                <a class="btn-social" href="http://www.facebook.com/pages/CUSEC/9884406702">
+                    <img src="img/icons/facebook.png"></img>
+                </a>
+                <a class="btn-social" href="http://www.twitter.com/cusec">
+                    <img src="img/icons/twitter.png"></img>
+                </a>
+                <a class="btn-social" href="http://plus.google.com/109086660120732587899">
+                    <img src="img/icons/googleplus.png"></img>
+                </a>
+                <a class="btn-social" href="http://www.vimeo.com/cusec/">
+                    <img src="img/icons/vimeo.png"></img>
+                </a>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-12" style="text-align:center">
+                <a href="mailto:info@cusec.net?Subject=CUSEC2015">
+                    Contact Us
+                </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
 </body>
+
 </html>
