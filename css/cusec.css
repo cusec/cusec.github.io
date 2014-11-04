@@ -177,7 +177,7 @@ a:hover {
   display: table;
   height: 250px;
   width: 100%;
-  background: url("http://i.imgur.com/NJ28Ukm.jpg") no-repeat center center scroll; 
+  background: url(../img/callout.jpg) no-repeat center center scroll; 
 background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
