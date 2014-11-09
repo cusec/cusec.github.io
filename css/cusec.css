@@ -1,5 +1,6 @@
 /* Global Styles */
 
+
 html,
 body {
   height: 100%;
@@ -141,9 +142,9 @@ body {
 /* Speakers */
 
 .speakers {
-  background: #260d21;
+  background: #fff;
   padding: 50px 0;
-  color: #ffffff;
+  color: #260d21;
 }
 
 .speakerPerson {
@@ -163,7 +164,7 @@ i.service-icon {
 }
 
 .speakers a {
-  color: #fff;
+  color: #260d21;
 }
 
 a:hover {
@@ -209,14 +210,19 @@ background-attachment: fixed;
 /* schools*/
 
 .schools {
-  color: #000;
-  background: #fff;
+  color: #fff;
+  background: #260d21;
   padding: 50px 0;
 }
 
 .schools a {
   text-decoration: underline;
-  color: #000;
+  color: #fff;
+}
+
+
+a:hover {
+  color: #696B80;
 }
 
 .call-to-action .btn {
