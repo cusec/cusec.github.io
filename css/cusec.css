@@ -171,6 +171,19 @@ a:hover {
   color: #696B80;
 }
 
+/* Team */
+.team {
+  background: #260d21;
+  padding: 50px 0;
+  color: #fff;
+}
+.team a {
+  color: #fff;
+}
+
+a:hover {
+  color: #696B80;
+}
 /* Callout */
 
 .callout {
