@@ -240,7 +240,9 @@ a:hover {
   color: white;
 }
 
-
+a:hover {
+  color: #696B80;
+}
 /* Map */
 
 .map {
