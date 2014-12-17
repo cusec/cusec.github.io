@@ -155,6 +155,10 @@ body {
   color: #260d21;
 }
 
+.btntext a {
+  color: #fff;
+}
+
 
 i.service-icon {
   border: 3px solid #ffffff;
