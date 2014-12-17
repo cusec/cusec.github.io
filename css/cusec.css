@@ -292,6 +292,11 @@ footer {
   padding: 20px 0;
   background: #260d21;
   color: #fff;
+
+}
+
+.navbar-fixed-bottom a {
+  color :#fff;
 }
 
 .top-scroll {

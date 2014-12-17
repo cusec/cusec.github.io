@@ -4490,6 +4490,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
   bottom: 0;
   margin-bottom: 0;
   border-width: 1px 0 0;
+  padding: 20px 0;
+  background: #260d21;
+  color: #fff;
+  
 }
 
 .navbar-brand {
