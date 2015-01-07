@@ -13,6 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 
     <!-- Add custom CSS here -->
     <link href="css/cusec.css" rel="stylesheet">
@@ -36,6 +37,7 @@
             <li><a href="index.html#about">About</a></li>
             <li><a href="speakers.html">Speakers</a></li>
             <li><a href="#top">Democamp</a></li>
+            <li><a href="resumes.html">Resume Upload</a></li>
             <li><a href="talks.html">Lightning Talks</a></li>
             <li><a href="index.html#schools">Schools</a></li>
             <li><a href="index.html#sponsors">Sponsors</a></li>
@@ -70,11 +72,11 @@
             
                 <p>In addition to presenting to an audience of fellow CUSEC attendees, you will be presenting to a panel of judges made up of speakers and sponsors whose job it is to offer feedback, advice, and their expertise.</p></br>
             </div>
-
-            <div class="col-sm-4 col-md-offset-4 btntext" >
-                <a href="#" class="btn btn-primary btn-block disabled">Submissions open soon!</a></br></br>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <div id="wufoo-mmgfn101brmky8">
+                    Fill out my <a href="https://cusecresumes.wufoo.com/forms/mmgfn101brmky8">online form</a>.
+                </div>
             </div>
-                
         </div>
     </div>
     <!-- Footer -->
@@ -147,6 +149,24 @@
             }
         });
     });
+    </script>
+    <script type="text/javascript">
+        var mmgfn101brmky8;(function(d, t) {
+            var s = d.createElement(t), options = {
+            'userName':'cusecresumes',
+            'formHash':'mmgfn101brmky8',
+            'autoResize':true,
+            'height':'1008',
+            'async':true,
+            'host':'wufoo.com',
+            'header':'show',
+            'ssl':true};
+            s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+            s.onload = s.onreadystatechange = function() {
+            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+            try { mmgfn101brmky8 = new WufooForm();mmgfn101brmky8.initialize(options);mmgfn101brmky8.display(); } catch (e) {}};
+            var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+            })(document, 'script');
     </script>
 </body>
 
