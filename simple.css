@@ -1,0 +1,211 @@
+body {
+	background-color: #FBF6CE;
+	margin: 40px auto;
+	width: 760px;
+	color: #444;
+	font-size: 14px;
+	font-family: "Lucida Grande", Verdana, Sans-serif;	
+}
+
+h1 {
+	margin-bottom: 25px;
+	font-family: Georgia, Helvetica, Arial, sans-serif;	
+	font-size: 200%;
+	font-weight: normal;	
+	color: #930808;
+}
+
+h1.logo {
+	letter-spacing: 10px;
+	font-size: 500%;
+	text-align: center;
+	font-weight: bold;	
+}
+
+h1 span {
+	font-size: 25%;
+	letter-spacing: 0px;
+	font-weight: normal;
+	font-style: italic;
+	color: #444;
+}
+
+h2 {
+	font-size: 120%;
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+
+h2 span {
+	font-size: 80%;
+	font-weight: normal;
+}
+
+h2.advisor {
+	margin-top: 0;
+}
+
+h3 {
+	font-weight: normal;
+	font-size: 90%;
+	color: #AAA;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 20px;
+	line-height: 1.5em;
+}
+
+a {
+	color: #104E93;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #104E93;
+	color: #FFF;
+}
+
+a:visited {
+	color: #617891;
+}
+
+ul {
+	margin-bottom: 50px;
+	padding: 0;
+	list-style: none;
+}
+
+ul li ul {
+	margin-bottom: 0;
+	padding: 0;
+}
+
+ul li ul li {
+	margin-bottom: 20px;
+	font-size: 80%;
+}
+
+blockquote {
+	border: 1px solid #CCC;
+	margin: 0 0 25px 0;
+	padding: 20px;
+}
+
+blockquote p {
+	margin: 0;
+	padding: 0;
+	font-style: italic;
+	color: #222;
+}
+
+blockquote p span {
+	color: #666;
+}
+
+img {
+	border: none;
+}
+
+.highlight {
+	background-color: #FFA;
+}
+
+.notice {
+  border-top: 1px solid #FF6;
+  border-bottom: 1px solid #FF6;
+  padding: 5px;
+  background-color: #FFA;
+  font-size: 24px;
+  text-align: center;
+}
+
+img.header {
+	border: 1px solid #333;
+	padding: 1px;
+}
+
+img.advisor {
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	padding: 1px;
+	border: 1px solid #333;
+}
+
+#content {
+	margin-right: 225px;
+	padding-right: 24px;
+	border-right: 1px solid #DDD;	
+}
+
+#sidebar {
+	float: right;
+	width: 200px;
+	font-size: 13px;
+}
+
+#footer {
+	clear: both;
+	margin: 80px 0 50px 0;
+	font-size: 90%;
+	text-align: center;
+	color: #666;
+	font-style: italic;
+}
+
+#mainmenu {
+	padding-bottom: 30px;
+}
+
+#mainmenu div, #mainmenu a {
+	position: relative;
+	display: block;
+	padding: 2px 0;
+}
+
+#mainmenu div {
+  background-color: #617891;
+  color: #FFF;
+}
+
+#mainmenu a:hover  {
+  color: #FFF;
+}
+#mainmenu a span {
+	color: #999;
+}
+
+
+.archive_header {
+	border-top: 10px solid #CCC;
+	padding-top: 20px;
+}
+
+.archive_header h2 {
+	font-size: 150%;
+	margin-top: 0;
+}
+
+ul.presentations li ul li {
+	padding-bottom: 20px;
+	border-bottom: 1px dotted #AAA;
+}
+
+ul.presentations li ul li span {
+	display: block;
+	margin-top: 15px;
+}
+
+ul.organizers {
+	padding-left: 30px;
+	list-style: disc;
+	color: #555;
+	font-size: 90%;
+}
+
+ul.organizers li span {
+	color: #666;
+	font-size: 80%;
+}
