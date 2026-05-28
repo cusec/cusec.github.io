@@ -1,0 +1,228 @@
+{
+  "Nav": {
+    "pastSpeakers": "历届讲者",
+    "participantSchools": "参与院校",
+    "historicSponsors": "历届赞助商",
+    "primary": "主要",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "menu": "菜单",
+    "close": "关闭"
+  },
+  "LocaleSwitcher": {
+    "label": "选择语言"
+  },
+  "Hero": {
+    "tagline": "加拿大大学软件工程会议",
+    "intro": "CUSEC 是一个非营利组织，举办由学生组织、面向学生的技术会议。我们成立于 2002 年，每年一月初举办一次会议，今年我们正在筹备 CUSEC 2027。",
+    "cta": "访问 CUSEC 2027 网站"
+  },
+  "Home": {
+    "bandAlt": "CUSEC 与会者在会议厅中合影。"
+  },
+  "Stats": {
+    "statement": "在 <b>25 年以上</b>的时间里，我们已经迎来了 <b>10,000 多名</b>与会者、<b>270 多家</b>赞助商和 <b>380 多位</b>讲者"
+  },
+  "Testimonials": {
+    "t1": "在 CUSEC 的 3 天里，你学到的将超过整个大学第一年。",
+    "t2": "CUSEC 已经成长为<b>首屈一指的</b>由计算机科学学生为计算机科学学生举办的会议，覆盖整个加拿大。可惜美国的计算机科学学生没有一个与之相当的学生主办会议。",
+    "t3": "太棒了。如果你是这里的学生，从事任何与软件相关的事情，就来参加吧。如果你是资深人士，有人请你演讲，就接受吧。如果你是寻找人才的雇主，就来赞助吧。",
+    "t4": "只是想告诉你，多亏了 CUSEC，我拿到了 AutoDesk 和 Microsoft 两家的面试机会。",
+    "attributions": {
+      "t1": "Michel Parisien，学生，康考迪亚大学",
+      "t2": "Jeff Atwood，StackOverflow 联合创始人",
+      "t3": "Tim Bray，OpenText 创始人、XML 共同创建者",
+      "t4": "Loren，学生，康考迪亚大学"
+    }
+  },
+  "Editorial": {
+    "whatIsCusec": {
+      "heading": "CUSEC <em>是</em>什么？",
+      "alt": "鲜艳蓝天下一片翠绿的田野。",
+      "body1": "加拿大大学软件工程会议被许多人称为<hl>软件工程未来的盛会</hl>。来自加拿大各地、不同专业方向、热爱软件工程的学生齐聚一堂，在整整三天里向全球最著名、最受追捧的软件工程讲者、研究者和专业人士学习。",
+      "body2": "但这不仅仅关乎演讲。会议让你有机会结识其他志同道合的人——看看你的同伴在创造什么，他们如何在技术领域进行尝试。<hl>CUSEC 让你有机会与塑造行业的人物以及打造我们日常所用之物的人坦诚交流。</hl>让你能够直接向你敬仰的人学习。别忘了，我们还有一个不断壮大的招聘会，或许会让你感兴趣。"
+    },
+    "isCusecForMe": {
+      "heading": "CUSEC 适合<em>我</em>吗？",
+      "alt": "阳光明媚的田野，有树木和蓝天。",
+      "body1": "无论你是工程专业的本科生，还是正在攻读 MBA，<hl>只要你关心行业的当前状况，那么 CUSEC 就适合你。</hl>会议主要面向软件工程的本科生和研究生而组织。但这并不意味着其他人无法从中受益：会议项目始终保持最高质量，任何有兴趣的人都能从中收获良多。"
+    }
+  },
+  "Sponsors": {
+    "heading": "由<em>最优秀者</em>支持",
+    "lede": "没有多年来一直支持我们的出色赞助商，CUSEC 不可能实现。",
+    "seeAll": "查看所有历届赞助商",
+    "logoAlt": "{name} 标志"
+  },
+  "Schools": {
+    "heading": "来自<em>全国各地</em>",
+    "lede": "我们迎来了来自各类大学和学院的学生。",
+    "seeAll": "查看所有参与院校"
+  },
+  "Speakers": {
+    "heading": "<em>传奇</em>讲者",
+    "lede": "向软件工程、设计和技术领域一些最具影响力的人物学习。",
+    "seeAll": "查看所有历届讲者",
+    "learnMore": "了解更多",
+    "srAbout": "关于 {name}",
+    "bios": {
+      "Kent Beck": "软件工程师，Extreme Programming (XP) 创始人，对敏捷开发影响深远",
+      "Richard Stallman": "GNU 项目和自由软件运动创始人",
+      "Joel Spolsky": "软件开发者、作家，Stack Overflow 和 Trello 联合创始人",
+      "Jeff Atwood": "Stack Overflow 联合创始人，Coding Horror 编程博客作者",
+      "Alexis Ohanian": "企业家，Reddit 联合创始人",
+      "David Heinemeier Hansson": "Ruby on Rails 创建者，Basecamp 共同所有者兼 CTO",
+      "Douglas Crockford": "以推广 JSON 闻名的程序员",
+      "Bruce Schneier": "网络安全专家、密码学家和安全作家",
+      "Bret Victor": "界面设计师和计算机科学家，以交互式计算概念闻名",
+      "Greg Kroah-Hartman": "Linux 内核开发者和维护者",
+      "Grady Booch": "软件工程师，UML（统一建模语言）共同创建者",
+      "Jeff Ullman": "斯坦福计算机科学教授，以数据库和编译器理论闻名",
+      "Michael Seibel": "企业家，Twitch 前 CEO，Y Combinator 合伙人",
+      "Alex Karp": "Running Start 作者，Thumbtack 工程经理",
+      "Joelle Pineau": "人工智能研究者、麦吉尔大学教授、Meta AI 前负责人",
+      "Yehuda Katz": "开源开发者，以 Ember.js、Ruby on Rails 和 Rust 贡献闻名",
+      "Aaron Patterson": "Ruby 核心开发者，Ruby on Rails 重要贡献者",
+      "Julia Evans": "软件工程师和教育者，以通俗的编程与系统 zine 闻名",
+      "Kathy Sierra": "编程教育者，Head First 系列共同创建者",
+      "Sandi Metz": "软件架构师和作者，以面向对象设计与 Ruby 专长闻名"
+    }
+  },
+  "Archive": {
+    "heading": "<em>历届</em>会议",
+    "lede": "探索 CUSEC 二十多年的历史、讲者和活动。",
+    "archived": "已存档",
+    "visitSite": "访问网站",
+    "seeFullArchive": "查看完整存档",
+    "seeLess": "收起",
+    "logoAlt": "CUSEC {year} 标志",
+    "info": {
+      "2011": "激励加拿大科技未来的十年。",
+      "2012": "展现云计算与大数据的兴起。",
+      "2013": "鼓励开发者构建真正有价值的工具。",
+      "2014": "聚焦移动开发与可扩展基础设施的进展。",
+      "2015": "连接理论与产业实践。",
+      "2016": "关注安全、隐私以及技术的影响。",
+      "2017": "展示创新创业公司与软件工程工作流。",
+      "2018": "围绕开源软件与去中心化技术展开讨论。",
+      "2019": "由多元科技声音塑造下一代。",
+      "2020": "疫情前关于系统架构与 Web 平台的洞见。",
+      "2021": "开创 CUSEC 首次全线上体验。",
+      "2022": "通过线上体验连接全球学生。",
+      "2023": "回归线下交流、学习与分享想法。",
+      "2024": "探索人工智能、无障碍与现代软件实践。",
+      "2025": "在蒙特利尔共同建设科技的未来。",
+      "2026": "加拿大大学软件工程会议 25 周年。"
+    },
+    "detailed": {
+      "2003": "第二届 CUSEC 证明首届活动并非偶然成功。它确立了加拿大需要一个由学生主导的软件工程会议，为学生提供向行业前辈学习并在职业早期结识同侪的重要平台。",
+      "2004": "在早期成功的基础上，CUSEC 2004 扩大了覆盖范围，汇聚了更多加拿大大学的学生。活动促进了跨省交流，并将会议确立为面向未来软件工程师的全国性聚会。",
+      "2005": "CUSEC 2005 捕捉到了开源运动的兴起。会议强调参与公共代码库、向全球同侪学习，以及让高校计算机课程更好融入开源理念的重要性。",
+      "2006": "CUSEC 2006 庆祝五周年，成为会议的重要里程碑。它回顾了互联网泡沫以来行业的变化，并展望由开源协作和更易获得的开发工具主导的未来。",
+      "2007": "CUSEC 2007 深入探讨软件架构与设计模式。早在现代框架普及之前，讲者就帮助学生理解构建稳健、可扩展、可维护系统的长期原则。",
+      "2008": "随着 Web 2.0 持续改变线上互动方式，CUSEC 2008 带来了关于富互联网应用、用户生成内容和 Web 开发范式转变的思考。会议进一步巩固了其作为加拿大计算机学生重要活动的声誉。",
+      "2009": "2009 年，软件行业迅速采用敏捷方法。CUSEC 将这些前沿开发流程带给学生，举办了关于结对编程、测试驱动开发以及复杂团队协作的工作坊。",
+      "2010": "CUSEC 2010 聚焦硬件与软件的深度交汇，邀请北美先驱讲者分享系统工程、早期智能手机应用开发和独立科技社区的洞见。它仍然是学生重要的交流场所。"
+    }
+  },
+  "Footer": {
+    "copyright": "版权所有 2002-2026。保留所有权利。"
+  },
+  "Pages": {
+    "pastSpeakers": {
+      "heading": "<em>历届</em>讲者",
+      "lede": "认识多年来在 CUSEC 演讲过的杰出人士。"
+    },
+    "participantSchools": {
+      "heading": "<em>参与</em>院校",
+      "lede": "浏览多年来 CUSEC 与会者所代表的大学和学院。"
+    },
+    "historicSponsors": {
+      "heading": "<em>历届</em>赞助商",
+      "lede": "认识多年来一直支持 CUSEC 的杰出合作伙伴。"
+    }
+  },
+  "SpeakersBrowser": {
+    "ariaCategories": "讲者类别",
+    "noSpeakers": "未找到此类别的讲者。",
+    "focus": {
+      "legends": {
+        "label": "传奇人物",
+        "description": "在 CUSEC 演讲过的最知名、最具影响力的人物。"
+      },
+      "2020s": {
+        "label": "2020 年代",
+        "description": "2020 年至今的讲者。"
+      },
+      "2010s": {
+        "label": "2010 年代",
+        "description": "2010 年至 2019 年的讲者。"
+      },
+      "2000s": {
+        "label": "2000 年代",
+        "description": "2002 年至 2009 年的讲者。"
+      }
+    }
+  },
+  "SponsorsBrowser": {
+    "ariaIndustry": "行业领域",
+    "note": "本存档并非 CUSEC 所有赞助商的完整列表。",
+    "focus": {
+      "all": {
+        "label": "全部",
+        "description": "CUSEC 存档中的所有赞助商。"
+      },
+      "platforms-infra": {
+        "label": "平台与基础设施",
+        "description": "主要技术平台、云服务提供商、网络、电信和核心系统。"
+      },
+      "software-products": {
+        "label": "软件产品",
+        "description": "SaaS、企业软件、开发者工具、数据产品和垂直应用。"
+      },
+      "finance-commerce": {
+        "label": "金融与商业",
+        "description": "金融服务、支付、零售平台、在线市场和消费商业。"
+      },
+      "games-creative": {
+        "label": "游戏与创意",
+        "description": "游戏工作室、创意工具、互动媒体、时尚和数字体验。"
+      },
+      "services-public-systems": {
+        "label": "服务与系统",
+        "description": "咨询、代理机构、教育、公益技术、工业系统和深科技。"
+      }
+    }
+  },
+  "SchoolsBrowser": {
+    "summary": "概览",
+    "regionDescription": "多年来 CUSEC 与会者所代表的来自{region}的院校。",
+    "note": "此历史列表并非当年的名册，也不是正式的院校合作目录。",
+    "summaryAria": "历史概览",
+    "regionAria": "{region}的院校"
+  },
+  "Summary": {
+    "barChartAria": "百分比条形图",
+    "degreePieAria": "学位阶段百分比细分",
+    "studyMix": {
+      "title": "我们的与会者学习哪些领域？",
+      "footnote": "当学生填写了交叉学科时，项目可能被标记为多个类别。",
+      "metrics": {
+        "computerScience": "计算机科学",
+        "softwareEngineering": "软件工程",
+        "computerEngineering": "计算机工程",
+        "mathStatsData": "数学、统计、数据",
+        "other": "其他",
+        "electricalEngineering": "电气工程"
+      }
+    },
+    "degreeMix": {
+      "title": "与会者处于哪个学位阶段？",
+      "metrics": {
+        "bachelors": "学士",
+        "masters": "硕士",
+        "other": "其他"
+      }
+    }
+  }
+}

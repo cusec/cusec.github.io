@@ -1,0 +1,6 @@
+.agents
+.codex
+.omx
+node_modules/
+.next
+.claude/

@@ -1,0 +1,319 @@
+{
+  "Nav": {
+    "pastSpeakers": "Past Speakers",
+    "participantSchools": "Participating Schools",
+    "historicSponsors": "Historic Sponsors",
+    "primary": "Primary",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "LocaleSwitcher": {
+    "label": "Select language"
+  },
+  "Hero": {
+    "tagline": "Canadian University Software Engineering Conference",
+    "intro": "CUSEC is a non-profit organization hosting technology conferences organized by students, for students. Founded in 2002, we host a conference annually in early January, this year we are gearing up for CUSEC 2027.",
+    "cta": "Visit CUSEC 2027's site"
+  },
+  "Home": {
+    "bandAlt": "CUSEC attendees gathered for a group photo in a conference hall."
+  },
+  "Stats": {
+    "statement": "For <b>25+</b> years we've welcomed <b>10,000+</b> attendees, <b>270+</b> sponsors and <b>380+</b> speakers"
+  },
+  "Testimonials": {
+    "t1": "You will learn more at CUSEC in 3 days than your entire 1st year of university.",
+    "t2": "CUSEC has grown into <b>the premier</b> conference by computer science students, for computer science students - across the whole of Canada. It's too bad there isn't an equivalent student-run conference for American computer science students.",
+    "t3": "What a blast. If you're a student up here doing anything software-related, attend. If you're a veteran and they ask you to speak, accept. If you're an employer looking for talent, sponsor.",
+    "t4": "Just letting you know I got interviews with both AutoDesk and Microsoft setup thanks to CUSEC.",
+    "attributions": {
+      "t1": "Michel Parisien, Student, Concordia University",
+      "t2": "Jeff Atwood, Co-Founder of StackOverflow",
+      "t3": "Tim Bray, Founder of OpenText, Co-Creator of XML",
+      "t4": "Loren, Student, Concordia University"
+    }
+  },
+  "Editorial": {
+    "whatIsCusec": {
+      "heading": "What <em>is</em> CUSEC?",
+      "alt": "A bright green field under a vivid blue sky.",
+      "body1": "The Canadian University Software Engineering Conference is referred to by many as the <hl>gathering of the future of Software Engineering</hl>. Students who are passionate about Software Engineering, from across Canada and diverse concentrations, gather under one roof for three full days to learn from the world's most famous and sought after software engineering speakers, researchers and professionals.",
+      "body2": "It's not just about the presentations though. The conference gives you the opportunity to meet others who share your passion - to see what your peers are making and how they're experimenting in tech. <hl>CUSEC gives you the opportunity to have open conversations with the figures shaping the industry as well as the people who build the things we use every day.</hl> Allowing you to learn directly from the people you look up to. And don't forget, we also have a growing career fair that might be of interest to you."
+    },
+    "isCusecForMe": {
+      "heading": "Is CUSEC for <em>me</em>?",
+      "alt": "A sunny field with trees and blue sky.",
+      "body1": "It doesn't matter if you're an undergrad in engineering or if you're getting your MBA, <hl>if you're interested in the current state of the industry then CUSEC is for you.</hl> The conference is organized primarily with software engineering undergrads and graduate students in mind. That does not mean that other people cannot benefit, the program is always of the highest quality and anyone who is interested can gain a lot from the conference."
+    }
+  },
+  "Sponsors": {
+    "heading": "Supported by the <em>Best</em>",
+    "lede": "CUSEC wouldn't be possible without our amazing sponsors who have supported us over the years.",
+    "seeAll": "See All Historic Sponsors",
+    "logoAlt": "{name} Logo"
+  },
+  "Schools": {
+    "heading": "From Across <em>the Country</em>",
+    "lede": "We've welcomed students from a wide range of universities and colleges.",
+    "seeAll": "See All Participant Schools"
+  },
+  "Speakers": {
+    "heading": "Legendary <em>Speakers</em>",
+    "lede": "Learn from some of the most influential minds in software engineering, design, and technology.",
+    "seeAll": "See All Past Speakers",
+    "learnMore": "Learn More",
+    "srAbout": "about {name}",
+    "bios": {
+      "Kent Beck": "Software engineer and creator of Extreme Programming (XP), influential in Agile software development",
+      "Richard Stallman": "Founder of the GNU Project and Free Software Movement",
+      "Joel Spolsky": "Software developer, writer, and co-founder of Stack Overflow and Trello",
+      "Jeff Atwood": "Co-founder of Stack Overflow and programming blogger behind Coding Horror",
+      "Alexis Ohanian": "Entrepreneur and co-founder of Reddit",
+      "David Heinemeier Hansson": "Creator of Ruby on Rails and co-owner/CTO of Basecamp",
+      "Douglas Crockford": "Computer programmer best known for popularizing JSON",
+      "Bruce Schneier": "Cybersecurity expert, cryptographer, and security author",
+      "Bret Victor": "Interface designer and computer scientist known for interactive computing concepts",
+      "Greg Kroah-Hartman": "Linux kernel developer and maintainer",
+      "Grady Booch": "Software engineer and co-creator of UML (Unified Modeling Language)",
+      "Jeff Ullman": "Stanford computer science professor known for databases and compiler theory",
+      "Michael Seibel": "Entrepreneur, former CEO of Twitch, and partner at Y Combinator",
+      "Alex Karp": "Author of Running Start: How to get a job in tech, keep that job, and thrive. Engineering manager at Thumbtack",
+      "Joelle Pineau": "AI researcher, professor at McGill University, and former Meta AI leader",
+      "Yehuda Katz": "Open source developer known for Ember.js, Ruby on Rails, and Rust contributions",
+      "Aaron Patterson": "Ruby core developer and major contributor to Ruby on Rails",
+      "Julia Evans": "Software engineer and educator known for approachable programming zines and systems content",
+      "Kathy Sierra": "Programming educator and co-creator of the Head First book series",
+      "Sandi Metz": "Software architect and author known for object-oriented design and Ruby expertise"
+    }
+  },
+  "Archive": {
+    "heading": "Past <em>Conferences</em>",
+    "lede": "Explore over two decades of CUSEC history, speakers, and events.",
+    "archived": "Archived",
+    "visitSite": "Visit Site",
+    "seeFullArchive": "See Full Archive",
+    "seeLess": "See Less",
+    "logoAlt": "CUSEC {year} Logo",
+    "info": {
+      "2011": "A decade of inspiring the future of Canadian tech.",
+      "2012": "Showcasing the rise of cloud computing and big data.",
+      "2013": "Empowering developers to build tools that matter.",
+      "2014": "Advancements in mobile development and scalable infrastructure.",
+      "2015": "Bridging the gap between theory and industry application.",
+      "2016": "Focusing on security, privacy, and the impact of technology.",
+      "2017": "Highlighting innovative startups and software engineering workflows.",
+      "2018": "Discussions on open-source software and decentralized technologies.",
+      "2019": "Diverse voices in technology shaping the next generation.",
+      "2020": "Pre-pandemic insights into system architecture and web platforms.",
+      "2021": "Pioneering the first fully virtual CUSEC experience.",
+      "2022": "Connecting students globally through virtual experiences.",
+      "2023": "A return to in-person networking, learning, and sharing ideas.",
+      "2024": "Exploring artificial intelligence, accessibility, and modern software practices.",
+      "2025": "Building the future of tech, together in Montreal.",
+      "2026": "The 25th anniversary of the Canadian University Software Engineering Conference."
+    },
+    "detailed": {
+      "2003": "The second-ever CUSEC proved that the inaugural event was no fluke. It cemented the need for a dedicated, student-run software engineering conference in Canada, providing an essential platform for students to learn from industry veterans and connect with like-minded peers early in their careers.",
+      "2004": "Building on the success of its earlier editions, CUSEC 2004 expanded its reach, bringing together students from a wider array of Canadian universities. The event fostered cross-provincial networking and established the conference as a truly national gathering for future software engineers.",
+      "2005": "CUSEC 2005 captured the rising tide of the open-source movement. The conference highlighted the importance of contributing to public codebases, learning from peers globally, and how academic institutions could better integrate open-source philosophies into their computer science curricula.",
+      "2006": "Celebrating its fifth anniversary, CUSEC 2006 marked a major milestone for the conference. It featured retrospective talks on how the industry had evolved since the dot-com bubble and looked ahead to a future dominated by open-source collaboration and increasingly accessible development tools.",
+      "2007": "CUSEC 2007 was a deep dive into software architecture and design patterns. Long before modern frameworks became ubiquitous, speakers at this edition helped students understand the timeless principles of building robust, scalable, and maintainable software systems from the ground up.",
+      "2008": "As Web 2.0 continued to revolutionize how we interact online, CUSEC 2008 featured thought-provoking talks on rich internet applications, user-generated content, and the shifting paradigms of web development. The conference solidified its reputation as the premier event for Canadian computer science students.",
+      "2009": "In 2009, the software industry was rapidly adopting Agile methodologies. CUSEC brought these cutting-edge development workflows directly to students, hosting workshops on pair programming, test-driven development, and navigating complex team dynamics in the ever-evolving tech landscape.",
+      "2010": "The 2010 edition of CUSEC focused on exploring the deep intersections between hardware and software, welcoming pioneering speakers from across North America to share insights into systems engineering, early smartphone app development, and the burgeoning indie tech scene. It remained a vital meeting ground for students."
+    }
+  },
+  "Footer": {
+    "copyright": "Copyright 2002-2026. All rights reserved."
+  },
+  "Metadata": {
+    "title": "CUSEC",
+    "description": "Canadian University Software Engineering Conference, a student-run technology conference founded in 2002."
+  },
+  "Pages": {
+    "pastSpeakers": {
+      "heading": "Past <em>Speakers</em>",
+      "lede": "Meet the amazing individuals who have spoken at CUSEC throughout the years."
+    },
+    "participantSchools": {
+      "heading": "Participating <em>Schools</em>",
+      "lede": "Browse universities and colleges represented by CUSEC attendees over the years."
+    },
+    "historicSponsors": {
+      "heading": "Historic <em>Sponsors</em>",
+      "lede": "Meet the amazing partners who have supported CUSEC throughout the years."
+    }
+  },
+  "SpeakersBrowser": {
+    "ariaCategories": "Speaker categories",
+    "noSpeakers": "No speakers found for this category.",
+    "focus": {
+      "legends": {
+        "label": "Legends",
+        "description": "Most recognizable names and most influential figures who spoke at CUSEC."
+      },
+      "2020s": {
+        "label": "2020s",
+        "description": "Speakers from 2020 to present."
+      },
+      "2010s": {
+        "label": "2010s",
+        "description": "Speakers from 2010 to 2019."
+      },
+      "2000s": {
+        "label": "2000s",
+        "description": "Speakers from 2002 to 2009."
+      }
+    }
+  },
+  "SponsorsBrowser": {
+    "ariaIndustry": "Industry focus",
+    "note": "This archive is not a comprehensive list of every CUSEC sponsor.",
+    "focus": {
+      "all": {
+        "label": "All",
+        "description": "Every sponsor in the CUSEC archive."
+      },
+      "platforms-infra": {
+        "label": "Platforms & Infra",
+        "description": "Major tech platforms, cloud providers, networking, telecom, and core systems."
+      },
+      "software-products": {
+        "label": "Software Products",
+        "description": "SaaS, enterprise software, developer tools, data products, and vertical apps."
+      },
+      "finance-commerce": {
+        "label": "Finance & Commerce",
+        "description": "Financial services, payments, retail platforms, marketplaces, and consumer commerce."
+      },
+      "games-creative": {
+        "label": "Games & Creative",
+        "description": "Game studios, creative tooling, interactive media, fashion, and digital experiences."
+      },
+      "services-public-systems": {
+        "label": "Services & Systems",
+        "description": "Consulting, agencies, education, public-interest tech, industrial systems, and deep tech."
+      }
+    },
+    "descriptions": {
+      "Google": "Organizing the world's information.",
+      "Microsoft": "Empowering every person and organization.",
+      "Shopify": "Long-standing supporter of student tech conferences.",
+      "Amazon": "Empowering developers to build the future.",
+      "AWS": "Amazon Web Services, global cloud provider.",
+      "Stripe": "Financial infrastructure for the internet.",
+      "Palantir": "Building software that integrates data, decisions, and operations.",
+      "Dropbox": "Cloud collaboration and file sharing platform.",
+      "Adobe": "Creative, marketing, and document software.",
+      "Oracle": "Enterprise database, cloud, and software provider.",
+      "EA": "Global leader in digital interactive entertainment.",
+      "Riot Games": "Developer and publisher of player-focused games.",
+      "Unity": "The world's leading platform for real-time content.",
+      "General Motors": "Innovating the future of mobility.",
+      "RBC": "Investing in the next generation of engineers.",
+      "IBM": "Pioneering technology and innovation.",
+      "Deloitte": "Consulting and technology solutions provider.",
+      "Morgan Stanley": "Global financial services and tech engineering.",
+      "Nokia": "Creating the technology that helps the world act together.",
+      "SAP": "Enterprise application software.",
+      "TD": "Leading North American financial institution.",
+      "Capital One": "Financial services and technology pioneer.",
+      "GE": "Digital industrial technology solutions.",
+      "Wealthsimple": "Financial tools to help you grow your money.",
+      "Lightspeed": "Cloud-based point of sale and e-commerce.",
+      "TELUS": "Canadian telecommunications and technology company.",
+      "Research In Motion": "BlackBerry maker and mobile technology pioneer.",
+      "Autodesk": "Design, engineering, and entertainment software.",
+      "QNX": "Real-time operating systems and embedded software.",
+      "Gameloft": "Developer and publisher of mobile games.",
+      "Voiceflow": "Designing, prototyping, and building voice apps.",
+      "iQmetrix": "Retail management software solutions.",
+      "SPIRIA": "Custom software and digital transformation.",
+      "Trip Advisor": "Connecting people to experiences worldwide.",
+      "Wolfram": "Computation meets knowledge.",
+      "Compulsion Games": "Crafting unique gaming experiences.",
+      "Accenture": "Delivering on the promise of technology and human ingenuity.",
+      "1Password": "Security solutions for businesses and individuals.",
+      "CSE": "Canada's national cryptologic agency.",
+      "Kinaxis": "Supply chain management and planning software.",
+      "Wonsulting": "Helping underdogs turn into winners.",
+      "Wish": "Global e-commerce platform.",
+      "Yelp": "Connecting people with great local businesses.",
+      "Khan Academy": "Free, world-class education for anyone.",
+      "CAE": "High-tech training and simulation solutions.",
+      "Qlik": "Data integration and analytics solutions.",
+      "D2L": "Transforming the way the world learns.",
+      "TandemLaunch": "Creating deep tech startups from university research.",
+      "Evolving Web": "Digital agency specializing in Drupal and modern web.",
+      "Ubisoft": "Creator of original and memorable interactive experiences.",
+      "Tailed": "Supporting the software engineering community.",
+      "Knox": "Innovative technology ecosystem partner.",
+      "Genetec": "Security, intelligence, and operations.",
+      "Sticker Mule": "Custom stickers that kick ass.",
+      "Sticker Beaver": "Premium quality custom stickers.",
+      "SSENSE": "Elevating the intersection of fashion and technology.",
+      "Fellow": "Meeting productivity and management software.",
+      "Egghead": "Bite-sized web development video training.",
+      "Diff": "Creative commerce agency.",
+      "Ciena": "Networking systems, services, and software.",
+      "Balsamiq": "Rapid wireframing software.",
+      "Gadget": "The full-stack platform for building apps.",
+      "Aerotek": "Recruiting and staffing partner for technical talent.",
+      "AppDirect": "Subscription commerce platform for digital services.",
+      "Apress": "Technical publishing for developers and IT professionals.",
+      "Benbria": "Customer experience and engagement software.",
+      "BMO": "North American financial services provider.",
+      "Cisco": "Networking, security, and collaboration technology.",
+      "CUTC": "Canadian Undergraduate Technology Conference.",
+      "DigitalOcean": "Cloud infrastructure for developers and startups.",
+      "Direct Energy": "Energy services for homes and businesses.",
+      "Emids": "Healthcare technology and digital transformation partner.",
+      "Evertz": "Broadcast and media technology solutions.",
+      "Geotab": "Connected vehicle and fleet management technology.",
+      "Leaseweb": "Cloud hosting and infrastructure provider.",
+      "Mega Bloks": "Creative construction toys and play experiences.",
+      "Microsoft Azure": "Cloud computing platform from Microsoft.",
+      "Namecheap": "Domain registration, hosting, and web services.",
+      "NexJ Systems": "Enterprise CRM and client management software.",
+      "Nexsan": "Enterprise storage systems and data management.",
+      "Numerator": "Consumer insights and market intelligence platform.",
+      "O'Reilly": "Learning resources for technology professionals.",
+      "RealDecoy": "Digital commerce and software consulting partner.",
+      "ServiceNow": "Digital workflow platform for enterprise teams.",
+      "Velocity": "Startup and entrepreneurship community supporter."
+    }
+  },
+  "SchoolsBrowser": {
+    "summary": "Summary",
+    "regionDescription": "Institutions from {region} represented by CUSEC attendees over the years.",
+    "note": "This historical list is not a current-year roster or formal school partnership directory.",
+    "summaryAria": "Historic summary",
+    "regionAria": "{region} schools"
+  },
+  "Summary": {
+    "barChartAria": "Percentage bar chart",
+    "degreePieAria": "Degree stage percentage breakdown",
+    "studyMix": {
+      "title": "What fields do our attendees study?",
+      "footnote": "Programs may be multi-tagged when students listed combined studies.",
+      "metrics": {
+        "computerScience": "Computer science",
+        "softwareEngineering": "Software engineering",
+        "computerEngineering": "Computer engineering",
+        "mathStatsData": "Math, statistics, data",
+        "other": "Other",
+        "electricalEngineering": "Electrical engineering"
+      }
+    },
+    "degreeMix": {
+      "title": "What degree stage are attendees in?",
+      "metrics": {
+        "bachelors": "Bachelor's",
+        "masters": "Master's",
+        "other": "Other"
+      }
+    }
+  }
+}

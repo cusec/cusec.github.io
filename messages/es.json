@@ -1,0 +1,228 @@
+{
+  "Nav": {
+    "pastSpeakers": "Ponentes anteriores",
+    "participantSchools": "Escuelas participantes",
+    "historicSponsors": "Patrocinadores históricos",
+    "primary": "Principal",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "menu": "Menú",
+    "close": "Cerrar"
+  },
+  "LocaleSwitcher": {
+    "label": "Seleccionar idioma"
+  },
+  "Hero": {
+    "tagline": "Conferencia Canadiense Universitaria de Ingeniería de Software",
+    "intro": "CUSEC es una organización sin fines de lucro que organiza conferencias tecnológicas hechas por estudiantes, para estudiantes. Fundada en 2002, celebramos una conferencia cada año a principios de enero; este año nos estamos preparando para CUSEC 2027.",
+    "cta": "Visitar el sitio de CUSEC 2027"
+  },
+  "Home": {
+    "bandAlt": "Asistentes de CUSEC reunidos para una foto de grupo en una sala de conferencias."
+  },
+  "Stats": {
+    "statement": "Durante más de <b>25 años</b> hemos recibido a más de <b>10 000</b> asistentes, más de <b>270</b> patrocinadores y más de <b>380</b> ponentes"
+  },
+  "Testimonials": {
+    "t1": "Aprenderás más en CUSEC en 3 días que en todo tu primer año de universidad.",
+    "t2": "CUSEC se ha convertido en <b>la conferencia por excelencia</b> hecha por estudiantes de informática, para estudiantes de informática, en todo Canadá. Es una lástima que no exista una conferencia estudiantil equivalente para los estudiantes de informática estadounidenses.",
+    "t3": "Qué maravilla. Si eres estudiante aquí y haces cualquier cosa relacionada con el software, asiste. Si eres un veterano y te piden que hables, acepta. Si eres un empleador en busca de talento, patrocina.",
+    "t4": "Solo quería avisarte que conseguí entrevistas tanto con AutoDesk como con Microsoft gracias a CUSEC.",
+    "attributions": {
+      "t1": "Michel Parisien, estudiante, Universidad Concordia",
+      "t2": "Jeff Atwood, cofundador de StackOverflow",
+      "t3": "Tim Bray, fundador de OpenText y cocreador de XML",
+      "t4": "Loren, estudiante, Universidad Concordia"
+    }
+  },
+  "Editorial": {
+    "whatIsCusec": {
+      "heading": "¿Qué <em>es</em> CUSEC?",
+      "alt": "Un campo de un verde brillante bajo un cielo azul intenso.",
+      "body1": "La Conferencia Canadiense Universitaria de Ingeniería de Software es considerada por muchos como el <hl>encuentro del futuro de la ingeniería de software</hl>. Estudiantes apasionados por la ingeniería de software, de todo Canadá y de diversas concentraciones, se reúnen bajo un mismo techo durante tres días completos para aprender de los ponentes, investigadores y profesionales de ingeniería de software más famosos y solicitados del mundo.",
+      "body2": "Pero no se trata solo de las presentaciones. La conferencia te da la oportunidad de conocer a otras personas que comparten tu pasión, de ver qué están creando tus colegas y cómo experimentan con la tecnología. <hl>CUSEC te brinda la oportunidad de tener conversaciones abiertas con las figuras que dan forma a la industria, así como con las personas que construyen las cosas que usamos cada día.</hl> Permitiéndote aprender directamente de las personas que admiras. Y no lo olvides, también tenemos una feria de empleo en crecimiento que podría interesarte."
+    },
+    "isCusecForMe": {
+      "heading": "¿Es CUSEC para <em>mí</em>?",
+      "alt": "Un campo soleado con árboles y cielo azul.",
+      "body1": "No importa si eres estudiante de grado en ingeniería o si estás cursando un MBA, <hl>si te interesa el estado actual de la industria, entonces CUSEC es para ti.</hl> La conferencia está organizada principalmente pensando en los estudiantes de grado y posgrado de ingeniería de software. Eso no significa que otras personas no puedan beneficiarse: el programa siempre es de la más alta calidad y cualquiera que tenga interés puede sacar mucho provecho de la conferencia."
+    }
+  },
+  "Sponsors": {
+    "heading": "Apoyado por los <em>mejores</em>",
+    "lede": "CUSEC no sería posible sin nuestros increíbles patrocinadores que nos han apoyado a lo largo de los años.",
+    "seeAll": "Ver todos los patrocinadores históricos",
+    "logoAlt": "Logotipo de {name}"
+  },
+  "Schools": {
+    "heading": "Desde todo el <em>país</em>",
+    "lede": "Hemos recibido a estudiantes de una amplia variedad de universidades y colegios.",
+    "seeAll": "Ver todas las escuelas participantes"
+  },
+  "Speakers": {
+    "heading": "Ponentes <em>legendarios</em>",
+    "lede": "Aprende de algunas de las mentes más influyentes en ingeniería de software, diseño y tecnología.",
+    "seeAll": "Ver todos los ponentes anteriores",
+    "learnMore": "Saber más",
+    "srAbout": "sobre {name}",
+    "bios": {
+      "Kent Beck": "Ingeniero de software y creador de Extreme Programming (XP), influyente en el desarrollo ágil",
+      "Richard Stallman": "Fundador del Proyecto GNU y del movimiento de software libre",
+      "Joel Spolsky": "Desarrollador, escritor y cofundador de Stack Overflow y Trello",
+      "Jeff Atwood": "Cofundador de Stack Overflow y autor del blog Coding Horror",
+      "Alexis Ohanian": "Emprendedor y cofundador de Reddit",
+      "David Heinemeier Hansson": "Creador de Ruby on Rails y copropietario/CTO de Basecamp",
+      "Douglas Crockford": "Programador conocido por popularizar JSON",
+      "Bruce Schneier": "Experto en ciberseguridad, criptógrafo y autor sobre seguridad",
+      "Bret Victor": "Diseñador de interfaces e informático conocido por conceptos de computación interactiva",
+      "Greg Kroah-Hartman": "Desarrollador y mantenedor del kernel de Linux",
+      "Grady Booch": "Ingeniero de software y cocreador de UML (Unified Modeling Language)",
+      "Jeff Ullman": "Profesor de informática de Stanford conocido por bases de datos y teoría de compiladores",
+      "Michael Seibel": "Emprendedor, ex CEO de Twitch y socio de Y Combinator",
+      "Alex Karp": "Autor de Running Start y gerente de ingeniería en Thumbtack",
+      "Joelle Pineau": "Investigadora de IA, profesora en McGill y exlíder de Meta AI",
+      "Yehuda Katz": "Desarrollador open source conocido por Ember.js, Ruby on Rails y contribuciones a Rust",
+      "Aaron Patterson": "Desarrollador central de Ruby y colaborador importante de Ruby on Rails",
+      "Julia Evans": "Ingeniera y educadora conocida por zines accesibles sobre programación y sistemas",
+      "Kathy Sierra": "Educadora de programación y cocreadora de la serie Head First",
+      "Sandi Metz": "Arquitecta de software y autora conocida por diseño orientado a objetos y Ruby"
+    }
+  },
+  "Archive": {
+    "heading": "Conferencias <em>anteriores</em>",
+    "lede": "Explora más de dos décadas de historia, ponentes y eventos de CUSEC.",
+    "archived": "Archivado",
+    "visitSite": "Visitar el sitio",
+    "seeFullArchive": "Ver el archivo completo",
+    "seeLess": "Ver menos",
+    "logoAlt": "Logotipo de CUSEC {year}",
+    "info": {
+      "2011": "Una década inspirando el futuro de la tecnología canadiense.",
+      "2012": "Mostrando el auge de la computación en la nube y los macrodatos.",
+      "2013": "Impulsando a desarrolladores a crear herramientas que importan.",
+      "2014": "Avances en desarrollo móvil e infraestructura escalable.",
+      "2015": "Tendiendo puentes entre la teoría y su aplicación en la industria.",
+      "2016": "Centrado en seguridad, privacidad e impacto de la tecnología.",
+      "2017": "Destacando startups innovadoras y flujos modernos de ingeniería de software.",
+      "2018": "Conversaciones sobre software libre y tecnologías descentralizadas.",
+      "2019": "Voces diversas en tecnología que moldean la próxima generación.",
+      "2020": "Perspectivas prepandémicas sobre arquitectura de sistemas y plataformas web.",
+      "2021": "La primera experiencia CUSEC completamente virtual.",
+      "2022": "Conectando estudiantes de todo el mundo mediante experiencias virtuales.",
+      "2023": "El regreso al networking, el aprendizaje y el intercambio de ideas en persona.",
+      "2024": "Explorando inteligencia artificial, accesibilidad y prácticas modernas de software.",
+      "2025": "Construyendo juntos el futuro de la tecnología en Montreal.",
+      "2026": "El 25.º aniversario de la Conferencia Canadiense Universitaria de Ingeniería de Software."
+    },
+    "detailed": {
+      "2003": "La segunda edición de CUSEC demostró que el evento inaugural no había sido casualidad. Consolidó la necesidad de una conferencia de ingeniería de software dirigida por estudiantes en Canadá, ofreciendo una plataforma esencial para aprender de profesionales de la industria y conectar con colegas al inicio de sus carreras.",
+      "2004": "A partir del éxito de sus primeras ediciones, CUSEC 2004 amplió su alcance y reunió a estudiantes de más universidades canadienses. El evento fomentó conexiones entre provincias y consolidó la conferencia como un encuentro nacional para futuros ingenieros de software.",
+      "2005": "CUSEC 2005 capturó el crecimiento del movimiento de software libre. La conferencia destacó la importancia de contribuir a repositorios públicos, aprender de pares de todo el mundo y acercar la filosofía open source a la enseñanza de la informática.",
+      "2006": "Al celebrar su quinto aniversario, CUSEC 2006 marcó un hito importante para la conferencia. Incluyó miradas retrospectivas sobre la evolución de la industria desde la burbuja puntocom y anticipó un futuro impulsado por la colaboración abierta y herramientas de desarrollo más accesibles.",
+      "2007": "CUSEC 2007 profundizó en arquitectura de software y patrones de diseño. Mucho antes de que los frameworks modernos fueran ubicuos, sus ponentes ayudaron a los estudiantes a entender principios duraderos para crear sistemas robustos, escalables y mantenibles.",
+      "2008": "Mientras la Web 2.0 transformaba la forma de interactuar en línea, CUSEC 2008 presentó charlas sobre aplicaciones web enriquecidas, contenido generado por usuarios y nuevos paradigmas del desarrollo web. La conferencia reforzó su reputación como evento principal para estudiantes canadienses de informática.",
+      "2009": "En 2009, la industria del software adoptaba rápidamente metodologías ágiles. CUSEC llevó esos flujos de trabajo a los estudiantes con talleres sobre programación en parejas, desarrollo guiado por pruebas y dinámicas de equipo en un entorno tecnológico cambiante.",
+      "2010": "La edición 2010 de CUSEC exploró las intersecciones entre hardware y software, con ponentes pioneros de Norteamérica que compartieron ideas sobre ingeniería de sistemas, primeras aplicaciones móviles y la escena tecnológica independiente. Siguió siendo un punto de encuentro vital para estudiantes."
+    }
+  },
+  "Footer": {
+    "copyright": "Copyright 2002-2026. Todos los derechos reservados."
+  },
+  "Pages": {
+    "pastSpeakers": {
+      "heading": "Ponentes <em>anteriores</em>",
+      "lede": "Conoce a las personas extraordinarias que han hablado en CUSEC a lo largo de los años."
+    },
+    "participantSchools": {
+      "heading": "Escuelas <em>participantes</em>",
+      "lede": "Explora las universidades y colegios representados por los asistentes de CUSEC a lo largo de los años."
+    },
+    "historicSponsors": {
+      "heading": "Patrocinadores <em>históricos</em>",
+      "lede": "Conoce a los increíbles socios que han apoyado a CUSEC a lo largo de los años."
+    }
+  },
+  "SpeakersBrowser": {
+    "ariaCategories": "Categorías de ponentes",
+    "noSpeakers": "No se encontraron ponentes para esta categoría.",
+    "focus": {
+      "legends": {
+        "label": "Leyendas",
+        "description": "Los nombres más reconocidos y las figuras más influyentes que han hablado en CUSEC."
+      },
+      "2020s": {
+        "label": "Años 2020",
+        "description": "Ponentes desde 2020 hasta la actualidad."
+      },
+      "2010s": {
+        "label": "Años 2010",
+        "description": "Ponentes de 2010 a 2019."
+      },
+      "2000s": {
+        "label": "Años 2000",
+        "description": "Ponentes de 2002 a 2009."
+      }
+    }
+  },
+  "SponsorsBrowser": {
+    "ariaIndustry": "Sector de actividad",
+    "note": "Este archivo no es una lista exhaustiva de todos los patrocinadores de CUSEC.",
+    "focus": {
+      "all": {
+        "label": "Todos",
+        "description": "Todos los patrocinadores del archivo de CUSEC."
+      },
+      "platforms-infra": {
+        "label": "Plataformas e infraestructura",
+        "description": "Grandes plataformas tecnológicas, proveedores de nube, redes, telecomunicaciones y sistemas fundamentales."
+      },
+      "software-products": {
+        "label": "Productos de software",
+        "description": "SaaS, software empresarial, herramientas para desarrolladores, productos de datos y aplicaciones verticales."
+      },
+      "finance-commerce": {
+        "label": "Finanzas y comercio",
+        "description": "Servicios financieros, pagos, plataformas minoristas, mercados en línea y comercio de consumo."
+      },
+      "games-creative": {
+        "label": "Juegos y creatividad",
+        "description": "Estudios de videojuegos, herramientas creativas, medios interactivos, moda y experiencias digitales."
+      },
+      "services-public-systems": {
+        "label": "Servicios y sistemas",
+        "description": "Consultoría, agencias, educación, tecnología de interés público, sistemas industriales y tecnología avanzada."
+      }
+    }
+  },
+  "SchoolsBrowser": {
+    "summary": "Resumen",
+    "regionDescription": "Instituciones de {region} representadas por los asistentes de CUSEC a lo largo de los años.",
+    "note": "Esta lista histórica no es un registro del año en curso ni un directorio oficial de alianzas escolares.",
+    "summaryAria": "Resumen histórico",
+    "regionAria": "Escuelas de {region}"
+  },
+  "Summary": {
+    "barChartAria": "Gráfico de barras en porcentaje",
+    "degreePieAria": "Desglose en porcentaje por etapa de titulación",
+    "studyMix": {
+      "title": "¿Qué campos estudian nuestros asistentes?",
+      "footnote": "Los programas pueden tener varias etiquetas cuando los estudiantes indicaron estudios combinados.",
+      "metrics": {
+        "computerScience": "Ciencias de la computación",
+        "softwareEngineering": "Ingeniería de software",
+        "computerEngineering": "Ingeniería informática",
+        "mathStatsData": "Matemáticas, estadística, datos",
+        "other": "Otro",
+        "electricalEngineering": "Ingeniería eléctrica"
+      }
+    },
+    "degreeMix": {
+      "title": "¿En qué etapa de titulación están los asistentes?",
+      "metrics": {
+        "bachelors": "Grado",
+        "masters": "Maestría",
+        "other": "Otro"
+      }
+    }
+  }
+}
