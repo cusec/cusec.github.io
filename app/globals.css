@@ -9,8 +9,7 @@
   --color-focus: #3b6f7a;
 
   --font-ui: var(--font-karla), var(--font-noto-sc), var(--font-noto-gurmukhi), sans-serif;
-  --font-editorial: var(--font-eb-garamond), var(--font-noto-sc), var(--font-noto-gurmukhi),
-    serif;
+  --font-editorial: var(--font-eb-garamond), var(--font-noto-sc), var(--font-noto-gurmukhi), serif;
 
   --gutter: clamp(1.5rem, 7vw, 5.5rem);
   --content-max: 108rem;
@@ -194,7 +193,6 @@ a {
 
 .cusec-button-link:hover {
   background: #242424;
-  transform: translateY(-1px);
 }
 
 .cusec-button-link:focus-visible {
@@ -239,6 +237,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 35%;
   filter: grayscale(1) contrast(1.04);
 }
 
@@ -444,6 +443,10 @@ a {
   font-style: italic;
 }
 
+.cusec-archive-section .cusec-section-heading h2 em {
+  font-style: normal;
+}
+
 .cusec-section-heading p {
   max-width: var(--measure);
   margin-top: clamp(1.1rem, 2vw, 1.75rem);
@@ -632,7 +635,8 @@ a {
 
 .cusec-historic-sponsor--mosaic .cusec-archive-item__header {
   min-height: clamp(4rem, 6vw, 5rem);
-  border-bottom-color: rgba(34, 34, 34, 0.16);
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .cusec-historic-sponsor--mosaic .cusec-historic-sponsor__brand {
@@ -658,10 +662,6 @@ a {
 .cusec-historic-sponsor--mosaic .cusec-logo-tile--compact-left {
   max-width: min(100%, 9rem);
   height: clamp(2.35rem, 3.8vw, 3.1rem);
-}
-
-.cusec-historic-sponsor--mosaic .cusec-archive-item__brand h3 {
-  font-size: clamp(1.15rem, 1.75vw, 1.45rem);
 }
 
 .cusec-historic-sponsor--mosaic .cusec-archive-item__content {
@@ -724,10 +724,390 @@ a {
   opacity: 0.7;
 }
 
+.cusec-archive-preview {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.72fr) minmax(0, 1fr);
+  gap: clamp(1.2rem, 3vw, 2.5rem);
+  align-items: stretch;
+}
+
+.cusec-archive-preview__poster {
+  position: relative;
+  display: grid;
+  min-height: clamp(16rem, 31vw, 24rem);
+  overflow: hidden;
+  border: 1px solid rgba(34, 34, 34, 0.14);
+  border-radius: 4px;
+  padding: clamp(1rem, 2.6vw, 1.75rem);
+  background:
+    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.68), transparent 34%),
+    linear-gradient(135deg, #ffbd55 0%, #f15f3a 48%, #2c5b62 100%);
+  color: var(--color-ink);
+  text-decoration: none;
+  transition: transform 180ms ease;
+}
+
+.cusec-archive-preview__poster::after {
+  content: "";
+  position: absolute;
+  inset: auto -12% -22% 22%;
+  height: 44%;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.28);
+  transform: rotate(-7deg);
+}
+
+.cusec-archive-preview__poster:hover {
+  transform: translateY(-0.18rem);
+}
+
+.cusec-archive-preview__poster:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 4px;
+}
+
+.cusec-archive-preview__eyebrow,
+.cusec-archive-preview__hint {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-ui);
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.cusec-archive-preview__count {
+  position: relative;
+  z-index: 1;
+  align-self: center;
+  max-width: 7ch;
+  font-family: var(--font-ui);
+  font-size: clamp(4.3rem, 10vw, 8.8rem);
+  font-weight: 400;
+  letter-spacing: -0.12em;
+  line-height: 0.75;
+}
+
+.cusec-archive-preview__hint {
+  align-self: end;
+  max-width: 15ch;
+}
+
+.cusec-archive-preview__body {
+  display: grid;
+  align-content: center;
+  gap: clamp(1.3rem, 2.7vw, 2.2rem);
+  min-width: 0;
+  padding-block: clamp(0.25rem, 1vw, 1rem);
+}
+
+.cusec-archive-logo-stack {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(3rem, 5.8rem));
+  isolation: isolate;
+}
+
+.cusec-archive-logo-stack__tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  margin-left: calc(var(--archive-tile-index) * -0.9rem);
+  border: 1px solid rgba(34, 34, 34, 0.14);
+  border-radius: 4px;
+  padding: clamp(0.55rem, 1vw, 0.82rem);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 1rem 2.4rem rgba(34, 34, 34, 0.08);
+  transform: translateY(calc(var(--archive-tile-lift) * 0.55rem));
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+  z-index: calc(10 - var(--archive-tile-index));
+}
+
+.cusec-archive-logo-stack__tile:hover {
+  box-shadow: 0 1.2rem 2.8rem rgba(34, 34, 34, 0.12);
+  transform: translateY(calc(var(--archive-tile-lift) * 0.55rem - 0.22rem));
+}
+
+.cusec-archive-logo-stack__tile--framed {
+  background: var(--color-ink);
+}
+
+.cusec-archive-logo-stack__tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cusec-archive-year-rail {
+  display: flex;
+  gap: 0.48rem;
+  min-width: 0;
+  margin: 0;
+  overflow-x: auto;
+  padding: 0.15rem 0 0.65rem;
+  list-style: none;
+  mask-image: linear-gradient(to right, black calc(100% - 2.5rem), transparent);
+  -webkit-mask-image: linear-gradient(to right, black calc(100% - 2.5rem), transparent);
+  scrollbar-width: thin;
+}
+
+.cusec-archive-year-rail a {
+  display: inline-flex;
+  min-height: 2.6rem;
+  align-items: center;
+  border: 1px solid rgba(34, 34, 34, 0.15);
+  border-radius: 999px;
+  padding: 0.58rem 0.82rem;
+  background: rgba(255, 255, 255, 0.34);
+  color: var(--color-ink);
+  font-family: var(--font-ui);
+  font-size: clamp(0.98rem, 1.25vw, 1.14rem);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    background-color 150ms ease,
+    transform 150ms ease;
+}
+
+.cusec-archive-year-rail a:hover {
+  background: rgba(34, 34, 34, 0.06);
+  transform: translateY(-0.1rem);
+}
+
+.cusec-archive-year-rail a:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+.cusec-archive-preview__summary {
+  max-width: 42ch;
+  margin: 0;
+  color: var(--color-body);
+  font-family: var(--font-editorial);
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+}
+
+.cusec-archive-actions--preview {
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+@media (max-width: 760px) {
+  .cusec-archive-preview {
+    grid-template-columns: 1fr;
+  }
+
+  .cusec-archive-preview__poster {
+    min-height: 13.5rem;
+  }
+
+  .cusec-archive-logo-stack {
+    grid-template-columns: repeat(6, minmax(2.7rem, 4.8rem));
+  }
+}
+
+.cusec-archive-jubilee {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  gap: clamp(1.75rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.cusec-archive-jubilee__figure {
+  display: block;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.cusec-archive-jubilee__figure:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 8px;
+}
+
+.cusec-archive-jubilee__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  filter: drop-shadow(0 1.5rem 3rem rgba(34, 34, 34, 0.12));
+  transition: filter 240ms ease;
+}
+
+.cusec-archive-jubilee__figure:hover .cusec-archive-jubilee__svg {
+  filter: drop-shadow(0 1.85rem 3.4rem rgba(34, 34, 34, 0.18));
+}
+
+.cusec-archive-jubilee__aside {
+  display: grid;
+  gap: clamp(1.2rem, 2.6vw, 1.9rem);
+}
+
+.cusec-archive-jubilee__lede {
+  max-width: 34ch;
+  margin: 0;
+  color: var(--color-body);
+  font-family: var(--font-editorial);
+  font-size: clamp(1.3rem, 2.2vw, 1.85rem);
+  letter-spacing: -0.01em;
+  line-height: 1.14;
+}
+
+@media (max-width: 760px) {
+  .cusec-archive-jubilee {
+    grid-template-columns: 1fr;
+    gap: clamp(1.5rem, 6vw, 2.5rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cusec-archive-jubilee__svg {
+    transition: none;
+  }
+}
+
+.cusec-archive-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.75rem, 3.5vw, 2.75rem);
+}
+
+.cusec-archive-row {
+  display: grid;
+  grid-template-columns: clamp(7rem, 16vw, 12rem) 1fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: stretch;
+  padding-bottom: clamp(1.75rem, 3.5vw, 2.75rem);
+  border-bottom: 1px solid rgba(34, 34, 34, 0.1);
+  color: inherit;
+  text-decoration: none;
+}
+
+.cusec-archive-rows li:last-child .cusec-archive-row {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.cusec-archive-row__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cusec-archive-row__logo img {
+  width: 100%;
+  height: 100%;
+  max-height: clamp(7rem, 13vw, 11rem);
+  object-fit: contain;
+}
+
+.cusec-archive-row__logo--framed {
+  align-self: center;
+  width: 100%;
+  max-height: clamp(7rem, 13vw, 11rem);
+  padding: clamp(0.75rem, 1.6vw, 1.25rem);
+  border-radius: 6px;
+  background: var(--color-ink);
+}
+
+.cusec-archive-row__logo--framed img {
+  max-height: none;
+}
+
+.cusec-archive-row__body {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.cusec-archive-row__title {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-ui);
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.cusec-archive-row__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin: 0;
+  color: var(--color-muted);
+  font-family: var(--font-ui);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  letter-spacing: -0.01em;
+}
+
+.cusec-archive-row__theme {
+  color: var(--color-body);
+  font-style: italic;
+}
+
+.cusec-archive-row__dot {
+  color: var(--color-muted);
+}
+
+.cusec-archive-row__summary {
+  max-width: var(--measure);
+  margin: 0.15rem 0 0;
+  color: var(--color-body);
+  font-family: var(--font-editorial);
+  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+  line-height: 1.3;
+}
+
+.cusec-archive-row .cusec-archive-link {
+  margin-top: 0.4rem;
+}
+
+.cusec-archive-row:hover .cusec-archive-row__title {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.cusec-archive-row:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 4px;
+}
+
+@media (max-width: 40rem) {
+  .cusec-archive-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cusec-archive-row__logo {
+    justify-content: flex-start;
+  }
+
+  .cusec-archive-row__logo img {
+    width: auto;
+    max-height: 6rem;
+  }
+}
+
 .cusec-archive-actions {
   display: flex;
   justify-content: center;
   margin-top: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.cusec-archive-actions.cusec-archive-actions--preview {
+  justify-content: flex-start;
+  margin-top: 0;
 }
 
 .cusec-archive-more-btn {
@@ -753,7 +1133,6 @@ a {
 
 .cusec-archive-more-btn:hover {
   background: rgba(34, 34, 34, 0.04);
-  transform: translateY(-1px);
 }
 
 /* --- Sponsors Section --- */
@@ -810,7 +1189,6 @@ a {
 .cusec-marquee-track {
   display: flex;
   align-items: center;
-  gap: clamp(4rem, 8vw, 8rem);
   width: max-content;
   will-change: transform;
 }
@@ -831,9 +1209,18 @@ a {
   animation-play-state: running;
 }
 
+.cusec-marquee-container:not(.cusec-marquee-container--in-view) .cusec-marquee-track {
+  animation-play-state: paused;
+}
+
 .cusec-marquee-logo {
   max-width: 12.8rem;
   height: clamp(3.2rem, 6.4vw, 4.8rem);
+}
+
+/* Higher specificity so the gap wins over .cusec-logo-tile's `margin: 0 auto`. */
+.cusec-marquee-track .cusec-marquee-logo {
+  margin-right: clamp(4rem, 8vw, 8rem);
 }
 
 .cusec-sponsors-actions {
@@ -865,6 +1252,42 @@ a {
   letter-spacing: -0.04em;
 }
 
+.cusec-schools-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(2rem, 4vw, 3.5rem) clamp(1.5rem, 3vw, 2.5rem);
+  align-items: center;
+}
+
+@media (max-width: 48rem) {
+  .cusec-schools-logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.cusec-schools-logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cusec-schools-logo-link .cusec-logo-tile {
+  opacity: 0.72;
+  transition: opacity 200ms ease;
+  max-width: 14rem;
+}
+
+.cusec-schools-logo-link:hover .cusec-logo-tile,
+.cusec-schools-logo-link:focus-visible .cusec-logo-tile {
+  opacity: 1;
+}
+
+.cusec-schools-logo-link:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
 .cusec-school-name-fallback {
   font-family: var(--font-ui);
   font-size: 1.1rem;
@@ -873,7 +1296,7 @@ a {
   color: var(--color-ink);
 }
 
-.cusec-school-item {
+.cusec-logo-tile {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -885,11 +1308,11 @@ a {
   transition: opacity 200ms ease;
 }
 
-.cusec-school-item:hover {
+.cusec-logo-tile:hover {
   opacity: 1;
 }
 
-.cusec-school-item img {
+.cusec-logo-tile img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -897,9 +1320,7 @@ a {
 
 @media (prefers-reduced-motion: reduce) {
   .cusec-marquee-track {
-    animation: none;
-    transform: none;
-    will-change: auto;
+    animation-duration: 120s;
   }
 }
 
@@ -923,7 +1344,6 @@ a {
 .cusec-speakers-carousel__track {
   display: flex;
   align-items: stretch;
-  gap: clamp(1.5rem, 3vw, 2.5rem);
   width: max-content;
   will-change: transform;
   animation: scroll-left 60s linear infinite;
@@ -934,11 +1354,16 @@ a {
   animation-play-state: paused;
 }
 
+.cusec-speakers-carousel:not(.cusec-speakers-carousel--in-view) .cusec-speakers-carousel__track {
+  animation-play-state: paused;
+}
+
 .cusec-speaker-card {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
   width: clamp(12rem, 22vw, 15rem);
+  margin-right: clamp(1.5rem, 3vw, 2.5rem);
   text-decoration: none;
   color: inherit;
 }
@@ -978,10 +1403,7 @@ a {
 
 @media (prefers-reduced-motion: reduce) {
   .cusec-speakers-carousel__track {
-    animation: none;
-    transform: none;
-    will-change: auto;
-    flex-wrap: wrap;
+    animation-duration: 150s;
   }
 }
 
@@ -1249,7 +1671,8 @@ a {
 
 .cusec-school-archive-item--mosaic .cusec-archive-item__header {
   min-height: clamp(4rem, 6vw, 5rem);
-  border-bottom-color: rgba(34, 34, 34, 0.16);
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .cusec-school-archive-item--mosaic .cusec-school-archive-item__brand {
@@ -1309,6 +1732,10 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: clamp(1rem, 3vw, 2.5rem);
+}
+
+.cusec-navbar__inner--no-wordmark {
+  justify-content: flex-end;
 }
 
 .cusec-navbar__wordmark {
@@ -1495,7 +1922,7 @@ a {
   }
 
   .cusec-stats {
-    width: min(100%, 18ch);
+    width: min(100%, 24ch);
   }
 
   .cusec-testimonials-grid,
@@ -1525,7 +1952,7 @@ a {
     --type-subtitle: clamp(0.9rem, 4vw, 1.1rem);
     --type-body: 1.18rem;
     --type-quote: 1.12rem;
-    --type-stats: clamp(1.75rem, 10vw, 2.55rem);
+    --type-stats: clamp(1.5rem, 8vw, 2rem);
   }
 
   .cusec-section {
@@ -1563,7 +1990,7 @@ a {
   }
 
   .cusec-image-band {
-    aspect-ratio: 1.45 / 1;
+    aspect-ratio: 1.9 / 1;
   }
 
   .cusec-testimonial {
@@ -1581,14 +2008,13 @@ a {
   }
 
   .cusec-historic-sponsors-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .cusec-summary-layout {
     grid-template-columns: 1fr;
   }
 
-  .cusec-summary-pie,
   .cusec-summary-pie__legend {
     grid-template-columns: 1fr;
   }
@@ -1612,7 +2038,7 @@ a {
   }
 
   .cusec-schools-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1677,11 +2103,12 @@ a {
   color: var(--color-ink);
   background: transparent;
   border: 1px solid color-mix(in srgb, var(--color-ink) 25%, transparent);
-  border-radius: 999px;
   padding: 0.3rem 1.6rem 0.3rem 0.7rem;
   cursor: pointer;
   appearance: none;
-  background-image: linear-gradient(45deg, transparent 50%, var(--color-ink) 50%),
+  border-radius: 4px;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--color-ink) 50%),
     linear-gradient(135deg, var(--color-ink) 50%, transparent 50%);
   background-position:
     calc(100% - 0.85rem) 50%,
@@ -1700,4 +2127,242 @@ a {
 .cusec-locale-switcher:focus-visible {
   outline: 2px solid var(--color-focus);
   outline-offset: 2px;
+}
+
+/* --- Archive Event Pages --- */
+
+.cusec-archive-list,
+.cusec-archive-talks__list,
+.cusec-archive-team-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cusec-archive-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  font-family: var(--font-ui);
+  font-size: clamp(0.98rem, 1.2vw, 1.1rem);
+  font-weight: 500;
+  color: var(--color-muted);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.cusec-archive-back:hover {
+  color: var(--color-ink);
+}
+
+.cusec-archive-year-header {
+  padding-block-start: 0;
+}
+
+.cusec-archive-year-header__main {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.25rem, 4vw, 2.75rem);
+  flex-wrap: wrap;
+}
+
+.cusec-archive-year-header__logo {
+  width: clamp(4.5rem, 10vw, 7rem);
+  height: clamp(4.5rem, 10vw, 7rem);
+  flex: 0 0 auto;
+}
+
+.cusec-archive-year-header__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cusec-archive-year-header__logo--framed {
+  padding: clamp(0.5rem, 1.2vw, 0.85rem);
+  border-radius: 6px;
+  background: var(--color-ink);
+}
+
+.cusec-archive-year-header__text {
+  min-width: 0;
+}
+
+.cusec-archive-year-header__eyebrow {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.cusec-archive-year-header h1 {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-ui);
+  font-size: var(--type-heading);
+  font-weight: 400;
+  letter-spacing: -0.07em;
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.cusec-archive-year-header__theme {
+  font-style: italic;
+  font-family: var(--font-editorial);
+  letter-spacing: -0.01em;
+}
+
+.cusec-archive-year-header__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin-top: clamp(0.9rem, 2vw, 1.4rem);
+  font-family: var(--font-ui);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  color: var(--color-body);
+}
+
+.cusec-archive-prose p {
+  max-width: var(--measure);
+  margin: 0;
+  color: var(--color-body);
+  font-family: var(--font-editorial);
+  font-size: var(--type-body);
+  line-height: 1.18;
+}
+
+.cusec-archive-placeholder {
+  margin: 0;
+  color: var(--color-muted);
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  line-height: 1.3;
+}
+
+.cusec-archive-card__theme {
+  font-style: italic;
+  color: var(--color-ink);
+}
+
+.cusec-archive-team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: clamp(1.25rem, 3vw, 2rem) clamp(1.5rem, 4vw, 3rem);
+}
+
+.cusec-archive-team-member {
+  border-top: 1px solid rgba(34, 34, 34, 0.1);
+  padding-top: 0.75rem;
+}
+
+.cusec-archive-team-member__name {
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  font-weight: 500;
+  color: var(--color-ink);
+}
+
+.cusec-archive-team-member__role {
+  margin: 0.2rem 0 0;
+  font-family: var(--font-editorial);
+  font-size: clamp(0.98rem, 1.2vw, 1.1rem);
+  color: var(--color-muted);
+  line-height: 1.25;
+}
+
+.cusec-archive-subheading {
+  margin: clamp(2rem, 4vw, 3rem) 0 clamp(1.25rem, 2.5vw, 1.75rem);
+  font-family: var(--font-ui);
+  font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: var(--color-ink);
+}
+
+.cusec-archive-talks__list {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.cusec-archive-talk {
+  border-top: 1px solid rgba(34, 34, 34, 0.1);
+  padding-top: clamp(1rem, 2vw, 1.4rem);
+}
+
+.cusec-archive-talk__title {
+  margin: 0;
+  font-family: var(--font-editorial);
+  font-size: clamp(1.2rem, 1.9vw, 1.6rem);
+  font-weight: 500;
+  color: var(--color-ink);
+  line-height: 1.2;
+}
+
+.cusec-archive-talk__presenter {
+  margin: 0.4rem 0 0;
+  font-family: var(--font-ui);
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  color: var(--color-body);
+  line-height: 1.3;
+}
+
+.cusec-archive-talk__affiliation {
+  color: var(--color-muted);
+}
+
+.cusec-archive-talk__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0 0;
+}
+
+.cusec-archive-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.cusec-archive-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.4rem;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.22);
+  font-family: var(--font-ui);
+  font-size: clamp(0.95rem, 1.15vw, 1.05rem);
+  font-weight: 500;
+  color: var(--color-ink);
+  text-decoration: none;
+  transition:
+    background-color 150ms ease,
+    transform 150ms ease;
+}
+
+.cusec-archive-chip:hover {
+  background: rgba(34, 34, 34, 0.04);
+  transform: translateY(-1px);
+}
+
+.cusec-archive-chip:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+.cusec-archive-chip--feature {
+  background: var(--color-ink);
+  color: var(--color-page);
+  border-color: var(--color-ink);
+}
+
+.cusec-archive-chip--feature:hover {
+  background: var(--color-button);
 }

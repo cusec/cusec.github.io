@@ -1,70 +1,35 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import Image from "next/image";
-import { useCallback, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { ButtonLink } from "@/components/ButtonLink";
+import { MarqueeRow } from "@/components/MarqueeRow";
 import { SectionHeading } from "@/components/SectionHeading";
-import { sponsorMarqueeRows, type Sponsor } from "@/lib/sponsorsData";
+import { sponsorMarqueeRows } from "@/lib/sponsorsData";
+import { useInView } from "@/lib/useInView";
 
-const HIGH_PRIORITY_LOGO_COUNT = 4;
-
-type MarqueeRowProps = {
-  direction: "left" | "right";
-  onLogoSettled: (key: string) => void;
-  rowId: string;
-  sponsors: Sponsor[];
-};
-
-function MarqueeRow({ direction, onLogoSettled, rowId, sponsors }: MarqueeRowProps) {
-  const t = useTranslations("Sponsors");
-  const repeatedSponsors = [...sponsors, ...sponsors];
-
-  return (
-    <div className={`cusec-marquee-track cusec-marquee-track--${direction}`}>
-      {repeatedSponsors.map((sponsor, i) => {
-        const logoKey = `${rowId}-${i}-${sponsor.name}`;
-
-        return (
-          <div key={logoKey} className="cusec-school-item cusec-marquee-logo" title={sponsor.name}>
-            <Image
-              src={sponsor.logo}
-              alt={t("logoAlt", { name: sponsor.name })}
-              quality={95}
-              sizes="160px"
-              loading="eager"
-              fetchPriority={i < HIGH_PRIORITY_LOGO_COUNT ? "high" : "auto"}
-              ref={(image) => {
-                if (image?.complete) {
-                  onLogoSettled(logoKey);
-                }
-              }}
-              onLoad={() => onLogoSettled(logoKey)}
-              onError={() => onLogoSettled(logoKey)}
-            />
-          </div>
-        );
-      })}
-    </div>
-  );
-}
+const totalLogoCount = (sponsorMarqueeRows.top.length + sponsorMarqueeRows.bottom.length) * 2;
 
 export function SponsorsSection() {
   const t = useTranslations("Sponsors");
-  const [settledLogoKeys, setSettledLogoKeys] = useState<Set<string>>(() => new Set());
-  const totalLogoCount = (sponsorMarqueeRows.top.length + sponsorMarqueeRows.bottom.length) * 2;
-  const isMarqueeReady = settledLogoKeys.size >= totalLogoCount;
+
+  // Track settled logos in a ref so each image load doesn't re-render the whole
+  // marquee. Only flip the boolean (one render) once every logo has settled.
+  const settledLogoKeys = useRef<Set<string>>(new Set());
+  const [isMarqueeReady, setIsMarqueeReady] = useState(false);
+
+  const { inView, ref: marqueeRef } = useInView<HTMLDivElement>();
 
   const handleLogoSettled = useCallback((key: string) => {
-    setSettledLogoKeys((currentKeys) => {
-      if (currentKeys.has(key)) {
-        return currentKeys;
-      }
+    if (settledLogoKeys.current.has(key)) {
+      return;
+    }
 
-      const nextKeys = new Set(currentKeys);
-      nextKeys.add(key);
-      return nextKeys;
-    });
+    settledLogoKeys.current.add(key);
+
+    if (settledLogoKeys.current.size >= totalLogoCount) {
+      setIsMarqueeReady(true);
+    }
   }, []);
 
   return (
@@ -77,9 +42,10 @@ export function SponsorsSection() {
         />
 
         <div
+          ref={marqueeRef}
           className={`cusec-marquee-container${
             isMarqueeReady ? " cusec-marquee-container--ready" : ""
-          }`}
+          }${inView ? " cusec-marquee-container--in-view" : ""}`}
           aria-busy={!isMarqueeReady}
         >
           <MarqueeRow

@@ -1,5 +1,6 @@
 {
   "Nav": {
+    "archives": "Archivos",
     "pastSpeakers": "Ponentes anteriores",
     "participantSchools": "Escuelas participantes",
     "historicSponsors": "Patrocinadores históricos",
@@ -91,11 +92,15 @@
   "Archive": {
     "heading": "Conferencias <em>anteriores</em>",
     "lede": "Explora más de dos décadas de historia, ponentes y eventos de CUSEC.",
-    "archived": "Archivado",
     "visitSite": "Visitar el sitio",
     "seeFullArchive": "Ver el archivo completo",
     "seeLess": "Ver menos",
     "logoAlt": "Logotipo de CUSEC {year}",
+    "previewEyebrow": "Archivo",
+    "previewCount": "{count} ediciones",
+    "previewHint": "Ir al archivo completo de la conferencia",
+    "previewSummary": "Explora el archivo completo de CUSEC por año, con páginas de eventos, ponentes, equipos, actas y sitios de conferencias conservados en un solo lugar.",
+    "yearRailLabel": "Años del archivo de CUSEC",
     "info": {
       "2011": "Una década inspirando el futuro de la tecnología canadiense.",
       "2012": "Mostrando el auge de la computación en la nube y los macrodatos.",
@@ -124,6 +129,31 @@
       "2009": "En 2009, la industria del software adoptaba rápidamente metodologías ágiles. CUSEC llevó esos flujos de trabajo a los estudiantes con talleres sobre programación en parejas, desarrollo guiado por pruebas y dinámicas de equipo en un entorno tecnológico cambiante.",
       "2010": "La edición 2010 de CUSEC exploró las intersecciones entre hardware y software, con ponentes pioneros de Norteamérica que compartieron ideas sobre ingeniería de sistemas, primeras aplicaciones móviles y la escena tecnológica independiente. Siguió siendo un punto de encuentro vital para estudiantes."
     }
+  },
+  "Archives": {
+    "indexHeading": "<em>Archivos</em> de eventos",
+    "indexLede": "Explora cada conferencia CUSEC — su equipo, sus ponentes y sus momentos destacados, año tras año.",
+    "indexSummaryPlaceholder": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    "viewEvent": "Ver evento",
+    "metaTitle": "CUSEC {year} — Archivos",
+    "backToArchives": "Volver a los archivos",
+    "logoAlt": "Logotipo de CUSEC {year}",
+    "visitSite": "Visitar sitio",
+    "visitYearSite": "Visitar el sitio de CUSEC {year}",
+    "speakersHeading": "<em>Ponentes</em> y presentaciones",
+    "speakersLede": "Las voces que subieron al escenario en esta edición de CUSEC.",
+    "talksHeading": "Presentaciones",
+    "noSpeakers": "La información sobre los ponentes de este año se está recopilando.",
+    "teamHeading": "<em>Equipo</em> organizador",
+    "teamLede": "Los estudiantes que dieron vida a esta conferencia.",
+    "noTeam": "La información sobre el equipo de este año se está recopilando.",
+    "sponsorsHeading": "<em>Patrocinadores</em>",
+    "sponsorsLede": "Los socios que hicieron posible esta edición de CUSEC.",
+    "noSponsors": "La información sobre los patrocinadores de este año se está recopilando.",
+    "seeHistoricSponsors": "Ver todos los patrocinadores históricos",
+    "highlightsHeading": "<em>Momentos destacados</em>",
+    "highlightsLede": "Actas, fotos y mucho más de esta edición de CUSEC.",
+    "noHighlights": "Los momentos destacados de este año se están recopilando."
   },
   "Footer": {
     "copyright": "Copyright 2002-2026. Todos los derechos reservados."

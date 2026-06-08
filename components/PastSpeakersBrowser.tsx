@@ -2,80 +2,13 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
-import Image from "next/image";
+import { SpeakerCard } from "@/components/SpeakerCard";
+import { getSpeakersForFocus, speakerFocuses } from "@/lib/speakerFocuses";
 import type { Speaker } from "@/lib/speakersData";
-
-type SpeakerFocus = {
-  id: string;
-  years: number[];
-};
 
 type PastSpeakersBrowserProps = {
   speakers: Speaker[];
 };
-
-const speakerFocuses: SpeakerFocus[] = [
-  { id: "legends", years: [] },
-  { id: "2020s", years: [2020, 2021, 2022] },
-  {
-    id: "2010s",
-    years: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
-  },
-  { id: "2000s", years: [2004, 2005, 2006, 2007, 2008, 2009] },
-];
-
-const legendNames = [
-  "Kent Beck",
-  "Richard Stallman",
-  "Joel Spolsky",
-  "Jeff Atwood",
-  "Alexis Ohanian",
-  "David Heinemeier Hansson",
-  "Douglas Crockford",
-  "Bruce Schneier",
-  "Bret Victor",
-];
-
-function getSpeakersForFocus(speakers: Speaker[], focus: SpeakerFocus) {
-  if (focus.id === "legends") {
-    const names = new Set(legendNames);
-    return speakers.filter((speaker) => names.has(speaker.name));
-  }
-
-  const years = new Set(focus.years);
-  return speakers.filter((speaker) => speaker.year && years.has(speaker.year));
-}
-
-function SpeakerCard({ speaker, bio }: { speaker: Speaker; bio: string }) {
-  return (
-    <article className="cusec-archive-item cusec-historic-sponsor cusec-historic-sponsor--mosaic">
-      <div className="cusec-archive-item__header">
-        <a
-          className="cusec-archive-item__brand cusec-historic-sponsor__brand cusec-historic-sponsor__link"
-          href={speaker.url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="cusec-speaker-photo">
-            <Image
-              src={speaker.image}
-              alt={speaker.name}
-              fill
-              sizes="240px"
-              quality={95}
-              style={{ objectFit: "cover" }}
-            />
-          </div>
-          <h3>{speaker.name}</h3>
-        </a>
-      </div>
-
-      <div className="cusec-archive-item__content">
-        <p>{bio}</p>
-      </div>
-    </article>
-  );
-}
 
 export function PastSpeakersBrowser({ speakers }: PastSpeakersBrowserProps) {
   const t = useTranslations("SpeakersBrowser");

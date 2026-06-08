@@ -1,5 +1,6 @@
 {
   "Nav": {
+    "archives": "ਪੁਰਾਲੇਖ",
     "pastSpeakers": "ਪਿਛਲੇ ਬੁਲਾਰੇ",
     "participantSchools": "ਭਾਗ ਲੈਣ ਵਾਲੇ ਸਕੂਲ",
     "historicSponsors": "ਇਤਿਹਾਸਕ ਸਪਾਂਸਰ",
@@ -91,11 +92,15 @@
   "Archive": {
     "heading": "<em>ਪਿਛਲੀਆਂ</em> ਕਾਨਫਰੰਸਾਂ",
     "lede": "CUSEC ਦੇ ਦੋ ਦਹਾਕਿਆਂ ਤੋਂ ਵੱਧ ਦੇ ਇਤਿਹਾਸ, ਬੁਲਾਰਿਆਂ ਅਤੇ ਸਮਾਗਮਾਂ ਨੂੰ ਖੋਜੋ।",
-    "archived": "ਆਰਕਾਈਵ ਕੀਤਾ",
     "visitSite": "ਸਾਈਟ ਵੇਖੋ",
     "seeFullArchive": "ਪੂਰਾ ਆਰਕਾਈਵ ਵੇਖੋ",
     "seeLess": "ਘੱਟ ਵੇਖੋ",
     "logoAlt": "CUSEC {year} ਲੋਗੋ",
+    "previewEyebrow": "ਆਰਕਾਈਵ",
+    "previewCount": "{count} ਸੰਸਕਰਣ",
+    "previewHint": "ਪੂਰੇ ਕਾਨਫਰੰਸ ਆਰਕਾਈਵ ਵਿੱਚ ਜਾਓ",
+    "previewSummary": "CUSEC ਦੇ ਪੂਰੇ ਆਰਕਾਈਵ ਨੂੰ ਸਾਲ ਅਨੁਸਾਰ ਵੇਖੋ, ਜਿੱਥੇ ਇਵੈਂਟ ਪੇਜ, ਬੁਲਾਰੇ, ਟੀਮਾਂ, ਪ੍ਰੋਸੀਡਿੰਗਜ਼ ਅਤੇ ਬਚੀਆਂ ਹੋਈਆਂ ਕਾਨਫਰੰਸ ਸਾਈਟਾਂ ਇਕੱਠੀਆਂ ਹਨ।",
+    "yearRailLabel": "CUSEC ਆਰਕਾਈਵ ਦੇ ਸਾਲ",
     "info": {
       "2011": "ਕੈਨੇਡੀਅਨ ਤਕਨਾਲੋਜੀ ਦੇ ਭਵਿੱਖ ਨੂੰ ਪ੍ਰੇਰਿਤ ਕਰਨ ਦਾ ਇੱਕ ਦਹਾਕਾ।",
       "2012": "ਕਲਾਉਡ ਕੰਪਿਊਟਿੰਗ ਅਤੇ ਬਿਗ ਡਾਟਾ ਦੇ ਉਭਾਰ ਨੂੰ ਦਰਸਾਉਂਦਾ ਸੰਸਕਰਣ।",
@@ -124,6 +129,31 @@
       "2009": "2009 ਵਿੱਚ ਸਾਫਟਵੇਅਰ ਉਦਯੋਗ ਤੇਜ਼ੀ ਨਾਲ Agile ਪੱਧਤੀਆਂ ਅਪਣਾ ਰਿਹਾ ਸੀ। CUSEC ਨੇ ਪੇਅਰ ਪ੍ਰੋਗਰਾਮਿੰਗ, ਟੈਸਟ-ਡ੍ਰਿਵਨ ਡਿਵੈਲਪਮੈਂਟ ਅਤੇ ਟੀਮ ਡਾਇਨਾਮਿਕਸ ਬਾਰੇ ਵਰਕਸ਼ਾਪਾਂ ਰਾਹੀਂ ਇਹ ਅਭਿਆਸ ਸਿੱਧੇ ਵਿਦਿਆਰਥੀਆਂ ਤੱਕ ਪਹੁੰਚਾਏ।",
       "2010": "CUSEC 2010 ਨੇ ਹਾਰਡਵੇਅਰ ਅਤੇ ਸਾਫਟਵੇਅਰ ਦੇ ਡੂੰਘੇ ਸੰਬੰਧਾਂ ਦੀ ਖੋਜ ਕੀਤੀ, ਉੱਤਰੀ ਅਮਰੀਕਾ ਦੇ ਅਗਵਾਈ ਕਰਨ ਵਾਲੇ ਬੁਲਾਰਿਆਂ ਨੂੰ ਸਿਸਟਮ ਇੰਜੀਨੀਅਰਿੰਗ, ਸ਼ੁਰੂਆਤੀ ਸਮਾਰਟਫੋਨ ਐਪ ਵਿਕਾਸ ਅਤੇ ਇੰਡੀ ਤਕਨਾਲੋਜੀ ਦ੍ਰਿਸ਼ ਬਾਰੇ ਵਿਚਾਰ ਸਾਂਝੇ ਕਰਨ ਲਈ ਸੱਦਾ ਦਿੱਤਾ।"
     }
+  },
+  "Archives": {
+    "indexHeading": "ਸਮਾਗਮ <em>ਪੁਰਾਲੇਖ</em>",
+    "indexLede": "ਹਰ CUSEC ਕਾਨਫ਼ਰੰਸ ਨੂੰ ਸਾਲ-ਦਰ-ਸਾਲ ਪੜਚੋਲੋ — ਇਸ ਦੀ ਟੀਮ, ਬੁਲਾਰੇ ਅਤੇ ਖ਼ਾਸ ਪਲ।",
+    "indexSummaryPlaceholder": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    "viewEvent": "ਸਮਾਗਮ ਵੇਖੋ",
+    "metaTitle": "CUSEC {year} — ਪੁਰਾਲੇਖ",
+    "backToArchives": "ਪੁਰਾਲੇਖ ਵੱਲ ਵਾਪਸ",
+    "logoAlt": "CUSEC {year} ਲੋਗੋ",
+    "visitSite": "ਸਾਈਟ ਵੇਖੋ",
+    "visitYearSite": "CUSEC {year} ਸਾਈਟ ਵੇਖੋ",
+    "speakersHeading": "<em>ਬੁਲਾਰੇ</em> ਅਤੇ ਪੇਸ਼ਕਾਰੀਆਂ",
+    "speakersLede": "ਇਸ CUSEC ਵਿੱਚ ਸਟੇਜ ਉੱਤੇ ਆਈਆਂ ਆਵਾਜ਼ਾਂ।",
+    "talksHeading": "ਪੇਸ਼ਕਾਰੀਆਂ",
+    "noSpeakers": "ਇਸ ਸਾਲ ਦੇ ਬੁਲਾਰਿਆਂ ਦੀ ਜਾਣਕਾਰੀ ਤਿਆਰ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ।",
+    "teamHeading": "ਆਯੋਜਨ <em>ਟੀਮ</em>",
+    "teamLede": "ਉਹ ਵਿਦਿਆਰਥੀ ਜਿਨ੍ਹਾਂ ਨੇ ਇਸ ਕਾਨਫ਼ਰੰਸ ਨੂੰ ਜੀਵਨ ਦਿੱਤਾ।",
+    "noTeam": "ਇਸ ਸਾਲ ਦੀ ਟੀਮ ਦੀ ਜਾਣਕਾਰੀ ਤਿਆਰ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ।",
+    "sponsorsHeading": "<em>ਸਪਾਂਸਰ</em>",
+    "sponsorsLede": "ਉਹ ਭਾਈਵਾਲ ਜਿਨ੍ਹਾਂ ਨੇ ਇਸ CUSEC ਨੂੰ ਸੰਭਵ ਬਣਾਇਆ।",
+    "noSponsors": "ਇਸ ਸਾਲ ਦੇ ਸਪਾਂਸਰਾਂ ਦੀ ਜਾਣਕਾਰੀ ਤਿਆਰ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ।",
+    "seeHistoricSponsors": "ਸਾਰੇ ਇਤਿਹਾਸਕ ਸਪਾਂਸਰ ਵੇਖੋ",
+    "highlightsHeading": "<em>ਖ਼ਾਸ ਪਲ</em>",
+    "highlightsLede": "ਇਸ CUSEC ਦੇ ਕਾਰਵਾਈ-ਪੱਤਰ, ਤਸਵੀਰਾਂ ਅਤੇ ਹੋਰ ਬਹੁਤ ਕੁਝ।",
+    "noHighlights": "ਇਸ ਸਾਲ ਦੇ ਖ਼ਾਸ ਪਲ ਤਿਆਰ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ।"
   },
   "Footer": {
     "copyright": "ਕਾਪੀਰਾਈਟ 2002-2026। ਸਾਰੇ ਹੱਕ ਰਾਖਵੇਂ ਹਨ।"

@@ -8,7 +8,7 @@ type LogoTileProps = {
 };
 
 export function LogoTile({ name, url, logo, variant = "default" }: LogoTileProps) {
-  const className = `cusec-school-item${
+  const className = `cusec-logo-tile${
     variant === "compact-left" ? " cusec-logo-tile--compact-left" : ""
   }`;
 

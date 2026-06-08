@@ -2,37 +2,13 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
-import { LogoTile } from "@/components/LogoTile";
 import { ParticipantSchoolsSummary } from "@/components/ParticipantSchoolsSummary";
-import type { Region, School } from "@/lib/schoolsData";
+import { SchoolCard } from "@/components/SchoolCard";
+import type { Region } from "@/lib/schoolsData";
 
 type ParticipantSchoolsBrowserProps = {
   regions: Region[];
 };
-
-function SchoolCard({ school }: { school: School }) {
-  return (
-    <article className="cusec-archive-item cusec-school-archive-item cusec-school-archive-item--mosaic">
-      <div className="cusec-archive-item__header">
-        <div className="cusec-archive-item__brand cusec-school-archive-item__brand">
-          {school.logo ? (
-            <LogoTile name={school.name} logo={school.logo} variant="compact-left" />
-          ) : null}
-          <h3>
-            <a
-              href={school.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: "none" }}
-            >
-              {school.name}
-            </a>
-          </h3>
-        </div>
-      </div>
-    </article>
-  );
-}
 
 export function ParticipantSchoolsBrowser({ regions }: ParticipantSchoolsBrowserProps) {
   const t = useTranslations("SchoolsBrowser");
@@ -63,16 +39,11 @@ export function ParticipantSchoolsBrowser({ regions }: ParticipantSchoolsBrowser
   return (
     <div className="cusec-schools-browser">
       <div className="cusec-school-filter">
-        {!isSummary ? (
-          <div className="cusec-school-filter__summary" aria-live="polite">
-            <strong>{activeFocus.label}</strong>
-            <p>{activeFocus.description}</p>
-            <p className="cusec-school-filter__note">{t("note")}</p>
-          </div>
-        ) : (
-          <div aria-hidden="true" />
-        )}
-
+        <div className="cusec-school-filter__summary" aria-live="polite">
+          <strong>{activeFocus.label}</strong>
+          <p>{isSummary ? t("summaryDescription") : t("regionDescription", { region: activeFocus.label })}</p>
+          <p className="cusec-school-filter__note">{t("note")}</p>
+        </div>
         <div className="cusec-school-filter__tabs">
           {focuses.map((focus) => {
             const isActive = focus.id === activeFocus.id;

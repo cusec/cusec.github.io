@@ -4,12 +4,7 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { Link, usePathname } from "@/i18n/navigation";
-
-const navLinks = [
-  { href: "/past-speakers", key: "pastSpeakers" },
-  { href: "/participant-schools", key: "participantSchools" },
-  { href: "/historic-sponsors", key: "historicSponsors" },
-] as const;
+import { navLinks } from "@/lib/navLinks";
 
 export function Navbar() {
   const t = useTranslations("Nav");
@@ -18,10 +13,12 @@ export function Navbar() {
 
   return (
     <nav className="cusec-navbar" data-open={open ? "true" : "false"} aria-label={t("primary")}>
-      <div className="cusec-navbar__inner">
-        <Link href="/" className="cusec-navbar__wordmark">
-          CUSEC
-        </Link>
+      <div className={`cusec-navbar__inner${pathname === "/" ? " cusec-navbar__inner--no-wordmark" : ""}`}>
+        {pathname !== "/" && (
+          <Link href="/" className="cusec-navbar__wordmark">
+            CUSEC
+          </Link>
+        )}
         <button
           type="button"
           className="cusec-navbar__toggle"

@@ -1,5 +1,6 @@
 {
   "Nav": {
+    "archives": "Archives",
     "pastSpeakers": "Conférenciers passés",
     "participantSchools": "Écoles participantes",
     "historicSponsors": "Commanditaires historiques",
@@ -91,11 +92,15 @@
   "Archive": {
     "heading": "Conférences <em>passées</em>",
     "lede": "Explorez plus de deux décennies d’histoire, de conférenciers et d’événements de CUSEC.",
-    "archived": "Archivé",
     "visitSite": "Visiter le site",
     "seeFullArchive": "Voir toutes les archives",
     "seeLess": "Voir moins",
     "logoAlt": "Logo de CUSEC {year}",
+    "previewEyebrow": "Archives",
+    "previewCount": "{count} éditions",
+    "previewHint": "Accéder aux archives complètes de la conférence",
+    "previewSummary": "Parcourez les archives complètes de CUSEC par année, avec les pages d’événements, les conférenciers, les équipes, les actes et les sites de conférence encore disponibles.",
+    "yearRailLabel": "Années des archives CUSEC",
     "info": {
       "2011": "Une décennie à inspirer l’avenir de la technologie canadienne.",
       "2012": "Mise en valeur de l’essor de l’infonuagique et des mégadonnées.",
@@ -124,6 +129,31 @@
       "2009": "En 2009, l’industrie du logiciel adoptait rapidement les méthodes agiles. CUSEC a présenté ces pratiques aux étudiants avec des ateliers sur la programmation en binôme, le développement piloté par les tests et la dynamique d’équipe dans un paysage technologique en évolution.",
       "2010": "L’édition 2010 de CUSEC a exploré les liens profonds entre matériel et logiciel, accueillant des conférenciers pionniers d’Amérique du Nord pour parler d’ingénierie des systèmes, des premières applications mobiles et de la scène technologique indépendante. Elle est demeurée un lieu de rencontre essentiel pour les étudiants."
     }
+  },
+  "Archives": {
+    "indexHeading": "<em>Archives</em> des événements",
+    "indexLede": "Explorez chaque conférence CUSEC — son équipe, ses conférenciers et ses moments forts, année après année.",
+    "indexSummaryPlaceholder": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    "viewEvent": "Voir l'événement",
+    "metaTitle": "CUSEC {year} — Archives",
+    "backToArchives": "Retour aux archives",
+    "logoAlt": "Logo de CUSEC {year}",
+    "visitSite": "Visiter le site",
+    "visitYearSite": "Visiter le site de CUSEC {year}",
+    "speakersHeading": "<em>Conférenciers</em> et présentations",
+    "speakersLede": "Les voix qui sont montées sur scène lors de cette édition de CUSEC.",
+    "talksHeading": "Présentations",
+    "noSpeakers": "Les informations sur les conférenciers de cette année sont en cours de compilation.",
+    "teamHeading": "<em>Équipe</em> organisatrice",
+    "teamLede": "Les étudiants qui ont donné vie à cette conférence.",
+    "noTeam": "Les informations sur l'équipe de cette année sont en cours de compilation.",
+    "sponsorsHeading": "<em>Commanditaires</em>",
+    "sponsorsLede": "Les partenaires qui ont rendu cette édition de CUSEC possible.",
+    "noSponsors": "Les informations sur les commanditaires de cette année sont en cours de compilation.",
+    "seeHistoricSponsors": "Voir tous les commanditaires historiques",
+    "highlightsHeading": "<em>Moments forts</em>",
+    "highlightsLede": "Actes, photos et plus encore de cette édition de CUSEC.",
+    "noHighlights": "Les moments forts de cette année sont en cours de compilation."
   },
   "Footer": {
     "copyright": "Copyright 2002-2026. Tous droits réservés."
@@ -196,6 +226,7 @@
   },
   "SchoolsBrowser": {
     "summary": "Sommaire",
+    "summaryDescription": "Établissements de toutes les régions représentés par les participants de CUSEC au fil des ans.",
     "regionDescription": "Établissements de {region} représentés par les participants de CUSEC au fil des ans.",
     "note": "Cette liste historique n’est pas un registre de l’année en cours ni un répertoire officiel de partenariats scolaires.",
     "summaryAria": "Sommaire historique",

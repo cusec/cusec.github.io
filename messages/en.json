@@ -1,5 +1,6 @@
 {
   "Nav": {
+    "archives": "Archives",
     "pastSpeakers": "Past Speakers",
     "participantSchools": "Participating Schools",
     "historicSponsors": "Historic Sponsors",
@@ -91,11 +92,15 @@
   "Archive": {
     "heading": "Past <em>Conferences</em>",
     "lede": "Explore over two decades of CUSEC history, speakers, and events.",
-    "archived": "Archived",
     "visitSite": "Visit Site",
     "seeFullArchive": "See Full Archive",
     "seeLess": "See Less",
     "logoAlt": "CUSEC {year} Logo",
+    "previewEyebrow": "Archive",
+    "previewCount": "{count} editions",
+    "previewHint": "Jump into the full conference archive",
+    "previewSummary": "Browse the complete CUSEC archive by year, with event pages, speakers, teams, proceedings, and surviving conference sites collected in one place.",
+    "yearRailLabel": "CUSEC archive years",
     "info": {
       "2011": "A decade of inspiring the future of Canadian tech.",
       "2012": "Showcasing the rise of cloud computing and big data.",
@@ -124,6 +129,31 @@
       "2009": "In 2009, the software industry was rapidly adopting Agile methodologies. CUSEC brought these cutting-edge development workflows directly to students, hosting workshops on pair programming, test-driven development, and navigating complex team dynamics in the ever-evolving tech landscape.",
       "2010": "The 2010 edition of CUSEC focused on exploring the deep intersections between hardware and software, welcoming pioneering speakers from across North America to share insights into systems engineering, early smartphone app development, and the burgeoning indie tech scene. It remained a vital meeting ground for students."
     }
+  },
+  "Archives": {
+    "indexHeading": "Event <em>Archives</em>",
+    "indexLede": "Explore every CUSEC conference — its team, speakers, and highlights, year by year.",
+    "indexSummaryPlaceholder": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    "viewEvent": "View Event",
+    "metaTitle": "CUSEC {year} — Archives",
+    "backToArchives": "Back to Archives",
+    "logoAlt": "CUSEC {year} Logo",
+    "visitSite": "Visit Site",
+    "visitYearSite": "Visit CUSEC {year} Site",
+    "speakersHeading": "<em>Speakers</em> & Presentations",
+    "speakersLede": "The voices that took the stage at this CUSEC.",
+    "talksHeading": "Presentations",
+    "noSpeakers": "Speaker information for this year is being compiled.",
+    "teamHeading": "Organizing <em>Team</em>",
+    "teamLede": "The students who brought this conference to life.",
+    "noTeam": "Team information for this year is being compiled.",
+    "sponsorsHeading": "<em>Sponsors</em>",
+    "sponsorsLede": "The partners who made this CUSEC possible.",
+    "noSponsors": "Sponsor information for this year is being compiled.",
+    "seeHistoricSponsors": "See All Historic Sponsors",
+    "highlightsHeading": "<em>Highlights</em>",
+    "highlightsLede": "Proceedings, photos, and more from this CUSEC.",
+    "noHighlights": "Highlights for this year are being compiled."
   },
   "Footer": {
     "copyright": "Copyright 2002-2026. All rights reserved."
@@ -287,6 +317,7 @@
   },
   "SchoolsBrowser": {
     "summary": "Summary",
+    "summaryDescription": "Schools from all regions represented by CUSEC attendees over the years.",
     "regionDescription": "Institutions from {region} represented by CUSEC attendees over the years.",
     "note": "This historical list is not a current-year roster or formal school partnership directory.",
     "summaryAria": "Historic summary",

@@ -1,5 +1,4 @@
 import type { StaticImageData } from "next/image";
-import { pickByKey } from "./pick";
 import logo2003 from "../assets/cusec-logos/2003.png";
 import logo2004 from "../assets/cusec-logos/2004.png";
 import logo2005 from "../assets/cusec-logos/2005.png";
@@ -24,6 +23,7 @@ import logo2023 from "../assets/cusec-logos/2023.png";
 import logo2024 from "../assets/cusec-logos/2024.png";
 import logo2025 from "../assets/cusec-logos/2025.png";
 import logo2026 from "../assets/cusec-logos/2026.png";
+import { pickByKey } from "./pick";
 
 export type ArchiveYear = {
   year: number;
@@ -31,6 +31,7 @@ export type ArchiveYear = {
   title: string;
   url?: string;
   hasDetailedInfo?: boolean;
+  logoNeedsDarkBg?: boolean;
 };
 
 export const archiveData: ArchiveYear[] = [
@@ -40,11 +41,23 @@ export const archiveData: ArchiveYear[] = [
   { year: 2023, logo: logo2023, title: "CUSEC 2023", url: "https://2023.cusec.net" },
   { year: 2022, logo: logo2022, title: "CUSEC 2022", url: "https://2022.cusec.net" },
   { year: 2021, logo: logo2021, title: "CUSEC 2021", url: "https://2021.cusec.net" },
-  { year: 2020, logo: logo2020, title: "CUSEC 2020", url: "https://2020.cusec.net" },
+  {
+    year: 2020,
+    logo: logo2020,
+    title: "CUSEC 2020",
+    url: "https://2020.cusec.net",
+    logoNeedsDarkBg: true,
+  },
   { year: 2019, logo: logo2019, title: "CUSEC 2019", url: "https://2019.cusec.net" },
   { year: 2018, logo: logo2018, title: "CUSEC 2018", url: "https://2018.cusec.net" },
   { year: 2017, logo: logo2017, title: "CUSEC 2017", url: "https://2017.cusec.net" },
-  { year: 2016, logo: logo2016, title: "CUSEC 2016", url: "https://2016.cusec.net" },
+  {
+    year: 2016,
+    logo: logo2016,
+    title: "CUSEC 2016",
+    url: "https://2016.cusec.net",
+    logoNeedsDarkBg: true,
+  },
   { year: 2015, logo: logo2015, title: "CUSEC 2015", url: "https://2015.cusec.net" },
   { year: 2014, logo: logo2014, title: "CUSEC 2014", url: "https://2014.cusec.net" },
   { year: 2013, logo: logo2013, title: "CUSEC 2013", url: "https://2013.cusec.net" },
@@ -61,6 +74,8 @@ export const archiveData: ArchiveYear[] = [
 ];
 
 // The curated years shown on the landing page before "See Full Archive".
-export const featuredArchive: ArchiveYear[] = pickByKey(archiveData, "year", [
-  2026, 2025, 2024, 2023, 2022, 2021,
-]);
+export const featuredArchive: ArchiveYear[] = pickByKey(
+  archiveData,
+  "year",
+  [2026, 2025, 2024, 2023, 2022, 2021],
+);

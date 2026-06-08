@@ -1,5 +1,6 @@
 {
   "Nav": {
+    "archives": "往届归档",
     "pastSpeakers": "历届讲者",
     "participantSchools": "参与院校",
     "historicSponsors": "历届赞助商",
@@ -91,11 +92,15 @@
   "Archive": {
     "heading": "<em>历届</em>会议",
     "lede": "探索 CUSEC 二十多年的历史、讲者和活动。",
-    "archived": "已存档",
     "visitSite": "访问网站",
     "seeFullArchive": "查看完整存档",
     "seeLess": "收起",
     "logoAlt": "CUSEC {year} 标志",
+    "previewEyebrow": "存档",
+    "previewCount": "{count} 届",
+    "previewHint": "进入完整会议存档",
+    "previewSummary": "按年份浏览完整的 CUSEC 存档，集中查看活动页面、讲者、团队、论文集和仍保留的会议网站。",
+    "yearRailLabel": "CUSEC 存档年份",
     "info": {
       "2011": "激励加拿大科技未来的十年。",
       "2012": "展现云计算与大数据的兴起。",
@@ -124,6 +129,31 @@
       "2009": "2009 年，软件行业迅速采用敏捷方法。CUSEC 将这些前沿开发流程带给学生，举办了关于结对编程、测试驱动开发以及复杂团队协作的工作坊。",
       "2010": "CUSEC 2010 聚焦硬件与软件的深度交汇，邀请北美先驱讲者分享系统工程、早期智能手机应用开发和独立科技社区的洞见。它仍然是学生重要的交流场所。"
     }
+  },
+  "Archives": {
+    "indexHeading": "活动<em>归档</em>",
+    "indexLede": "逐年探索每一届 CUSEC 大会——它的团队、讲者与精彩亮点。",
+    "indexSummaryPlaceholder": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    "viewEvent": "查看活动",
+    "metaTitle": "CUSEC {year} — 归档",
+    "backToArchives": "返回归档",
+    "logoAlt": "CUSEC {year} 徽标",
+    "visitSite": "访问网站",
+    "visitYearSite": "访问 CUSEC {year} 网站",
+    "speakersHeading": "<em>讲者</em>与演讲",
+    "speakersLede": "在这一届 CUSEC 登台的声音。",
+    "talksHeading": "演讲",
+    "noSpeakers": "本年度讲者信息正在整理中。",
+    "teamHeading": "组织<em>团队</em>",
+    "teamLede": "让这届大会成为现实的学生们。",
+    "noTeam": "本年度团队信息正在整理中。",
+    "sponsorsHeading": "<em>赞助商</em>",
+    "sponsorsLede": "让这届 CUSEC 成为可能的合作伙伴。",
+    "noSponsors": "本年度赞助商信息正在整理中。",
+    "seeHistoricSponsors": "查看所有历届赞助商",
+    "highlightsHeading": "<em>精彩亮点</em>",
+    "highlightsLede": "这届 CUSEC 的会议论文集、照片等内容。",
+    "noHighlights": "本年度精彩亮点正在整理中。"
   },
   "Footer": {
     "copyright": "版权所有 2002-2026。保留所有权利。"

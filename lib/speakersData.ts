@@ -23,7 +23,7 @@ import jeffUllman from "../assets/speaker-photos/jeff-ullman.png";
 
 export type Speaker = {
   name: string;
-  url: string;
+  url?: string;
   image: StaticImageData;
   year?: number;
 };
