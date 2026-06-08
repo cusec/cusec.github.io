@@ -13,9 +13,7 @@ export function Footer() {
               key={link.href}
               href={link.href}
               className="cusec-footer__link"
-              {...(link.external
-                ? { target: "_blank", rel: "noopener noreferrer" }
-                : {})}
+              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             >
               {link.label}
             </a>

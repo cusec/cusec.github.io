@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import {
-  EB_Garamond,
-  Karla,
-  Noto_Sans_Gurmukhi,
-  Noto_Sans_SC,
-} from "next/font/google";
+import { EB_Garamond, Karla, Noto_Sans_Gurmukhi, Noto_Sans_SC } from "next/font/google";
+import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
-import { notFound } from "next/navigation";
 import { Navbar } from "@/components/Navbar";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
@@ -42,8 +37,7 @@ const notoSansGurmukhi = Noto_Sans_Gurmukhi({
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cusec.net";
 
-const localePath = (locale: string) =>
-  locale === routing.defaultLocale ? "/" : `/${locale}`;
+const localePath = (locale: string) => (locale === routing.defaultLocale ? "/" : `/${locale}`);
 
 // Namespaces consumed by "use client" components. Server components resolve
 // their messages during SSR, so only these need to ship in the client bundle.
@@ -60,10 +54,7 @@ const clientNamespaces = [
   "Summary",
 ] as const;
 
-function pick<T extends Record<string, unknown>>(
-  source: T,
-  keys: readonly string[],
-): Partial<T> {
+function pick<T extends Record<string, unknown>>(source: T, keys: readonly string[]): Partial<T> {
   const result: Partial<T> = {};
   for (const key of keys) {
     if (key in source) {

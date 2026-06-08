@@ -38,6 +38,13 @@ export function SpeakerCard({ speaker, bio }: { speaker: Speaker; bio?: string }
         )}
       </div>
 
+      {(speaker.title || speaker.talkTitle) && (
+        <div className="cusec-speaker-meta">
+          {speaker.title && <p className="cusec-speaker-meta__title">{speaker.title}</p>}
+          {speaker.talkTitle && <p className="cusec-speaker-meta__talk">{speaker.talkTitle}</p>}
+        </div>
+      )}
+
       {bio && (
         <div className="cusec-archive-item__content">
           <p>{bio}</p>

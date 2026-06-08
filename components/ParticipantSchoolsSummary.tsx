@@ -5,10 +5,7 @@ import { ChartShell } from "@/components/ChartShell";
 import { HorizontalBarsChart } from "@/components/HorizontalBarsChart";
 import { PieChart } from "@/components/PieChart";
 import type { LabeledMetric } from "@/lib/chartTheme";
-import {
-  historicDegreeMix,
-  historicStudyMix,
-} from "@/lib/participantSchoolsSummaryData";
+import { historicDegreeMix, historicStudyMix } from "@/lib/participantSchoolsSummaryData";
 
 export function ParticipantSchoolsSummary() {
   const t = useTranslations("Summary");

@@ -3,4 +3,24 @@
 .omx
 node_modules/
 .next
+tsconfig.tsbuildinfo
 .claude/
+# one-off asset-generation tooling
+scripts/.cache/
+scripts/node_modules/
+
+# build / TS cache
+tsconfig.tsbuildinfo
+
+# other package managers (pnpm-only repo)
+package-lock.json
+yarn.lock
+
+# AI tooling (local, may contain secrets)
+.mcp.json
+opencode.json
+.opencode/
+
+# OS noise
+.DS_Store
+Thumbs.db

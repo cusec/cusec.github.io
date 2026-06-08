@@ -2,11 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { SectionHeading } from "@/components/SectionHeading";
 import type { ArchiveTeamMember } from "@/lib/archiveYearsData";
 
-export async function ArchiveTeamSection({
-  team,
-}: {
-  team: ArchiveTeamMember[];
-}) {
+export async function ArchiveTeamSection({ team }: { team: ArchiveTeamMember[] }) {
   const t = await getTranslations("Archives");
 
   return (

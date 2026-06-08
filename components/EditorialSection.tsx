@@ -1,5 +1,5 @@
-import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import type { EditorialSectionContent } from "@/lib/content";
 import { Highlight } from "./Highlight";
 import { Section } from "./Section";

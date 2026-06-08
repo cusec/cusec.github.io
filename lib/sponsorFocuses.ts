@@ -1,6 +1,6 @@
 import { z } from "zod";
-import type { Sponsor } from "@/lib/sponsorsData";
 import { sponsorLinks } from "@/lib/sponsorLinks";
+import type { Sponsor } from "@/lib/sponsorsData";
 
 export type SponsorFocus = {
   id: string;

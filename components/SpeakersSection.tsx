@@ -1,10 +1,10 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { ButtonLink } from "@/components/ButtonLink";
 import { SectionHeading } from "@/components/SectionHeading";
-import { featuredSpeakers, speakersData, type Speaker } from "@/lib/speakersData";
+import { featuredSpeakers, type Speaker, speakersData } from "@/lib/speakersData";
 import { useInView } from "@/lib/useInView";
 
 function SpeakerCard({ speaker, duplicate }: { speaker: Speaker; duplicate?: boolean }) {

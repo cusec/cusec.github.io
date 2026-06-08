@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { SectionHeading } from "@/components/SectionHeading";
-import { resolveArchiveUrl, type ArchiveLink } from "@/lib/archiveYearsData";
+import { type ArchiveLink, resolveArchiveUrl } from "@/lib/archiveYearsData";
 
 type ArchiveHighlightsSectionProps = {
   highlights: ArchiveLink[];

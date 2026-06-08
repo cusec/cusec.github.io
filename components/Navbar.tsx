@@ -13,7 +13,9 @@ export function Navbar() {
 
   return (
     <nav className="cusec-navbar" data-open={open ? "true" : "false"} aria-label={t("primary")}>
-      <div className={`cusec-navbar__inner${pathname === "/" ? " cusec-navbar__inner--no-wordmark" : ""}`}>
+      <div
+        className={`cusec-navbar__inner${pathname === "/" ? " cusec-navbar__inner--no-wordmark" : ""}`}
+      >
         {pathname !== "/" && (
           <Link href="/" className="cusec-navbar__wordmark">
             CUSEC

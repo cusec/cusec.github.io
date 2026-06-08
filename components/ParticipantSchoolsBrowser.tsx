@@ -41,7 +41,11 @@ export function ParticipantSchoolsBrowser({ regions }: ParticipantSchoolsBrowser
       <div className="cusec-school-filter">
         <div className="cusec-school-filter__summary" aria-live="polite">
           <strong>{activeFocus.label}</strong>
-          <p>{isSummary ? t("summaryDescription") : t("regionDescription", { region: activeFocus.label })}</p>
+          <p>
+            {isSummary
+              ? t("summaryDescription")
+              : t("regionDescription", { region: activeFocus.label })}
+          </p>
           <p className="cusec-school-filter__note">{t("note")}</p>
         </div>
         <div className="cusec-school-filter__tabs">

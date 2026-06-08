@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { ButtonLink } from "@/components/ButtonLink";
-import { LogoTile } from "@/components/LogoTile";
+import { SchoolCard } from "@/components/SchoolCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import { featuredRegions } from "@/lib/schoolsData";
 
@@ -22,17 +22,9 @@ export function SchoolsSection() {
           {featuredRegions.map((region) => (
             <div key={region.name} className="cusec-schools-region">
               <h3 className="cusec-schools-region-title">{region.name}</h3>
-              <div className="cusec-schools-logo-grid">
+              <div className="cusec-archive-list cusec-schools-list">
                 {region.schools.map((school) => (
-                  <a
-                    key={school.name}
-                    href={school.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cusec-schools-logo-link"
-                  >
-                    <LogoTile name={school.name} logo={school.logo} />
-                  </a>
+                  <SchoolCard key={`${region.name}-${school.name}`} school={school} />
                 ))}
               </div>
             </div>

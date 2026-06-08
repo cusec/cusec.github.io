@@ -28,11 +28,7 @@ export function PastSpeakersBrowser({ speakers }: PastSpeakersBrowserProps) {
           <p>{t(`focus.${activeFocus.id}.description`)}</p>
         </div>
 
-        <div
-          className="cusec-sponsor-filter__tabs"
-          role="tablist"
-          aria-label={t("ariaCategories")}
-        >
+        <div className="cusec-sponsor-filter__tabs" role="tablist" aria-label={t("ariaCategories")}>
           {speakerFocuses.map((focus) => {
             const isActive = focus.id === activeFocusId;
             return (

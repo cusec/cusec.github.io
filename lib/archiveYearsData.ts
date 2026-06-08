@@ -34,12 +34,16 @@ export type ArchiveYearDetail = {
 export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   2026: {
     year: 2026,
+    summary:
+      "The 25th anniversary edition of CUSEC 2026. Held at Hotel Omni Mont-Royal, January 2026. This year, we introduced CUBEAR, CUSEC's mascot. Other big additions to the conference include the Scavenger Hunt, a gamification of the conference experience where delegates can earn points to use towards prizes at the Prize Booth. Other events were introduced such as the CUBEAR Photobooth, Programming Puzzles, and Live Coding.",
     team: [],
     talks: [],
     highlights: [],
   },
   2025: {
     year: 2025,
+    summary:
+      "CUSEC 2025 was held at the Sheraton Hotel in Downtown Montreal in January of 2025 where we welcomed 350+ of Canada's brightest and most ambitious students. This year's Dev's Den had many strong competitors, some of which have gone on to found startups with the projects they pitched at the event.",
     team: [
       { name: "Timothy Klint", role: "Co-Chair" },
       { name: "Kha Pham", role: "Co-Chair" },
@@ -69,6 +73,8 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   },
   2024: {
     year: 2024,
+    summary:
+      "CUSEC 2024 was held at the Sheraton Hotel in Downtown Montreal in January of 2024. Speakers from leading game studios, big tech, AI startups, academia and more!",
     team: [
       { name: "Jordon Hong", role: "Co-Chair" },
       { name: "Denys Popov", role: "Co-Chair" },
@@ -104,12 +110,16 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   },
   2023: {
     year: 2023,
+    summary:
+      "CUSEC 2023 was held at Hotel Bonaventure in Downtown Montreal in January of 2023. We welcomed talented students from across the country to hear from leaders and innovators in tech, from Grady Booch (creator of UML) to Shelli Brunswick (COO of the Space Foundation).",
     team: [],
     talks: [],
     highlights: [],
   },
   2022: {
     year: 2022,
+    summary:
+      "CUSEC 2022 was held virtually in January 2022. Speakers ranged from Michael Seibel, CEO and Partner at Y Combinator, Cindy Alvarez, Director of Customer Research at GitHub, Engineers and Leaders from various big tech and AI startups.",
     team: [
       { name: "HaoHao Du", role: "Chair" },
       { name: "Isham Singh Behl", role: "Chair" },
@@ -138,6 +148,8 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   2021: {
     year: 2021,
     theme: "Virtual Conference",
+    summary:
+      "CUSEC 2021 was held virtually in January 2021, welcoming 650+ passionate students to hear from industry leaders at AWS, MongoDB, box, RBC, Tech Inquiry, Apple, Microsoft, and many more.",
     team: [
       { name: "Ellen Li", role: "Co-Chair" },
       { name: "Nathan Tozer", role: "Co-Chair" },
@@ -163,6 +175,8 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   },
   2020: {
     year: 2020,
+    summary:
+      "CUSEC 2020 was held in Montreal January 2020. Welcoming 450+ Canadian students to hear from renown speakers such as Mayuko Inoue, Puneet Mulchandani, Kristina Balaam, Jackie Chi Kit Cheung, Maude Lemaire, Kate Arthur, and many, many more!",
     team: [
       { name: "Laura Wheatley", role: "Head Delegate - Universities in Montreal" },
       { name: "Michael Walz", role: "Head Delegate - University of New Brunswick" },
@@ -179,6 +193,8 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   },
   2019: {
     year: 2019,
+    summary:
+      "CUSEC 2019 was held in Montreal, Quebec in January 2019. Over 450+ passionate learners and builders from across Canada came together to learn from great minds and leaders like Gelu Ticala, Matt Lee, Amanda Cox, Jin Guo, Matthieu Courbariaux, Maxwell Elendt, Kim Noel, Olivier Bilodeau, and many more.",
     team: [
       { name: "Vinith Suriyakumar", role: "Co-Chair" },
       { name: "Sébastien Roy", role: "Co-Chair" },
@@ -206,6 +222,8 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   },
   2018: {
     year: 2018,
+    summary:
+      "CUSEC 2018 was held in Montreal in January 2018. 500+ students from top universities in Canada grouped together at Hotel Bonaventure to hear from speakers such as Eva Galperin, Steve Klabnik, David Lyon, Vadim Makarov, Robert Fratila, Christian Joudrey, Nicolas Le Roux, and so many more talented pioneers.",
     team: [
       { name: "Gracey Hlywa Maytan", role: "Co-Chair" },
       { name: "Kenny Hong", role: "Co-Chair" },
@@ -235,6 +253,8 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   },
   2017: {
     year: 2017,
+    summary:
+      "CUSEC 2017 was held in Montreal in January 2017. Welcoming 550+ passionate students from across Canada along with talented and renown speakers such as David Nolen, Lynn Root, Tracy Osborn, Emil Stolarsky, Florencia Herra-Vega, Jamie Wong, Lei Lopez, Peter Sobot, and so many more.",
     team: [
       { name: "Kim Noel", role: "CUSEC 2017 Chair" },
       { name: "Aniqah Mair", role: "Director of Speakers" },
@@ -258,6 +278,8 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   },
   2016: {
     year: 2016,
+    summary:
+      "CUSEC 2016 was held in Montreal in January 2016. Over 500+ of the best students from across Canada came together to learn from those leading the industry and pushing new technologies forward. Speakers such as Kate Heddleston, Carina C. Zona, Michael Bernstein, Julia Evans, and many more.",
     team: [
       { name: "Dominic Charley-Roy", role: "Co-Chair" },
       { name: "Alexander Coco", role: "Co-Chair" },
@@ -283,6 +305,8 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   },
   2015: {
     year: 2015,
+    summary:
+      "CUSEC 2015 was held in Montreal, January 2015 bringing together eager students and industry leaders such as Aaron Patterson, Julie Pagano, Camille Fournier, Sandi Metz, Bruce Schneier, David Wolever, Christopher Stumm, Hicham Ratnani, and so many more.",
     team: [
       { name: "Samira El-Rayyes", role: "Co-Chair" },
       { name: "Santiago Gil", role: "Co-Chair" },
@@ -316,6 +340,8 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   },
   2014: {
     year: 2014,
+    summary:
+      "CUSEC 2014 was held in Montreal in January 2014, welcoming hundreds of the best students from across Canada to hear from renown leaders and recognizeable faces such as Bruce Eckel, Gary Bernhardt, Kelsey Gilmore-Innis, Michelle Zatlyn, Zach Holman, Bruno Morency, Ian Chan, and so, so many more.",
     team: [
       { name: "Alex Selesse", role: "Co-Chair" },
       { name: "Matthew Leavitt", role: "Co-Chair" },
@@ -347,6 +373,8 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   },
   2013: {
     year: 2013,
+    summary:
+      "CUSEC 2013 was held in Montreal, January 2013. Hundreds of the most passionate students and learners came together to hear from the best of the best, notable speakers such as Ben Fry, Maciej Ceglowski, Benjamin Black, Ian Goldberg, Michelle Levesque, Jessica McKellar, Gail Carmichael, and countless more.",
     team: [
       { name: "Alexandra Phillips", role: "Co-Chair" },
       { name: "Carla Morawicz", role: "Co-Chair" },
@@ -371,6 +399,8 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   2012: {
     year: 2012,
     theme: "Turing Complete",
+    summary:
+      "CUSEC 2012, January 2012, Montreal. Simple enough. The biggest CUSEC to date bringing speakers from across the globe. Some notable names include Alexis Ohanian, Jeremy Ashkenas, Gayle L. McDowell, Greg Kroah-Hartman, Bret Victor, Andrew Rothbart, and so many more.",
     team: [
       { name: "Vijeta Patel", role: "Chair" },
       { name: "Thomas Hibbert", role: "Director of Finance" },
@@ -415,6 +445,8 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   2011: {
     year: 2011,
     theme: "Hello World",
+    summary:
+      "CUSEC 2011 was held in January 2011 in Downtown Montreal. We welcomed hundreds of students ready to learn from renown & influential speakers such as Yehuda Katz, Michael Lopp (Rands), Drew Conway, Julie Steele, Ben Fry, Mike Shaver, Eric Diep, Sha Xin Wei, and many more.",
     team: [
       { name: "Thomas Hibbert", role: "Co-Chair" },
       { name: "Sven James", role: "Co-Chair" },
@@ -462,6 +494,7 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   2010: {
     year: 2010,
     theme: "GOTO 10",
+    summary: "Information is being compiled.",
     team: [
       { name: "Andrew Louis", role: "Co-Chair" },
       { name: "Juan Musleh", role: "Co-Chair" },
@@ -508,6 +541,7 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   2009: {
     year: 2009,
     theme: "Software (R)evolutions",
+    summary: "Information is being compiled.",
     team: [
       { name: "Linda Wang", role: "Co-Chair" },
       { name: "Eitan 'Skrud' Levi", role: "Co-Chair" },
@@ -565,6 +599,7 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   2008: {
     year: 2008,
     theme: "Making it Fun",
+    summary: "Information is being compiled.",
     team: [
       { name: "Abdullah Salim", role: "Co-Chair" },
       { name: "Hugo Levasseur", role: "Co-Chair" },
@@ -722,6 +757,7 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   2007: {
     year: 2007,
     theme: "Designing for the Future",
+    summary: "Information is being compiled.",
     team: [
       { name: "Neeraj Mathrani", role: "Chair" },
       { name: "John Sloboda", role: "Director of Finance" },
@@ -778,6 +814,7 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   2006: {
     year: 2006,
     theme: "Engineering Useful Software",
+    summary: "Information is being compiled.",
     team: [
       { name: "John Kopanas", role: "Chair" },
       { name: "Mark Pavlidis", role: "Director of Finance" },
@@ -871,6 +908,7 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   2005: {
     year: 2005,
     theme: "Thinking Outside the Cubicle",
+    summary: "Information is being compiled.",
     team: [
       { name: "Chris Donaldson", role: "Director of Physical Things" },
       { name: "Karen Widish", role: "Director of Other Physical Things" },
@@ -971,6 +1009,7 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   2004: {
     year: 2004,
     theme: "Ensuring the Quality",
+    summary: "Information is being compiled.",
     team: [
       { name: "Joël Migneault", role: "Chair" },
       { name: "Gregory Sagget-Rudd", role: "VP Presentations" },
@@ -1004,6 +1043,7 @@ export const archiveYearDetails: Record<number, ArchiveYearDetail> = {
   2003: {
     year: 2003,
     theme: "Adapting The Process",
+    summary: "Information is being compiled.",
     team: [
       { name: "John Kopanas", role: "Chair" },
       { name: "Frédéric Rioux", role: "Director of Presentations" },

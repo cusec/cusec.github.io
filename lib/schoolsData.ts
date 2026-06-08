@@ -1,6 +1,4 @@
 import type { StaticImageData } from "next/image";
-import { pickByKey } from "./pick";
-
 import algonquin from "../assets/school-logos/algonquin 1.png";
 import athabasca from "../assets/school-logos/athabasca 1.png";
 import bishops from "../assets/school-logos/bishops 1.png";
@@ -25,8 +23,8 @@ import poly from "../assets/school-logos/poly 1.png";
 import queens from "../assets/school-logos/queens 1.png";
 import rmc from "../assets/school-logos/rmc 1.png";
 import rrc from "../assets/school-logos/rrc 1.png";
-import sait from "../assets/school-logos/sait 1.png";
 import seneca from "../assets/school-logos/Seneca 1.png";
+import sait from "../assets/school-logos/sait 1.png";
 import sfu from "../assets/school-logos/sfu 1.png";
 import sherbrooke from "../assets/school-logos/sherbrooke 1.png";
 import sheridan from "../assets/school-logos/sheridan 1.png";
@@ -55,6 +53,7 @@ import western from "../assets/school-logos/western 1.png";
 import wilfridlaurier from "../assets/school-logos/wilfridlaurier 1.png";
 import windsor from "../assets/school-logos/windsor 1.png";
 import york from "../assets/school-logos/york 1.png";
+import { pickByKey } from "./pick";
 
 export type School = {
   name: string;

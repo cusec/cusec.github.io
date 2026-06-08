@@ -1,7 +1,7 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import type { Sponsor } from "@/lib/sponsorsData";
 
 const HIGH_PRIORITY_LOGO_COUNT = 4;

@@ -8,8 +8,8 @@ import { ArchiveTeamSection } from "@/components/ArchiveTeamSection";
 import { ArchiveYearHeader } from "@/components/ArchiveYearHeader";
 import { Footer } from "@/components/Footer";
 import { PageShell } from "@/components/PageShell";
-import { getArchiveSpeakers } from "@/lib/archiveSpeakers";
 import { archiveData } from "@/lib/archiveData";
+import { getArchiveSpeakers } from "@/lib/archiveSpeakers";
 import { archiveYearDetails } from "@/lib/archiveYearsData";
 
 export function generateStaticParams() {
@@ -53,6 +53,7 @@ export default async function ArchiveYearPage({
           year={numericYear}
           logo={archiveYear.logo}
           theme={detail?.theme}
+          summary={detail?.summary}
           liveUrl={archiveYear.url}
           logoNeedsDarkBg={archiveYear.logoNeedsDarkBg}
         />

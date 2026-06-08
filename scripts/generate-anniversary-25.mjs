@@ -1,11 +1,11 @@
 // Regenerates assets/anniversary-25.png. Requires a one-off install:
 //   npm i --no-save @resvg/resvg-js && node scripts/generate-anniversary-25.mjs
 
-import { Resvg } from "@resvg/resvg-js";
 import { existsSync } from "node:fs";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { Resvg } from "@resvg/resvg-js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const LOGO_DIR = path.join(ROOT, "assets/cusec-logos");

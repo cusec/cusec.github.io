@@ -34,11 +34,7 @@ export function HistoricSponsorsBrowser({ sponsors }: HistoricSponsorsBrowserPro
           <p className="cusec-sponsor-filter__note">{t("note")}</p>
         </div>
 
-        <div
-          className="cusec-sponsor-filter__tabs"
-          role="tablist"
-          aria-label={t("ariaIndustry")}
-        >
+        <div className="cusec-sponsor-filter__tabs" role="tablist" aria-label={t("ariaIndustry")}>
           {sponsorFocuses.map((focus) => {
             const isActive = focus.id === activeFocus.id;
 

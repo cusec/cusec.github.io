@@ -1,4 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import cusecBand from "@/assets/cusec.png";
 import { ArchiveSection } from "@/components/ArchiveSection";
 import { EditorialSection } from "@/components/EditorialSection";
 import { Footer } from "@/components/Footer";
@@ -10,14 +11,9 @@ import { SpeakersSection } from "@/components/SpeakersSection";
 import { SponsorsSection } from "@/components/SponsorsSection";
 import { StatsStatement } from "@/components/StatsStatement";
 import { TestimonialsGrid } from "@/components/TestimonialsGrid";
-import cusecBand from "@/assets/cusec.png";
 import { editorialSections, testimonials } from "@/lib/content";
 
-export default async function Home({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Home");

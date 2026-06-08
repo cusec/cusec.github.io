@@ -7,6 +7,7 @@ type ArchiveYearHeaderProps = {
   year: number;
   logo: StaticImageData;
   theme?: string;
+  summary?: string;
   liveUrl?: string;
   logoNeedsDarkBg?: boolean;
 };
@@ -15,6 +16,7 @@ export async function ArchiveYearHeader({
   year,
   logo,
   theme,
+  summary,
   liveUrl,
   logoNeedsDarkBg,
 }: ArchiveYearHeaderProps) {
@@ -33,7 +35,12 @@ export async function ArchiveYearHeader({
               logoNeedsDarkBg ? " cusec-archive-year-header__logo--framed" : ""
             }`}
           >
-            <Image src={logo} alt={t("logoAlt", { year })} quality={95} sizes="120px" />
+            <Image
+              src={logo}
+              alt={t("logoAlt", { year })}
+              quality={95}
+              sizes="(max-width: 108rem) 100vw, 108rem"
+            />
           </div>
 
           <div className="cusec-archive-year-header__text">
@@ -58,6 +65,8 @@ export async function ArchiveYearHeader({
             ) : null}
           </div>
         </div>
+
+        {summary ? <p className="cusec-archive-year-header__summary">{summary}</p> : null}
       </div>
     </section>
   );

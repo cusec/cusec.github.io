@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import anniversary25 from "@/assets/anniversary-25.png";
 import { ButtonLink } from "@/components/ButtonLink";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Link } from "@/i18n/navigation";
-import anniversary25 from "@/assets/anniversary-25.png";
 
 export function ArchiveSection() {
   const t = useTranslations("Archive");
