@@ -3,9 +3,10 @@ import { Link } from "@/i18n/navigation";
 type ButtonLinkProps = {
   href: string;
   children: React.ReactNode;
+  newTab?: boolean;
 };
 
-export function ButtonLink({ href, children }: ButtonLinkProps) {
+export function ButtonLink({ href, children, newTab }: ButtonLinkProps) {
   const content = (
     <>
       <span>{children}</span>
@@ -17,7 +18,12 @@ export function ButtonLink({ href, children }: ButtonLinkProps) {
 
   if (href.startsWith("#") || /^https?:\/\//.test(href)) {
     return (
-      <a className="cusec-button-link" href={href}>
+      <a
+        className="cusec-button-link"
+        href={href}
+        target={newTab ? "_blank" : undefined}
+        rel={newTab ? "noopener noreferrer" : undefined}
+      >
         {content}
       </a>
     );

@@ -14,7 +14,9 @@ export function Hero() {
         </div>
         <div className="cusec-hero__intro">
           <p>{t("intro")}</p>
-          <ButtonLink href="#">{t("cta")}</ButtonLink>
+          <ButtonLink href="https://2027.cusec.net" newTab>
+            {t("cta")}
+          </ButtonLink>
         </div>
       </div>
     </Section>

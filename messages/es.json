@@ -15,7 +15,7 @@
   },
   "Hero": {
     "tagline": "Conferencia Canadiense Universitaria de Ingeniería de Software",
-    "intro": "CUSEC es una organización sin fines de lucro que organiza conferencias tecnológicas hechas por estudiantes, para estudiantes. Fundada en 2002, celebramos una conferencia cada año a principios de enero; este año nos estamos preparando para CUSEC 2027.",
+    "intro": "CUSEC es una organización sin fines de lucro que organiza conferencias tecnológicas hechas por estudiantes, para estudiantes. Fundada en 2002, celebramos una conferencia cada año a principios de enero. Este año nos estamos preparando para CUSEC 2027.",
     "cta": "Visitar el sitio de CUSEC 2027"
   },
   "Home": {
@@ -58,7 +58,8 @@
   "Schools": {
     "heading": "Desde todo el <em>país</em>",
     "lede": "Hemos recibido a estudiantes de una amplia variedad de universidades y colegios.",
-    "seeAll": "Ver todas las escuelas participantes"
+    "seeAll": "Ver todas las escuelas participantes",
+    "mapAria": "Mapa de Canadá con marcadores para cada escuela participante."
   },
   "Speakers": {
     "heading": "Ponentes <em>legendarios</em>",

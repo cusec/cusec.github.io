@@ -1,40 +1,75 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useCallback, useMemo, useState } from "react";
+import { CanadaMap, type MapPin } from "@/components/CanadaMap";
 import { ParticipantSchoolsSummary } from "@/components/ParticipantSchoolsSummary";
 import { SchoolCard } from "@/components/SchoolCard";
-import type { Region } from "@/lib/schoolsData";
+import { type Region, type School, schoolColor, schoolSlug } from "@/lib/schoolsData";
 
 type ParticipantSchoolsBrowserProps = {
   regions: Region[];
 };
 
+function schoolsToPins(schools: School[]): MapPin[] {
+  return schools.map((school) => ({
+    id: schoolSlug(school.name),
+    name: school.name,
+    city: school.city,
+    lat: school.lat,
+    lon: school.lon,
+    color: schoolColor(school.name),
+  }));
+}
+
 export function ParticipantSchoolsBrowser({ regions }: ParticipantSchoolsBrowserProps) {
   const t = useTranslations("SchoolsBrowser");
-  const allSchools = regions
-    .flatMap((region) => region.schools)
-    .toSorted((firstSchool, secondSchool) => firstSchool.name.localeCompare(secondSchool.name));
-  const focuses = [
-    {
-      id: "summary",
-      label: t("summary"),
-      description: "",
-      schools: allSchools,
-    },
-    ...regions.map((region) => ({
-      id: region.name.toLowerCase().replace(/\s+/g, "-"),
-      label: region.name,
-      description: t("regionDescription", { region: region.name }),
-      schools: region.schools,
-    })),
-  ];
+  const tSchools = useTranslations("Schools");
+
+  const allSchools = useMemo(
+    () =>
+      regions.flatMap((region) => region.schools).toSorted((a, b) => a.name.localeCompare(b.name)),
+    [regions],
+  );
+
+  const focuses = useMemo(
+    () => [
+      {
+        id: "summary",
+        label: t("summary"),
+        description: "",
+        schools: allSchools,
+      },
+      ...regions.map((region) => ({
+        id: region.name.toLowerCase().replace(/\s+/g, "-"),
+        label: region.name,
+        description: t("regionDescription", { region: region.name }),
+        schools: region.schools,
+      })),
+    ],
+    [allSchools, regions, t],
+  );
 
   const [activeFocusId, setActiveFocusId] = useState(focuses[0].id);
-  const activeFocus = focuses.find((focus) => focus.id === activeFocusId) ?? focuses[0];
+  const [activePinId, setActivePinId] = useState<string | null>(null);
 
-  const panelId = "school-focus-panel";
+  const activeFocus = focuses.find((focus) => focus.id === activeFocusId) ?? focuses[0];
   const isSummary = activeFocus.id === "summary";
+  const panelId = "school-focus-panel";
+
+  const pins = useMemo(() => schoolsToPins(activeFocus.schools), [activeFocus.schools]);
+
+  const handlePinClick = useCallback((id: string) => {
+    setActivePinId(id);
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, []);
+
+  const visibleRegions: Region[] = isSummary
+    ? regions
+    : regions.filter((r) => r.name === activeFocus.label);
 
   return (
     <div className="cusec-schools-browser">
@@ -51,7 +86,6 @@ export function ParticipantSchoolsBrowser({ regions }: ParticipantSchoolsBrowser
         <div className="cusec-school-filter__tabs">
           {focuses.map((focus) => {
             const isActive = focus.id === activeFocus.id;
-
             return (
               <button
                 key={focus.id}
@@ -61,7 +95,10 @@ export function ParticipantSchoolsBrowser({ regions }: ParticipantSchoolsBrowser
                 }`}
                 aria-pressed={isActive}
                 aria-controls={panelId}
-                onClick={() => setActiveFocusId(focus.id)}
+                onClick={() => {
+                  setActiveFocusId(focus.id);
+                  setActivePinId(null);
+                }}
               >
                 <span>{focus.label}</span>
               </button>
@@ -70,27 +107,38 @@ export function ParticipantSchoolsBrowser({ regions }: ParticipantSchoolsBrowser
         </div>
       </div>
 
+      <div className="cusec-schools-map-wrap cusec-schools-map-wrap--interactive">
+        <CanadaMap
+          pins={pins}
+          onPinClick={handlePinClick}
+          activeId={activePinId}
+          ariaLabel={tSchools("mapAria")}
+        />
+      </div>
+
       <section
         id={panelId}
         aria-label={isSummary ? t("summaryAria") : t("regionAria", { region: activeFocus.label })}
       >
-        {isSummary ? (
-          <div className="cusec-summary-with-schools">
-            <ParticipantSchoolsSummary />
+        {isSummary && <ParticipantSchoolsSummary />}
 
-            <div className="cusec-archive-list cusec-schools-list">
-              {activeFocus.schools.map((school, idx) => (
-                <SchoolCard key={`${school.name}-${idx}`} school={school} />
-              ))}
+        <div className="cusec-schools-regions-list">
+          {visibleRegions.map((region) => (
+            <div key={region.name} className="cusec-schools-region-block">
+              <h3 className="cusec-schools-region-title">{region.name}</h3>
+              <div className="cusec-archive-list cusec-schools-list">
+                {region.schools.map((school) => {
+                  const id = schoolSlug(school.name);
+                  return (
+                    <div key={id} id={id} className="cusec-school-anchor">
+                      <SchoolCard school={school} />
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        ) : (
-          <div className="cusec-archive-list cusec-schools-list">
-            {activeFocus.schools.map((school, idx) => (
-              <SchoolCard key={`${school.name}-${idx}`} school={school} />
-            ))}
-          </div>
-        )}
+          ))}
+        </div>
       </section>
     </div>
   );

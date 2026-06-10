@@ -15,7 +15,7 @@
   },
   "Hero": {
     "tagline": "Conférence canadienne universitaire en génie logiciel",
-    "intro": "CUSEC est un organisme à but non lucratif qui organise des conférences technologiques par des étudiants, pour des étudiants. Fondé en 2002, nous organisons une conférence chaque année au début janvier; cette année, nous nous préparons pour CUSEC 2027.",
+    "intro": "CUSEC est un organisme à but non lucratif qui organise des conférences technologiques par des étudiants, pour des étudiants. Fondé en 2002, nous organisons une conférence chaque année au début janvier. Cette année, nous nous préparons pour CUSEC 2027.",
     "cta": "Visiter le site de CUSEC 2027"
   },
   "Home": {
@@ -58,7 +58,8 @@
   "Schools": {
     "heading": "De partout au <em>pays</em>",
     "lede": "Nous avons accueilli des étudiants d’un large éventail d’universités et de collèges.",
-    "seeAll": "Voir toutes les écoles participantes"
+    "seeAll": "Voir toutes les écoles participantes",
+    "mapAria": "Carte du Canada avec des épingles pour chaque école participante."
   },
   "Speakers": {
     "heading": "Conférenciers <em>légendaires</em>",

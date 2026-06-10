@@ -1950,7 +1950,8 @@ export const scrapedArchiveSpeakersData: Record<number, Speaker[]> = {
       name: "Tony Xu",
       image: "/archive-speakers/2025/tony-xu.png",
       year: 2025,
-      title: "MSc Electrical and COEN at McGill, SE from WesternU, Business from Ivey Business School",
+      title:
+        "MSc Electrical and COEN at McGill, SE from WesternU, Business from Ivey Business School",
       bio: "Tony is a MSc electrical and compute engineering student at McGill researching GenAI. He holds a dual degree in software engineering from Western University and business from Ivey Business School. He is researching copyright-free diffusion models. His previous research was in plaque segmentation from ultrasound, optimal needle placement in brachytherapy, driver drowsiness detection, and tornado segmentation from satellite. He is working on a microbiome startup on a mission to take the guesswork out of skincare and provide a better alternative to antibiotics. His industry experience includes AI engineering, asset management, and software engineering.",
       sourceUrl: "https://2025.cusec.net/speakers",
     },

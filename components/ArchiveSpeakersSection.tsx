@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { SectionHeading } from "@/components/SectionHeading";
-import { SpeakerCard } from "@/components/SpeakerCard";
-import { curatedSpeakerNames } from "@/lib/archiveSpeakers";
 import { type ArchiveTalk, resolveArchiveUrl } from "@/lib/archiveYearsData";
 import type { Speaker } from "@/lib/speakersData";
 

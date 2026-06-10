@@ -73,8 +73,7 @@ export function getArchiveSpeakers(year: number): Speaker[] {
     (name) =>
       scrapedByName.get(canonicalSpeakerName(name)) ??
       curatedByCanonicalName.get(canonicalSpeakerName(name)) ??
-      curatedByName.get(name) ??
-      { name, image: placeholder },
+      curatedByName.get(name) ?? { name, image: placeholder },
   );
   const historicNames = new Set(
     historicSpeakers.map((speaker) => canonicalSpeakerName(speaker.name)),

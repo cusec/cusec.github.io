@@ -15,7 +15,7 @@
   },
   "Hero": {
     "tagline": "Canadian University Software Engineering Conference",
-    "intro": "CUSEC is a non-profit organization hosting technology conferences organized by students, for students. Founded in 2002, we host a conference annually in early January, this year we are gearing up for CUSEC 2027.",
+    "intro": "CUSEC is a non-profit organization hosting technology conferences organized by students, for students. Founded in 2002, we host a conference annually in early January. This year, we're gearing up for CUSEC 2027.",
     "cta": "Visit CUSEC 2027's site"
   },
   "Home": {
@@ -58,7 +58,8 @@
   "Schools": {
     "heading": "From Across <em>the Country</em>",
     "lede": "We've welcomed students from a wide range of universities and colleges.",
-    "seeAll": "See All Participant Schools"
+    "seeAll": "See All Participant Schools",
+    "mapAria": "Map of Canada with pins for every participating school."
   },
   "Speakers": {
     "heading": "Legendary <em>Speakers</em>",

@@ -1235,6 +1235,118 @@ a {
   padding-block: clamp(3rem, 8vw, 9.5rem);
 }
 
+.cusec-schools-map-wrap {
+  margin-block: clamp(2rem, 5vw, 3.5rem);
+  width: 100%;
+  max-width: 64rem;
+  margin-inline: auto;
+}
+
+.cusec-schools-map-wrap--interactive {
+  max-width: 100%;
+}
+
+.cusec-canada-map {
+  width: 100%;
+  line-height: 0;
+}
+
+.cusec-canada-map svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cusec-canada-map__land {
+  fill: url(#cusec-map-land-gradient);
+  stroke: rgba(34, 34, 34, 0.38);
+  stroke-width: 0.55;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 2px 6px rgba(34, 34, 34, 0.08));
+}
+
+.cusec-canada-map__pin {
+  outline: none;
+}
+
+.cusec-canada-map__pin-hit {
+  fill: transparent;
+  pointer-events: all;
+}
+
+.cusec-canada-map__pin-stem {
+  stroke: rgba(34, 34, 34, 0.45);
+  stroke-width: 0.6;
+  pointer-events: none;
+}
+
+.cusec-canada-map__pin-anchor {
+  fill: rgba(34, 34, 34, 0.55);
+  pointer-events: none;
+}
+
+.cusec-canada-map__pin-dot {
+  /* Each pin's <g> sets --cusec-pin-color from the school's brand hex.
+     Tint it toward cream so the palette reads soft/editorial instead of
+     screaming saturated. Falls back to ink for pins without a color. */
+  fill: color-mix(in srgb, var(--cusec-pin-color, #222222) 62%, #f4ecd6 38%);
+  stroke: var(--color-page);
+  stroke-width: 1.2;
+  transition:
+    fill 180ms ease,
+    r 180ms ease,
+    stroke-width 180ms ease;
+  pointer-events: none;
+}
+
+.cusec-canada-map--interactive .cusec-canada-map__pin:hover .cusec-canada-map__pin-dot,
+.cusec-canada-map--interactive .cusec-canada-map__pin:focus-visible .cusec-canada-map__pin-dot {
+  r: 5;
+  stroke-width: 1.6;
+  filter: url(#cusec-map-pin-glow);
+}
+
+.cusec-canada-map__pin--active .cusec-canada-map__pin-dot {
+  stroke: var(--color-focus);
+  stroke-width: 1.8;
+  r: 5;
+  filter: url(#cusec-map-pin-glow);
+  animation: cusec-pin-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes cusec-pin-pulse {
+  0%,
+  100% {
+    r: 5;
+    opacity: 1;
+  }
+  50% {
+    r: 6.5;
+    opacity: 0.85;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cusec-canada-map__pin--active .cusec-canada-map__pin-dot {
+    animation: none;
+  }
+}
+
+.cusec-schools-regions-list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.5rem, 6vw, 4.5rem);
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+}
+
+.cusec-schools-region-block {
+  scroll-margin-top: 6rem;
+}
+
+.cusec-school-anchor {
+  scroll-margin-top: 6rem;
+}
+
 .cusec-schools-regions {
   display: flex;
   flex-direction: column;
@@ -1643,11 +1755,50 @@ a {
   gap: 0.75rem;
 }
 
+/* Uniform logo "slot": every school logo fits inside the same fixed-height,
+   width-capped box. Wide logos cap at max-width, tall ones at max-height,
+   so visual weight stays consistent across very different aspect ratios. */
 .cusec-school-archive-item--mosaic .cusec-logo-tile--compact-left {
-  justify-content: flex-start;
-  max-width: min(100%, 9rem);
-  height: clamp(2.35rem, 3.8vw, 3.1rem);
-  margin-inline: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: clamp(5rem, 7vw, 6.5rem);
+  margin-inline: auto;
+  padding: 0.5rem;
+}
+
+.cusec-school-archive-item--mosaic .cusec-logo-tile--compact-left img {
+  width: auto;
+  height: auto;
+  max-width: 75%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cusec-school-archive-item--mosaic .cusec-archive-item__header {
+  justify-content: center;
+  border-bottom: none;
+  padding-bottom: 0;
+  min-height: auto;
+}
+
+.cusec-school-archive-item--mosaic .cusec-archive-item__brand {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cusec-school-archive-item--mosaic .cusec-archive-item__brand > a {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  transition: opacity 160ms ease;
+}
+
+.cusec-school-archive-item--mosaic .cusec-archive-item__brand > a:hover {
+  opacity: 0.7;
 }
 
 .cusec-school-archive-item--mosaic .cusec-archive-item__brand h3 {
@@ -2152,6 +2303,51 @@ a {
 @media (max-width: 600px) {
   .cusec-speakers--rows {
     grid-template-columns: 1fr;
+  }
+}
+
+/* --- Tooltip (Radix) --- */
+
+.cusec-tooltip {
+  z-index: 60;
+  max-width: 22rem;
+  padding: 0.45rem 0.7rem;
+  background: var(--color-ink);
+  color: var(--color-page);
+  border-radius: 4px;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  box-shadow: 0 6px 18px rgba(34, 34, 34, 0.18);
+  user-select: none;
+  animation: cusec-tooltip-in 140ms ease-out;
+  will-change: transform, opacity;
+}
+
+.cusec-tooltip[data-state="closed"],
+.cusec-tooltip[data-state="delayed-open"][data-side] {
+  animation-duration: 120ms;
+}
+
+.cusec-tooltip__arrow {
+  fill: var(--color-ink);
+}
+
+@keyframes cusec-tooltip-in {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cusec-tooltip {
+    animation: none;
   }
 }
 
