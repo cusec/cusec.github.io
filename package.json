@@ -2,14 +2,7 @@
   "name": "cusec-landing",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10.33.0",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": ">=10.33.0",
-      "onFail": "error"
-    }
-  },
+  "packageManager": "pnpm@11.5.3+sha512.7ac1c919341c213a34dc0d02afb7143c5c26ac26ee8c4782deea821b8ac64d2134a081fd8941dae6e29bbb48f58dfc2b7fbceeccc07cb2f09d219d342a4969ed",
   "engines": {
     "node": ">=20",
     "pnpm": ">=10.33.0",
@@ -32,7 +25,7 @@
     "@visx/scale": "4.0.0-alpha.11",
     "@visx/shape": "4.0.0-alpha.11",
     "d3-geo": "^3.1.1",
-    "next": "^15.3.1",
+    "next": "^15.5.18",
     "next-intl": "^4.12.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -52,6 +45,10 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "lefthook"
-    ]
+    ],
+    "overrides": {
+      "d3-color": ">=3.1.0",
+      "postcss": ">=8.5.10"
+    }
   }
 }

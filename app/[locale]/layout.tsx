@@ -5,6 +5,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { Navbar } from "@/components/Navbar";
 import { routing } from "@/i18n/routing";
+import { buildPageMetadata } from "@/lib/seo";
 import "../globals.css";
 
 const karla = Karla({
@@ -34,10 +35,6 @@ const notoSansGurmukhi = Noto_Sans_Gurmukhi({
   variable: "--font-noto-gurmukhi",
   display: "swap",
 });
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cusec.net";
-
-const localePath = (locale: string) => (locale === routing.defaultLocale ? "/" : `/${locale}`);
 
 // Namespaces consumed by "use client" components. Server components resolve
 // their messages during SSR, so only these need to ship in the client bundle.
@@ -76,22 +73,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
-  const languages: Record<string, string> = {
-    "x-default": "/",
-  };
-  for (const supported of routing.locales) {
-    languages[supported] = localePath(supported);
-  }
-
-  return {
-    metadataBase: new URL(siteUrl),
+  return buildPageMetadata({
+    locale,
+    path: "/",
     title: t("title"),
     description: t("description"),
-    alternates: {
-      canonical: localePath(locale),
-      languages,
-    },
-  };
+  });
 }
 
 export default async function LocaleLayout({

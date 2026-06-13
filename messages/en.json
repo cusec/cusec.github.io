@@ -160,8 +160,30 @@
     "copyright": "Copyright 2002-2026. All rights reserved."
   },
   "Metadata": {
-    "title": "CUSEC",
-    "description": "Canadian University Software Engineering Conference, a student-run technology conference founded in 2002."
+    "title": "CUSEC | Canadian University Software Engineering Conference",
+    "description": "CUSEC is the Canadian University Software Engineering Conference, a student-run technology conference for students interested in software engineering and technology.",
+    "pages": {
+      "home": {
+        "title": "CUSEC | Canadian University Software Engineering Conference",
+        "description": "CUSEC is a student-run technology conference for students interested in software engineering and technology."
+      },
+      "archives": {
+        "title": "CUSEC Archives | Past Conferences",
+        "description": "Explore past CUSEC conferences, speakers, sponsors, teams, and conference history."
+      },
+      "pastSpeakers": {
+        "title": "CUSEC Past Speakers | Software Engineering and Tech Talks",
+        "description": "Browse past CUSEC speakers from software engineering, technology, design, research, and industry."
+      },
+      "historicSponsors": {
+        "title": "CUSEC Historic Sponsors | Student Tech Conference Sponsors",
+        "description": "Explore organizations that have supported CUSEC and student software engineering communities."
+      },
+      "participantSchools": {
+        "title": "CUSEC Participating Schools | Canadian Student Tech Community",
+        "description": "Browse universities and colleges represented by CUSEC attendees over the years."
+      }
+    }
   },
   "Pages": {
     "pastSpeakers": {

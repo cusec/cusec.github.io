@@ -2555,6 +2555,33 @@ a {
   line-height: 1.25;
 }
 
+.cusec-archive-sponsors-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  align-items: center;
+  gap: clamp(1.5rem, 3.5vw, 2.5rem) clamp(1.5rem, 4vw, 3rem);
+  margin: 0 0 clamp(2rem, 4.5vw, 3.25rem);
+  padding: 0;
+}
+
+.cusec-archive-sponsors-grid__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(3.5rem, 6vw, 4.5rem);
+}
+
+.cusec-archive-sponsors-grid .cusec-logo-tile {
+  max-width: 11rem;
+  height: clamp(3rem, 5vw, 4rem);
+}
+
+.cusec-archive-sponsors-grid .cusec-school-name-fallback {
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  color: var(--color-body);
+}
+
 .cusec-archive-subheading {
   margin: clamp(2rem, 4vw, 3rem) 0 clamp(1.25rem, 2.5vw, 1.75rem);
   font-family: var(--font-ui);

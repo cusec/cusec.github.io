@@ -27,7 +27,7 @@ import gregWilson from "../assets/speaker-photos/greg_wilson.jpg";
 import gregKroahHartman from "../assets/speaker-photos/greg-kroah-hartman.png";
 import jeffAtwood from "../assets/speaker-photos/jeff-atwood.png";
 import jeffUllman from "../assets/speaker-photos/jeff-ullman.png";
-import jocelynMurphy from "../assets/speaker-photos/jocelyn_murphy.png";
+import jocelyneMurphy from "../assets/speaker-photos/jocelyne_murphy.png";
 import joelSpolsky from "../assets/speaker-photos/joel-spolsky.png";
 import joellePineau from "../assets/speaker-photos/joelle-pineau.png";
 import juliaEvans from "../assets/speaker-photos/julia-evans.png";
@@ -35,14 +35,14 @@ import kathySierra from "../assets/speaker-photos/kathy-sierra.png";
 import kentBeck from "../assets/speaker-photos/kent-beck.png";
 import laurenceLiang from "../assets/speaker-photos/laurence_liang.jpg";
 import lynChen from "../assets/speaker-photos/lyn_chen.jpg";
-import marceloArdilles from "../assets/speaker-photos/marcelo-ardilles.jpg";
+import marceloArdiles from "../assets/speaker-photos/marcelo-ardiles.jpg";
 import matthewMacraeBovell from "../assets/speaker-photos/matthew_macra-bovell.jpg";
 import mayaLekhi from "../assets/speaker-photos/maya_lekhi.jpg";
 import michaelSeibel from "../assets/speaker-photos/michael-seibel.png";
 import mukundMauji from "../assets/speaker-photos/mukund_mauji.jpg";
 import nivyKani from "../assets/speaker-photos/nivy_kani.jpg";
+import pirijanKeth from "../assets/speaker-photos/pirijan_keth.jpg";
 import prashanthiRamesh from "../assets/speaker-photos/prashanthi_ramesh.jpg";
-import prijanKeth from "../assets/speaker-photos/prijan_keth.jpg";
 import rababAzeem from "../assets/speaker-photos/rabab_azeem.jpg";
 import richardStallman from "../assets/speaker-photos/richard-stallman.png";
 import ridaMehdi from "../assets/speaker-photos/rida_mehdi.jpg";
@@ -122,16 +122,16 @@ export const speakersData: Speaker[] = [
   archived("Gazi Jarin", gaziJarin),
   archived("Georges-Antoine Assi", georgesAntoineAssi),
   archived("Greg Wilson", gregWilson),
-  archived("Jocelyn Murphy", jocelynMurphy),
+  archived("Jocelyne Murphy", jocelyneMurphy),
   archived("Laurence Liang", laurenceLiang),
   archived("Lyn Chen", lynChen),
-  archived("Marcelo Ardilles", marceloArdilles),
+  archived("Marcelo Ardiles", marceloArdiles),
   archived("Matthew MacRae-Bovell", matthewMacraeBovell),
   archived("Maya Lekhi", mayaLekhi),
   archived("Mukund Mauji", mukundMauji),
   archived("Nivy Kani", nivyKani),
   archived("Prashanthi Ramesh", prashanthiRamesh),
-  archived("Prijan Keth", prijanKeth),
+  archived("Pirijan Keth", pirijanKeth),
   archived("Rabab Azeem", rababAzeem),
   archived("Rida Mehdi", ridaMehdi),
   archived("Rue Sriharsha", rueSriharsha),

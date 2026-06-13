@@ -159,6 +159,32 @@
   "Footer": {
     "copyright": "Copyright 2002-2026. Tous droits réservés."
   },
+  "Metadata": {
+    "title": "CUSEC | Conférence canadienne universitaire en génie logiciel",
+    "description": "CUSEC est la Conférence canadienne universitaire en génie logiciel, une conférence technologique organisée par des étudiants pour les étudiants qui s'intéressent au génie logiciel et à la technologie.",
+    "pages": {
+      "home": {
+        "title": "CUSEC | Conférence canadienne universitaire en génie logiciel",
+        "description": "CUSEC est une conférence technologique organisée par des étudiants pour les étudiants qui s'intéressent au génie logiciel et à la technologie."
+      },
+      "archives": {
+        "title": "Archives de CUSEC | Conférences passées",
+        "description": "Explorez les anciennes conférences CUSEC, les conférenciers, les commanditaires, les équipes et l'histoire de la conférence."
+      },
+      "pastSpeakers": {
+        "title": "Conférenciers passés de CUSEC | Génie logiciel et technologie",
+        "description": "Parcourez les conférenciers passés de CUSEC issus du génie logiciel, de la technologie, du design, de la recherche et de l'industrie."
+      },
+      "historicSponsors": {
+        "title": "Commanditaires historiques de CUSEC | Conférence technologique étudiante",
+        "description": "Découvrez les organisations qui ont soutenu CUSEC et les communautés étudiantes en génie logiciel."
+      },
+      "participantSchools": {
+        "title": "Écoles participantes de CUSEC | Communauté technologique étudiante canadienne",
+        "description": "Parcourez les universités et collèges représentés par les participants de CUSEC au fil des ans."
+      }
+    }
+  },
   "Pages": {
     "pastSpeakers": {
       "heading": "Conférenciers <em>passés</em>",

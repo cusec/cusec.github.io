@@ -1891,7 +1891,7 @@ export const scrapedArchiveSpeakersData: Record<number, Speaker[]> = {
       sourceUrl: "https://2025.cusec.net/speakers",
     },
     {
-      name: "Maya Lehki",
+      name: "Maya Lekhi",
       image: "/archive-speakers/2025/maya-lehki.png",
       year: 2025,
       title: "Computer Science and Business at Western University and Ivey School of Business",
