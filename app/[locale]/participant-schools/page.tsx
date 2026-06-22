@@ -78,6 +78,7 @@ export default async function ParticipantSchoolsPage({
               title={t.rich("heading", { em: (chunks) => <em>{chunks}</em> })}
               lede={t("lede")}
               align="left"
+              as="h1"
             />
 
             <ParticipantSchoolsBrowser regions={regionsData} />

@@ -428,7 +428,7 @@ a {
   margin-bottom: var(--section-gap-tight);
 }
 
-.cusec-section-heading h2 {
+.cusec-section-heading :is(h1, h2) {
   margin: 0;
   color: var(--color-ink);
   font-family: var(--font-ui);
@@ -439,11 +439,11 @@ a {
   text-wrap: balance;
 }
 
-.cusec-section-heading h2 em {
+.cusec-section-heading :is(h1, h2) em {
   font-style: italic;
 }
 
-.cusec-archive-section .cusec-section-heading h2 em {
+.cusec-archive-section .cusec-section-heading :is(h1, h2) em {
   font-style: normal;
 }
 

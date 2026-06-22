@@ -16,6 +16,19 @@ export const speakerFocuses: SpeakerFocus[] = [
 ];
 
 export const legendNames = [
+  "Michelle Zatlyn",
+  "Leah Culver",
+  "Lyn Chen",
+  "Joelle Pineau",
+  "Sandi Metz",
+  "Camille Fournier",
+  "Eva Galperin",
+  "Kathy Sierra",
+  "Julia Evans",
+  "Gayle Laakmann McDowell",
+  "Marsha Chechik",
+  "Laurie Hendren",
+  "Caitlin Kelleher",
   "Kent Beck",
   "Richard Stallman",
   "Joel Spolsky",

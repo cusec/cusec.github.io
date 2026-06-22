@@ -41,7 +41,7 @@ export default async function PastSpeakersPage({
   const speakersJsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: t("heading").replace(/<\/?em>/g, ""),
+    name: t.raw("heading").replace(/<\/?em>/g, ""),
     description: t("lede"),
     url: pageUrl,
     mainEntity: {
@@ -74,6 +74,7 @@ export default async function PastSpeakersPage({
               title={t.rich("heading", { em: (chunks) => <em>{chunks}</em> })}
               lede={t("lede")}
               align="left"
+              as="h1"
             />
 
             <PastSpeakersBrowser speakers={speakersData} />

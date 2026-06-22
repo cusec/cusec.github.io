@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
 
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cusec.net";
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.cusec.net";
 export const defaultOgImage = "/og-image.png";
 
 export type SeoPageConfig = {

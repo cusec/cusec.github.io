@@ -63,6 +63,7 @@ export default async function ArchivesIndexPage({
               title={t.rich("indexHeading", { em: (chunks) => <em>{chunks}</em> })}
               lede={t("indexLede")}
               align="left"
+              as="h1"
             />
 
             <ul className="cusec-archive-rows">

@@ -63,6 +63,7 @@ export default async function HistoricSponsorsPage({
               title={t.rich("heading", { em: (chunks) => <em>{chunks}</em> })}
               lede={t("lede")}
               align="left"
+              as="h1"
             />
 
             <HistoricSponsorsBrowser sponsors={sponsorsData} />

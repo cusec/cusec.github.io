@@ -9,7 +9,9 @@ import ananyaNair from "../assets/speaker-photos/ananya_nair.jpg";
 import augusteRame from "../assets/speaker-photos/auguste_rame.jpg";
 import bretVictor from "../assets/speaker-photos/bret-victor.png";
 import bruceSchneier from "../assets/speaker-photos/bruce-schneier.png";
+import caitlinKelleher from "../assets/speaker-photos/caitlin_kelleher.jpg";
 import cameronAlexander from "../assets/speaker-photos/cameron_alexander.jpg";
+import camilleFournier from "../assets/speaker-photos/camille-fournier.png";
 import claudiuScotnotis from "../assets/speaker-photos/claudiu_scotnotis.jpg";
 import davidHeinemeierHansson from "../assets/speaker-photos/david-heinemeier-hansson.png";
 import devonKnight from "../assets/speaker-photos/devon_knight.jpg";
@@ -17,9 +19,11 @@ import douglasCrockford from "../assets/speaker-photos/douglas-crackford.png";
 import dylanSteen from "../assets/speaker-photos/dylan_steen.jpg";
 import edwinSarmiento from "../assets/speaker-photos/edwin_sarmiento.jpg";
 import eleanorRumsey from "../assets/speaker-photos/eleanor_rumsey.jpg";
+import evaGalperin from "../assets/speaker-photos/eva-galperin.jpg";
 import fatimaTaj from "../assets/speaker-photos/fatima_taj.jpg";
 import florentGiraud from "../assets/speaker-photos/florent_giraud.jpg";
 import gailCarmichael from "../assets/speaker-photos/gail_carmichael.jpg";
+import gayleLaakmannMcdowell from "../assets/speaker-photos/gayle-laakmann-mcdowell.jpg";
 import gaziJarin from "../assets/speaker-photos/gazi_jarin.jpg";
 import georgesAntoineAssi from "../assets/speaker-photos/georges-antoine_assi.png";
 import gradyBooch from "../assets/speaker-photos/grady-booch.png";
@@ -34,11 +38,15 @@ import juliaEvans from "../assets/speaker-photos/julia-evans.png";
 import kathySierra from "../assets/speaker-photos/kathy-sierra.png";
 import kentBeck from "../assets/speaker-photos/kent-beck.png";
 import laurenceLiang from "../assets/speaker-photos/laurence_liang.jpg";
+import laurieHendren from "../assets/speaker-photos/laurie-hendren.jpg";
+import leahCulver from "../assets/speaker-photos/leah_culver.jpg";
 import lynChen from "../assets/speaker-photos/lyn_chen.jpg";
 import marceloArdiles from "../assets/speaker-photos/marcelo-ardiles.jpg";
+import marshaChechik from "../assets/speaker-photos/marsha_chechik.jpg";
 import matthewMacraeBovell from "../assets/speaker-photos/matthew_macra-bovell.jpg";
 import mayaLekhi from "../assets/speaker-photos/maya_lekhi.jpg";
 import michaelSeibel from "../assets/speaker-photos/michael-seibel.png";
+import michelleZatlyn from "../assets/speaker-photos/michelle-zatlyn.png";
 import mukundMauji from "../assets/speaker-photos/mukund_mauji.jpg";
 import nivyKani from "../assets/speaker-photos/nivy_kani.jpg";
 import pirijanKeth from "../assets/speaker-photos/pirijan_keth.jpg";
@@ -111,6 +119,7 @@ export const speakersData: Speaker[] = [
   archived("Ananya Nair", ananyaNair),
   archived("Auguste Rame", augusteRame),
   archived("Cameron Alexander", cameronAlexander),
+  archived("Caitlin Kelleher", caitlinKelleher),
   archived("Claudiu Scotnotis", claudiuScotnotis),
   archived("Devon Knight", devonKnight),
   archived("Dylan Steen", dylanSteen),
@@ -124,8 +133,15 @@ export const speakersData: Speaker[] = [
   archived("Greg Wilson", gregWilson),
   archived("Jocelyne Murphy", jocelyneMurphy),
   archived("Laurence Liang", laurenceLiang),
+  archived("Leah Culver", leahCulver),
   archived("Lyn Chen", lynChen),
+  archived("Michelle Zatlyn", michelleZatlyn),
+  archived("Camille Fournier", camilleFournier),
+  archived("Eva Galperin", evaGalperin),
+  archived("Gayle Laakmann McDowell", gayleLaakmannMcdowell),
+  archived("Laurie Hendren", laurieHendren),
   archived("Marcelo Ardiles", marceloArdiles),
+  archived("Marsha Chechik", marshaChechik),
   archived("Matthew MacRae-Bovell", matthewMacraeBovell),
   archived("Maya Lekhi", mayaLekhi),
   archived("Mukund Mauji", mukundMauji),
@@ -146,6 +162,10 @@ export const speakersData: Speaker[] = [
 
 // The curated set shown on the landing page before "See All Speakers".
 export const featuredSpeakers: Speaker[] = pickByKey(speakersData, "name", [
+  "Kathy Sierra",
+  "Julia Evans",
+  "Joelle Pineau",
+  "Sandi Metz",
   "Kent Beck",
   "Richard Stallman",
   "Joel Spolsky",
