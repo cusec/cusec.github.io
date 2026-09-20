@@ -96,12 +96,7 @@ export default async function ArchivesIndexPage({
                           </p>
                         ) : null}
                         <p className="cusec-archive-row__summary">{summary}</p>
-                        <span className="cusec-archive-link">
-                          {t("viewEvent")}{" "}
-                          <span aria-hidden="true" className="cusec-button-link__arrow">
-                            -&gt;
-                          </span>
-                        </span>
+                        <span className="cusec-archive-link">{t("viewEvent")}</span>
                       </div>
                     </Link>
                   </li>

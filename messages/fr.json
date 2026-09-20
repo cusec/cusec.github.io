@@ -14,12 +14,13 @@
     "label": "Choisir la langue"
   },
   "Hero": {
-    "tagline": "Conférence canadienne universitaire en génie logiciel",
-    "intro": "CUSEC est un organisme à but non lucratif qui organise des conférences technologiques par des étudiants, pour des étudiants. Fondé en 2002, nous organisons une conférence chaque année au début janvier. Cette année, nous nous préparons pour CUSEC 2027.",
-    "cta": "Visiter le site de CUSEC 2027"
+    "tagline": "Conférence universitaire canadienne en informatique et génie logiciel",
+    "intro": "CUCIL est un organisme à but non lucratif qui organise des conférences technologiques par des étudiants, pour des étudiants. Fondé en 2002, nous organisons une conférence chaque année au début janvier. Cette année, nous nous préparons pour CUSEC 2027.",
+    "cta": "CUSEC 2027 — du 7 au 9 janvier, Montréal"
   },
   "Home": {
-    "bandAlt": "Des participants de CUSEC réunis pour une photo de groupe dans une salle de conférence."
+    "bandAlt": "Des participants de CUCIL réunis pour une photo de groupe dans une salle de conférence.",
+    "organizationDescription": "CUCIL est la plus ancienne conférence étudiante en génie logiciel au Canada, organisée par des étudiants pour des étudiants depuis 2002."
   },
   "Stats": {
     "statement": "Depuis plus de <b>25 ans</b>, nous avons accueilli plus de <b>10 000</b> participants, plus de <b>270</b> commanditaires et plus de <b>380</b> conférenciers"
@@ -38,20 +39,20 @@
   },
   "Editorial": {
     "whatIsCusec": {
-      "heading": "Qu’<em>est-ce que</em> CUSEC?",
+      "heading": "Qu’<em>est-ce que</em> CUCIL?",
       "alt": "Un champ d’un vert éclatant sous un ciel bleu intense.",
-      "body1": "La Conférence canadienne universitaire en génie logiciel est décrite par beaucoup comme le <hl>rassemblement de l’avenir du génie logiciel</hl>. Des étudiants passionnés de génie logiciel, venus de partout au Canada et de concentrations diverses, se réunissent sous un même toit pendant trois journées complètes pour apprendre auprès des conférenciers, chercheurs et professionnels les plus célèbres et les plus recherchés du génie logiciel dans le monde.",
-      "body2": "Mais il ne s’agit pas que des présentations. La conférence vous donne l’occasion de rencontrer d’autres personnes qui partagent votre passion - de voir ce que créent vos pairs et comment ils expérimentent dans la technologie. <hl>CUSEC vous offre l’occasion d’avoir des conversations ouvertes avec les figures qui façonnent l’industrie ainsi qu’avec les personnes qui bâtissent les choses que nous utilisons au quotidien.</hl> Vous permettant d’apprendre directement des personnes que vous admirez. Et n’oubliez pas, nous avons aussi un salon de l’emploi en pleine croissance qui pourrait vous intéresser."
+      "body1": "CUCIL — la Conférence universitaire canadienne en informatique et génie logiciel, connue en anglais sous le nom de CUSEC — est décrite par beaucoup comme le <hl>rassemblement de l’avenir du génie logiciel</hl>. Des étudiants passionnés de génie logiciel, venus de partout au Canada et de concentrations diverses, se réunissent sous un même toit pendant trois journées complètes pour apprendre auprès des conférenciers, chercheurs et professionnels les plus célèbres et les plus recherchés du génie logiciel dans le monde.",
+      "body2": "Mais il ne s’agit pas que des présentations. La conférence vous donne l’occasion de rencontrer d’autres personnes qui partagent votre passion - de voir ce que créent vos pairs et comment ils expérimentent dans la technologie. <hl>CUCIL vous offre l’occasion d’avoir des conversations ouvertes avec les figures qui façonnent l’industrie ainsi qu’avec les personnes qui bâtissent les choses que nous utilisons au quotidien.</hl> Vous permettant d’apprendre directement des personnes que vous admirez. Et n’oubliez pas, nous avons aussi un salon de l’emploi en pleine croissance qui pourrait vous intéresser."
     },
     "isCusecForMe": {
-      "heading": "CUSEC est-elle pour <em>moi</em>?",
+      "heading": "CUCIL est-elle pour <em>moi</em>?",
       "alt": "Un champ ensoleillé avec des arbres et un ciel bleu.",
-      "body1": "Peu importe que vous soyez au premier cycle en génie ou que vous prépariez votre MBA, <hl>si vous vous intéressez à l’état actuel de l’industrie, alors CUSEC est pour vous.</hl> La conférence est organisée principalement en pensant aux étudiants de premier cycle et des cycles supérieurs en génie logiciel. Cela ne signifie pas que d’autres personnes ne peuvent pas en profiter : le programme est toujours de la plus haute qualité et quiconque s’y intéresse peut en tirer beaucoup."
+      "body1": "Peu importe que vous soyez au premier cycle en génie ou que vous prépariez votre MBA, <hl>si vous vous intéressez à l’état actuel de l’industrie, alors CUCIL est pour vous.</hl> La conférence est organisée principalement en pensant aux étudiants de premier cycle et des cycles supérieurs en génie logiciel. Cela ne signifie pas que d’autres personnes ne peuvent pas en profiter : le programme est toujours de la plus haute qualité et quiconque s’y intéresse peut en tirer beaucoup."
     }
   },
   "Sponsors": {
     "heading": "Soutenu par les <em>meilleurs</em>",
-    "lede": "CUSEC ne serait pas possible sans nos formidables commanditaires qui nous soutiennent depuis des années.",
+    "lede": "CUCIL ne serait pas possible sans nos formidables commanditaires qui nous soutiennent depuis des années.",
     "seeAll": "Voir tous les commanditaires historiques",
     "logoAlt": "Logo de {name}"
   },
@@ -101,16 +102,16 @@
   },
   "Archive": {
     "heading": "Conférences <em>passées</em>",
-    "lede": "Explorez plus de deux décennies d’histoire, de conférenciers et d’événements de CUSEC.",
+    "lede": "Explorez plus de deux décennies d’histoire, de conférenciers et d’événements de CUCIL.",
     "visitSite": "Visiter le site",
     "seeFullArchive": "Voir toutes les archives",
     "seeLess": "Voir moins",
-    "logoAlt": "Logo de CUSEC {year}",
+    "logoAlt": "Logo de CUCIL {year}",
     "previewEyebrow": "Archives",
     "previewCount": "{count} éditions",
     "previewHint": "Accéder aux archives complètes de la conférence",
-    "previewSummary": "Parcourez les archives complètes de CUSEC par année, avec les pages d’événements, les conférenciers, les équipes, les actes et les sites de conférence encore disponibles.",
-    "yearRailLabel": "Années des archives CUSEC",
+    "previewSummary": "Parcourez les archives complètes de CUCIL par année, avec les pages d’événements, les conférenciers, les équipes, les actes et les sites de conférence encore disponibles.",
+    "yearRailLabel": "Années des archives CUCIL",
     "info": {
       "2011": "Une décennie à inspirer l’avenir de la technologie canadienne.",
       "2012": "Mise en valeur de l’essor de l’infonuagique et des mégadonnées.",
@@ -122,58 +123,58 @@
       "2018": "Discussions sur le logiciel libre et les technologies décentralisées.",
       "2019": "Des voix diverses en technologie qui façonnent la prochaine génération.",
       "2020": "Regards prépandémiques sur l’architecture des systèmes et les plateformes web.",
-      "2021": "La première expérience CUSEC entièrement virtuelle.",
+      "2021": "La première expérience CUCIL entièrement virtuelle.",
       "2022": "Relier les étudiants du monde entier grâce à des expériences virtuelles.",
       "2023": "Le retour aux rencontres, à l’apprentissage et au partage d’idées en personne.",
       "2024": "Explorer l’intelligence artificielle, l’accessibilité et les pratiques logicielles modernes.",
       "2025": "Bâtir ensemble l’avenir de la technologie à Montréal.",
-      "2026": "Le 25e anniversaire de la Conférence canadienne universitaire en génie logiciel."
+      "2026": "Le 25e anniversaire de la Conférence universitaire canadienne en informatique et génie logiciel."
     },
     "detailed": {
-      "2003": "La deuxième édition de CUSEC a prouvé que l’événement inaugural n’était pas un hasard. Elle a confirmé la nécessité d’une conférence canadienne de génie logiciel menée par des étudiants, offrant aux participants une plateforme essentielle pour apprendre de professionnels et rencontrer des pairs en début de parcours.",
+      "2003": "La deuxième édition de CUCIL a prouvé que l’événement inaugural n’était pas un hasard. Elle a confirmé la nécessité d’une conférence canadienne de génie logiciel menée par des étudiants, offrant aux participants une plateforme essentielle pour apprendre de professionnels et rencontrer des pairs en début de parcours.",
       "2004": "Forte du succès de ses premières éditions, CUSEC 2004 a élargi sa portée en réunissant des étudiants d’un plus grand nombre d’universités canadiennes. L’événement a favorisé les liens interprovinciaux et établi la conférence comme un véritable rassemblement national.",
       "2005": "CUSEC 2005 a saisi l’élan du mouvement du logiciel libre. La conférence a souligné l’importance de contribuer à des bases de code publiques, d’apprendre de pairs partout dans le monde et d’intégrer davantage les valeurs open source aux programmes d’informatique.",
       "2006": "En célébrant son cinquième anniversaire, CUSEC 2006 a marqué une étape importante. Elle proposait des regards rétrospectifs sur l’évolution de l’industrie depuis la bulle Internet et se tournait vers un avenir dominé par la collaboration ouverte et des outils de développement plus accessibles.",
       "2007": "CUSEC 2007 s’est plongée dans l’architecture logicielle et les patrons de conception. Bien avant l’omniprésence des frameworks modernes, les conférenciers ont aidé les étudiants à comprendre les principes durables de systèmes robustes, extensibles et maintenables.",
       "2008": "Alors que le Web 2.0 transformait les interactions en ligne, CUSEC 2008 a présenté des conférences sur les applications Internet riches, le contenu généré par les utilisateurs et les nouveaux paradigmes du développement web. La conférence a renforcé sa réputation d’événement phare pour les étudiants canadiens en informatique.",
-      "2009": "En 2009, l’industrie du logiciel adoptait rapidement les méthodes agiles. CUSEC a présenté ces pratiques aux étudiants avec des ateliers sur la programmation en binôme, le développement piloté par les tests et la dynamique d’équipe dans un paysage technologique en évolution.",
-      "2010": "L’édition 2010 de CUSEC a exploré les liens profonds entre matériel et logiciel, accueillant des conférenciers pionniers d’Amérique du Nord pour parler d’ingénierie des systèmes, des premières applications mobiles et de la scène technologique indépendante. Elle est demeurée un lieu de rencontre essentiel pour les étudiants."
+      "2009": "En 2009, l’industrie du logiciel adoptait rapidement les méthodes agiles. CUCIL a présenté ces pratiques aux étudiants avec des ateliers sur la programmation en binôme, le développement piloté par les tests et la dynamique d’équipe dans un paysage technologique en évolution.",
+      "2010": "L’édition 2010 de CUCIL a exploré les liens profonds entre matériel et logiciel, accueillant des conférenciers pionniers d’Amérique du Nord pour parler d’ingénierie des systèmes, des premières applications mobiles et de la scène technologique indépendante. Elle est demeurée un lieu de rencontre essentiel pour les étudiants."
     }
   },
   "Archives": {
     "indexHeading": "<em>Archives</em> des événements",
-    "indexLede": "Explorez chaque conférence CUSEC — son équipe, ses conférenciers et ses moments forts, année après année.",
+    "indexLede": "Explorez chaque conférence CUCIL — son équipe, ses conférenciers et ses moments forts, année après année.",
     "indexSummaryPlaceholder": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
     "viewEvent": "Voir l'événement",
-    "metaTitle": "CUSEC {year} — Archives",
+    "metaTitle": "CUCIL {year} — Archives",
     "backToArchives": "Retour aux archives",
-    "logoAlt": "Logo de CUSEC {year}",
+    "logoAlt": "Logo de CUCIL {year}",
     "visitSite": "Visiter le site",
-    "visitYearSite": "Visiter le site de CUSEC {year}",
+    "visitYearSite": "Visiter le site de CUCIL {year}",
     "speakersHeading": "<em>Conférenciers</em> et présentations",
-    "speakersLede": "Les voix qui sont montées sur scène lors de cette édition de CUSEC.",
+    "speakersLede": "Les voix qui sont montées sur scène lors de cette édition de CUCIL.",
     "talksHeading": "Présentations",
     "noSpeakers": "Les informations sur les conférenciers de cette année sont en cours de compilation.",
     "teamHeading": "<em>Équipe</em> organisatrice",
     "teamLede": "Les étudiants qui ont donné vie à cette conférence.",
     "noTeam": "Les informations sur l'équipe de cette année sont en cours de compilation.",
     "sponsorsHeading": "<em>Commanditaires</em>",
-    "sponsorsLede": "Les partenaires qui ont rendu cette édition de CUSEC possible.",
+    "sponsorsLede": "Les partenaires qui ont rendu cette édition de CUCIL possible.",
     "noSponsors": "Les informations sur les commanditaires de cette année sont en cours de compilation.",
     "seeHistoricSponsors": "Voir tous les commanditaires historiques",
     "highlightsHeading": "<em>Moments forts</em>",
-    "highlightsLede": "Actes, photos et plus encore de cette édition de CUSEC.",
+    "highlightsLede": "Actes, photos et plus encore de cette édition de CUCIL.",
     "noHighlights": "Les moments forts de cette année sont en cours de compilation."
   },
   "Footer": {
     "copyright": "Copyright 2002-2026. Tous droits réservés."
   },
   "Metadata": {
-    "title": "CUSEC | Conférence canadienne universitaire en génie logiciel",
-    "description": "CUSEC est la Conférence canadienne universitaire en génie logiciel, une conférence technologique organisée par des étudiants pour les étudiants qui s'intéressent au génie logiciel et à la technologie.",
+    "title": "CUSEC | Conférence universitaire canadienne en informatique et génie logiciel",
+    "description": "CUSEC est la Conférence universitaire canadienne en informatique et génie logiciel, une conférence technologique organisée par des étudiants pour les étudiants qui s'intéressent au génie logiciel et à la technologie.",
     "pages": {
       "home": {
-        "title": "CUSEC | Conférence canadienne universitaire en génie logiciel",
+        "title": "CUSEC | Conférence universitaire canadienne en informatique et génie logiciel",
         "description": "CUSEC est une conférence technologique organisée par des étudiants pour les étudiants qui s'intéressent au génie logiciel et à la technologie."
       },
       "archives": {
@@ -197,15 +198,15 @@
   "Pages": {
     "pastSpeakers": {
       "heading": "Conférenciers <em>passés</em>",
-      "lede": "Rencontrez les personnes remarquables qui ont pris la parole à CUSEC au fil des ans."
+      "lede": "Rencontrez les personnes remarquables qui ont pris la parole à CUCIL au fil des ans."
     },
     "participantSchools": {
       "heading": "Écoles <em>participantes</em>",
-      "lede": "Parcourez les universités et collèges représentés par les participants de CUSEC au fil des ans."
+      "lede": "Parcourez les universités et collèges représentés par les participants de CUCIL au fil des ans."
     },
     "historicSponsors": {
       "heading": "Commanditaires <em>historiques</em>",
-      "lede": "Rencontrez les formidables partenaires qui ont soutenu CUSEC au fil des ans."
+      "lede": "Rencontrez les formidables partenaires qui ont soutenu CUCIL au fil des ans."
     }
   },
   "SpeakersBrowser": {
@@ -214,7 +215,7 @@
     "focus": {
       "legends": {
         "label": "Légendes",
-        "description": "Les noms les plus reconnaissables et les figures les plus influentes ayant pris la parole à CUSEC."
+        "description": "Les noms les plus reconnaissables et les figures les plus influentes ayant pris la parole à CUCIL."
       },
       "2020s": {
         "label": "Années 2020",
@@ -232,11 +233,11 @@
   },
   "SponsorsBrowser": {
     "ariaIndustry": "Secteur d’activité",
-    "note": "Ces archives ne constituent pas une liste exhaustive de tous les commanditaires de CUSEC.",
+    "note": "Ces archives ne constituent pas une liste exhaustive de tous les commanditaires de CUCIL.",
     "focus": {
       "all": {
         "label": "Tous",
-        "description": "Tous les commanditaires des archives de CUSEC."
+        "description": "Tous les commanditaires des archives de CUCIL."
       },
       "platforms-infra": {
         "label": "Plateformes et infrastructure",
@@ -262,8 +263,8 @@
   },
   "SchoolsBrowser": {
     "summary": "Sommaire",
-    "summaryDescription": "Établissements de toutes les régions représentés par les participants de CUSEC au fil des ans.",
-    "regionDescription": "Établissements de {region} représentés par les participants de CUSEC au fil des ans.",
+    "summaryDescription": "Établissements de toutes les régions représentés par les participants de CUCIL au fil des ans.",
+    "regionDescription": "Établissements de {region} représentés par les participants de CUCIL au fil des ans.",
     "note": "Cette liste historique n’est pas un registre de l’année en cours ni un répertoire officiel de partenariats scolaires.",
     "summaryAria": "Sommaire historique",
     "regionAria": "Écoles de {region}"

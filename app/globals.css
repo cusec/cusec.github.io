@@ -200,7 +200,9 @@ a {
   outline-offset: 4px;
 }
 
-.cusec-button-link__arrow {
+.cusec-button-link::after,
+.cusec-archive-link::after {
+  content: "->";
   font-feature-settings: "tnum";
 }
 

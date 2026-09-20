@@ -14,7 +14,7 @@ import { SponsorsSection } from "@/components/SponsorsSection";
 import { StatsStatement } from "@/components/StatsStatement";
 import { TestimonialsGrid } from "@/components/TestimonialsGrid";
 import { editorialSections, testimonials } from "@/lib/content";
-import { absoluteUrl, buildPageMetadata, siteUrl } from "@/lib/seo";
+import { buildPageMetadata, siteUrl } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -39,9 +39,35 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${siteUrl}/#organization`,
     name: "CUSEC",
-    alternateName: "Canadian University Software Engineering Conference",
-    url: absoluteUrl(locale, "/"),
+    legalName: "Canadian University Software Engineering Conference",
+    alternateName: [
+      "Canadian University Software Engineering Conference",
+      "CUCIL",
+      "Conf\u00e9rence universitaire canadienne en informatique et g\u00e9nie logiciel",
+    ],
+    url: siteUrl,
+    logo: `${siteUrl}/icon.png`,
+    foundingDate: "2002",
+    description: t("organizationDescription"),
+    areaServed: "CA",
+    sameAs: [
+      "https://ca.linkedin.com/company/cusec",
+      "https://www.instagram.com/cusecofficial",
+      "https://twitter.com/cusec",
+      "https://www.facebook.com/cusecofficial",
+      "https://github.com/cusec",
+    ],
+  };
+  const eventSeriesJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "EventSeries",
+    "@id": `${siteUrl}/#series`,
+    name: "Canadian University Software Engineering Conference",
+    alternateName: "CUSEC",
+    url: siteUrl,
+    organizer: { "@id": `${siteUrl}/#organization` },
   };
   const websiteJsonLd = {
     "@context": "https://schema.org",
@@ -53,6 +79,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   return (
     <>
       <JsonLd data={organizationJsonLd} />
+      <JsonLd data={eventSeriesJsonLd} />
       <JsonLd data={websiteJsonLd} />
       <PageShell>
         <Hero />
