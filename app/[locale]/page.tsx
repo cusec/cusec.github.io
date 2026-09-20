@@ -60,6 +60,15 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       "https://github.com/cusec",
     ],
   };
+  const eventSeriesJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "EventSeries",
+    "@id": `${siteUrl}/#series`,
+    name: "Canadian University Software Engineering Conference",
+    alternateName: "CUSEC",
+    url: siteUrl,
+    organizer: { "@id": `${siteUrl}/#organization` },
+  };
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -70,6 +79,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   return (
     <>
       <JsonLd data={organizationJsonLd} />
+      <JsonLd data={eventSeriesJsonLd} />
       <JsonLd data={websiteJsonLd} />
       <PageShell>
         <Hero />
