@@ -76,6 +76,9 @@ export function buildPageMetadata({
         "max-video-preview": -1,
       },
     },
+    verification: {
+      google: "rr8EHeTgYYXM7QyXAgy2-R715ahKGs6lkLyR9vsKHMY",
+    },
   };
 }
 
