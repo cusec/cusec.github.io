@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { EB_Garamond, Karla, Noto_Sans_Gurmukhi, Noto_Sans_SC } from "next/font/google";
 import { notFound } from "next/navigation";
@@ -112,6 +113,7 @@ export default async function LocaleLayout({
             {children}
           </div>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
