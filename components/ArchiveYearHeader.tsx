@@ -56,10 +56,7 @@ export async function ArchiveYearHeader({
                   rel="noopener noreferrer"
                   className="cusec-archive-link"
                 >
-                  {t("visitSite")}{" "}
-                  <span aria-hidden="true" className="cusec-button-link__arrow">
-                    -&gt;
-                  </span>
+                  {t("visitSite")}
                 </a>
               </div>
             ) : null}

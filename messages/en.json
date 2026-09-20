@@ -16,10 +16,11 @@
   "Hero": {
     "tagline": "Canadian University Software Engineering Conference",
     "intro": "CUSEC is a non-profit organization hosting technology conferences organized by students, for students. Founded in 2002, we host a conference annually in early January. This year, we're gearing up for CUSEC 2027.",
-    "cta": "Visit CUSEC 2027's site"
+    "cta": "CUSEC 2027 — January 7–9, Montréal"
   },
   "Home": {
-    "bandAlt": "CUSEC attendees gathered for a group photo in a conference hall."
+    "bandAlt": "CUSEC attendees gathered for a group photo in a conference hall.",
+    "organizationDescription": "CUSEC is Canada's longest-running student-led software engineering conference, organized by students for students since 2002."
   },
   "Stats": {
     "statement": "For <b>25+</b> years we've welcomed <b>10,000+</b> attendees, <b>270+</b> sponsors and <b>380+</b> speakers"

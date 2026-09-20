@@ -10,9 +10,6 @@ export function ButtonLink({ href, children, newTab }: ButtonLinkProps) {
   const content = (
     <>
       <span>{children}</span>
-      <span aria-hidden="true" className="cusec-button-link__arrow">
-        -&gt;
-      </span>
     </>
   );
 

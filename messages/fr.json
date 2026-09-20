@@ -14,12 +14,13 @@
     "label": "Choisir la langue"
   },
   "Hero": {
-    "tagline": "Conférence canadienne universitaire en génie logiciel",
+    "tagline": "Conférence universitaire canadienne en informatique et génie logiciel",
     "intro": "CUSEC est un organisme à but non lucratif qui organise des conférences technologiques par des étudiants, pour des étudiants. Fondé en 2002, nous organisons une conférence chaque année au début janvier. Cette année, nous nous préparons pour CUSEC 2027.",
-    "cta": "Visiter le site de CUSEC 2027"
+    "cta": "CUSEC 2027 — du 7 au 9 janvier, Montréal"
   },
   "Home": {
-    "bandAlt": "Des participants de CUSEC réunis pour une photo de groupe dans une salle de conférence."
+    "bandAlt": "Des participants de CUSEC réunis pour une photo de groupe dans une salle de conférence.",
+    "organizationDescription": "CUCIL est la plus ancienne conférence étudiante en génie logiciel au Canada, organisée par des étudiants pour des étudiants depuis 2002."
   },
   "Stats": {
     "statement": "Depuis plus de <b>25 ans</b>, nous avons accueilli plus de <b>10 000</b> participants, plus de <b>270</b> commanditaires et plus de <b>380</b> conférenciers"
@@ -40,7 +41,7 @@
     "whatIsCusec": {
       "heading": "Qu’<em>est-ce que</em> CUSEC?",
       "alt": "Un champ d’un vert éclatant sous un ciel bleu intense.",
-      "body1": "La Conférence canadienne universitaire en génie logiciel est décrite par beaucoup comme le <hl>rassemblement de l’avenir du génie logiciel</hl>. Des étudiants passionnés de génie logiciel, venus de partout au Canada et de concentrations diverses, se réunissent sous un même toit pendant trois journées complètes pour apprendre auprès des conférenciers, chercheurs et professionnels les plus célèbres et les plus recherchés du génie logiciel dans le monde.",
+      "body1": "La Conférence universitaire canadienne en informatique et génie logiciel est décrite par beaucoup comme le <hl>rassemblement de l’avenir du génie logiciel</hl>. Des étudiants passionnés de génie logiciel, venus de partout au Canada et de concentrations diverses, se réunissent sous un même toit pendant trois journées complètes pour apprendre auprès des conférenciers, chercheurs et professionnels les plus célèbres et les plus recherchés du génie logiciel dans le monde.",
       "body2": "Mais il ne s’agit pas que des présentations. La conférence vous donne l’occasion de rencontrer d’autres personnes qui partagent votre passion - de voir ce que créent vos pairs et comment ils expérimentent dans la technologie. <hl>CUSEC vous offre l’occasion d’avoir des conversations ouvertes avec les figures qui façonnent l’industrie ainsi qu’avec les personnes qui bâtissent les choses que nous utilisons au quotidien.</hl> Vous permettant d’apprendre directement des personnes que vous admirez. Et n’oubliez pas, nous avons aussi un salon de l’emploi en pleine croissance qui pourrait vous intéresser."
     },
     "isCusecForMe": {
@@ -127,7 +128,7 @@
       "2023": "Le retour aux rencontres, à l’apprentissage et au partage d’idées en personne.",
       "2024": "Explorer l’intelligence artificielle, l’accessibilité et les pratiques logicielles modernes.",
       "2025": "Bâtir ensemble l’avenir de la technologie à Montréal.",
-      "2026": "Le 25e anniversaire de la Conférence canadienne universitaire en génie logiciel."
+      "2026": "Le 25e anniversaire de la Conférence universitaire canadienne en informatique et génie logiciel."
     },
     "detailed": {
       "2003": "La deuxième édition de CUSEC a prouvé que l’événement inaugural n’était pas un hasard. Elle a confirmé la nécessité d’une conférence canadienne de génie logiciel menée par des étudiants, offrant aux participants une plateforme essentielle pour apprendre de professionnels et rencontrer des pairs en début de parcours.",
@@ -169,11 +170,11 @@
     "copyright": "Copyright 2002-2026. Tous droits réservés."
   },
   "Metadata": {
-    "title": "CUSEC | Conférence canadienne universitaire en génie logiciel",
-    "description": "CUSEC est la Conférence canadienne universitaire en génie logiciel, une conférence technologique organisée par des étudiants pour les étudiants qui s'intéressent au génie logiciel et à la technologie.",
+    "title": "CUSEC | Conférence universitaire canadienne en informatique et génie logiciel",
+    "description": "CUSEC est la Conférence universitaire canadienne en informatique et génie logiciel, une conférence technologique organisée par des étudiants pour les étudiants qui s'intéressent au génie logiciel et à la technologie.",
     "pages": {
       "home": {
-        "title": "CUSEC | Conférence canadienne universitaire en génie logiciel",
+        "title": "CUSEC | Conférence universitaire canadienne en informatique et génie logiciel",
         "description": "CUSEC est une conférence technologique organisée par des étudiants pour les étudiants qui s'intéressent au génie logiciel et à la technologie."
       },
       "archives": {
